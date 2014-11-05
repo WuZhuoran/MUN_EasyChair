@@ -1,0 +1,8 @@
+D:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\bin\Debug\MUN_ChairTools.exe
+D:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\bin\Debug\MUN_ChairTools.pdb
+D:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.MainForm.resources
+D:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.Properties.Resources.resources
+D:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.csproj.GenerateResource.Cache
+D:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.exe
+D:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.pdb
+D:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.csprojResolveAssemblyReference.cache
