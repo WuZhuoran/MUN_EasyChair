@@ -35,13 +35,11 @@
             this.ActionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OtherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain = new System.Windows.Forms.Panel();
             this.groupBoxInfo = new System.Windows.Forms.GroupBox();
             this.groupBoxTime = new System.Windows.Forms.GroupBox();
             this.buttonSetTimeReset = new System.Windows.Forms.Button();
-            this.labelColon = new System.Windows.Forms.Label();
-            this.labelSetTimeSecond = new System.Windows.Forms.Label();
-            this.labelSetTimeMinute = new System.Windows.Forms.Label();
             this.buttonSetTimePause = new System.Windows.Forms.Button();
             this.buttonSetTimeStart = new System.Windows.Forms.Button();
             this.LabelSecond = new System.Windows.Forms.Label();
@@ -49,9 +47,8 @@
             this.labelSetTime = new System.Windows.Forms.Label();
             this.labelSystemTime = new System.Windows.Forms.Label();
             this.groupBoxRecord = new System.Windows.Forms.GroupBox();
-            this.timerSystemTime = new System.Windows.Forms.Timer(this.components);
+            this.labelSetTimeMinute = new System.Windows.Forms.Label();
             this.timerSetTime = new System.Windows.Forms.Timer(this.components);
-            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripMain.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.groupBoxTime.SuspendLayout();
@@ -67,26 +64,26 @@
             this.HelpToolStripMenuItem});
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
-            this.menuStripMain.Size = new System.Drawing.Size(1008, 25);
+            this.menuStripMain.Size = new System.Drawing.Size(1008, 24);
             this.menuStripMain.TabIndex = 3;
             this.menuStripMain.Text = "menuStrip1";
             // 
             // SystemToolStripMenuItem
             // 
             this.SystemToolStripMenuItem.Name = "SystemToolStripMenuItem";
-            this.SystemToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.SystemToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.SystemToolStripMenuItem.Text = "文件";
             // 
             // ActionToolStripMenuItem
             // 
             this.ActionToolStripMenuItem.Name = "ActionToolStripMenuItem";
-            this.ActionToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.ActionToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.ActionToolStripMenuItem.Text = "操作";
             // 
             // OtherToolStripMenuItem
             // 
             this.OtherToolStripMenuItem.Name = "OtherToolStripMenuItem";
-            this.OtherToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.OtherToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.OtherToolStripMenuItem.Text = "其他";
             // 
             // HelpToolStripMenuItem
@@ -94,8 +91,14 @@
             this.HelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AboutToolStripMenuItem});
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
-            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.HelpToolStripMenuItem.Text = "帮助";
+            // 
+            // AboutToolStripMenuItem
+            // 
+            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.AboutToolStripMenuItem.Text = "关于";
             // 
             // panelMain
             // 
@@ -127,10 +130,8 @@
             // 
             this.groupBoxTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxTime.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBoxTime.Controls.Add(this.buttonSetTimeReset);
-            this.groupBoxTime.Controls.Add(this.labelColon);
-            this.groupBoxTime.Controls.Add(this.labelSetTimeSecond);
             this.groupBoxTime.Controls.Add(this.labelSetTimeMinute);
+            this.groupBoxTime.Controls.Add(this.buttonSetTimeReset);
             this.groupBoxTime.Controls.Add(this.buttonSetTimePause);
             this.groupBoxTime.Controls.Add(this.buttonSetTimeStart);
             this.groupBoxTime.Controls.Add(this.LabelSecond);
@@ -153,38 +154,6 @@
             this.buttonSetTimeReset.Text = "重置";
             this.buttonSetTimeReset.UseVisualStyleBackColor = true;
             this.buttonSetTimeReset.Click += new System.EventHandler(this.buttonSetTimeReset_Click);
-            // 
-            // labelColon
-            // 
-            this.labelColon.BackColor = System.Drawing.Color.Transparent;
-            this.labelColon.Font = new System.Drawing.Font("微软雅黑", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelColon.Location = new System.Drawing.Point(168, 88);
-            this.labelColon.Name = "labelColon";
-            this.labelColon.Size = new System.Drawing.Size(48, 75);
-            this.labelColon.TabIndex = 8;
-            this.labelColon.Text = ":";
-            // 
-            // labelSetTimeSecond
-            // 
-            this.labelSetTimeSecond.AutoSize = true;
-            this.labelSetTimeSecond.BackColor = System.Drawing.Color.Transparent;
-            this.labelSetTimeSecond.Font = new System.Drawing.Font("微软雅黑", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelSetTimeSecond.Location = new System.Drawing.Point(191, 62);
-            this.labelSetTimeSecond.Name = "labelSetTimeSecond";
-            this.labelSetTimeSecond.Size = new System.Drawing.Size(173, 128);
-            this.labelSetTimeSecond.TabIndex = 7;
-            this.labelSetTimeSecond.Text = "00";
-            // 
-            // labelSetTimeMinute
-            // 
-            this.labelSetTimeMinute.Font = new System.Drawing.Font("微软雅黑", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelSetTimeMinute.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelSetTimeMinute.Location = new System.Drawing.Point(28, 60);
-            this.labelSetTimeMinute.Name = "labelSetTimeMinute";
-            this.labelSetTimeMinute.Size = new System.Drawing.Size(173, 128);
-            this.labelSetTimeMinute.TabIndex = 6;
-            this.labelSetTimeMinute.Text = "0";
-            this.labelSetTimeMinute.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // buttonSetTimePause
             // 
@@ -233,7 +202,7 @@
             // 
             this.labelSetTime.AutoSize = true;
             this.labelSetTime.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelSetTime.Location = new System.Drawing.Point(20, 211);
+            this.labelSetTime.Location = new System.Drawing.Point(18, 211);
             this.labelSetTime.Name = "labelSetTime";
             this.labelSetTime.Size = new System.Drawing.Size(107, 26);
             this.labelSetTime.TabIndex = 1;
@@ -259,15 +228,20 @@
             this.groupBoxRecord.TabStop = false;
             this.groupBoxRecord.Text = "会议记录";
             // 
+            // labelSetTimeMinute
+            // 
+            this.labelSetTimeMinute.Font = new System.Drawing.Font("微软雅黑", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelSetTimeMinute.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelSetTimeMinute.Location = new System.Drawing.Point(26, 71);
+            this.labelSetTimeMinute.Name = "labelSetTimeMinute";
+            this.labelSetTimeMinute.Size = new System.Drawing.Size(335, 128);
+            this.labelSetTimeMinute.TabIndex = 6;
+            this.labelSetTimeMinute.Text = "0";
+            this.labelSetTimeMinute.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // timerSetTime
             // 
             this.timerSetTime.Interval = 1000;
-            // 
-            // AboutToolStripMenuItem
-            // 
-            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.AboutToolStripMenuItem.Text = "关于";
             // 
             // MainForm
             // 
@@ -303,18 +277,15 @@
         private System.Windows.Forms.GroupBox groupBoxTime;
         private System.Windows.Forms.GroupBox groupBoxInfo;
         private System.Windows.Forms.Label labelSystemTime;
-        private System.Windows.Forms.Timer timerSystemTime;
         private System.Windows.Forms.Label labelSetTime;
         private System.Windows.Forms.Label LabelSecond;
         private System.Windows.Forms.NumericUpDown numericUpDownSetTime;
         private System.Windows.Forms.Button buttonSetTimePause;
         private System.Windows.Forms.Button buttonSetTimeStart;
         private System.Windows.Forms.Label labelSetTimeMinute;
-        private System.Windows.Forms.Timer timerSetTime;
-        private System.Windows.Forms.Label labelColon;
-        private System.Windows.Forms.Label labelSetTimeSecond;
         private System.Windows.Forms.Button buttonSetTimeReset;
         private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
+        private System.Windows.Forms.Timer timerSetTime;
     }
 }
 
