@@ -14,3 +14,5 @@ E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\M
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.MainForm.resources
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.Properties.Resources.resources
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.csproj.GenerateResource.Cache
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.AboutBox.resources
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.RollCallForm.resources

@@ -35,10 +35,12 @@
             this.ActionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OtherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SeeHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain = new System.Windows.Forms.Panel();
             this.groupBoxInfo = new System.Windows.Forms.GroupBox();
             this.groupBoxTime = new System.Windows.Forms.GroupBox();
+            this.labelSetTimeMinute = new System.Windows.Forms.Label();
             this.buttonSetTimeReset = new System.Windows.Forms.Button();
             this.buttonSetTimePause = new System.Windows.Forms.Button();
             this.buttonSetTimeStart = new System.Windows.Forms.Button();
@@ -47,8 +49,8 @@
             this.labelSetTime = new System.Windows.Forms.Label();
             this.labelSystemTime = new System.Windows.Forms.Label();
             this.groupBoxRecord = new System.Windows.Forms.GroupBox();
-            this.labelSetTimeMinute = new System.Windows.Forms.Label();
             this.timerSetTime = new System.Windows.Forms.Timer(this.components);
+            this.timerSystemTime = new System.Windows.Forms.Timer(this.components);
             this.menuStripMain.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.groupBoxTime.SuspendLayout();
@@ -89,16 +91,24 @@
             // HelpToolStripMenuItem
             // 
             this.HelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AboutToolStripMenuItem});
+            this.SeeHelpToolStripMenuItem,
+            this.AboutBoxToolStripMenuItem});
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
             this.HelpToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.HelpToolStripMenuItem.Text = "帮助";
             // 
-            // AboutToolStripMenuItem
+            // SeeHelpToolStripMenuItem
             // 
-            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
-            this.AboutToolStripMenuItem.Text = "关于";
+            this.SeeHelpToolStripMenuItem.Name = "SeeHelpToolStripMenuItem";
+            this.SeeHelpToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.SeeHelpToolStripMenuItem.Text = "帮助";
+            // 
+            // AboutBoxToolStripMenuItem
+            // 
+            this.AboutBoxToolStripMenuItem.Name = "AboutBoxToolStripMenuItem";
+            this.AboutBoxToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.AboutBoxToolStripMenuItem.Text = "关于";
+            this.AboutBoxToolStripMenuItem.Click += new System.EventHandler(this.AboutBoxToolStripMenuItem_Click);
             // 
             // panelMain
             // 
@@ -144,6 +154,16 @@
             this.groupBoxTime.TabIndex = 1;
             this.groupBoxTime.TabStop = false;
             this.groupBoxTime.Text = "计时工具";
+            // 
+            // labelSetTimeMinute
+            // 
+            this.labelSetTimeMinute.Font = new System.Drawing.Font("微软雅黑", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelSetTimeMinute.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelSetTimeMinute.Location = new System.Drawing.Point(26, 71);
+            this.labelSetTimeMinute.Name = "labelSetTimeMinute";
+            this.labelSetTimeMinute.Size = new System.Drawing.Size(335, 128);
+            this.labelSetTimeMinute.TabIndex = 6;
+            this.labelSetTimeMinute.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // buttonSetTimeReset
             // 
@@ -228,20 +248,14 @@
             this.groupBoxRecord.TabStop = false;
             this.groupBoxRecord.Text = "会议记录";
             // 
-            // labelSetTimeMinute
-            // 
-            this.labelSetTimeMinute.Font = new System.Drawing.Font("微软雅黑", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelSetTimeMinute.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelSetTimeMinute.Location = new System.Drawing.Point(26, 71);
-            this.labelSetTimeMinute.Name = "labelSetTimeMinute";
-            this.labelSetTimeMinute.Size = new System.Drawing.Size(335, 128);
-            this.labelSetTimeMinute.TabIndex = 6;
-            this.labelSetTimeMinute.Text = "0";
-            this.labelSetTimeMinute.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // timerSetTime
             // 
             this.timerSetTime.Interval = 1000;
+            // 
+            // timerSystemTime
+            // 
+            this.timerSystemTime.Interval = 1000;
+            this.timerSystemTime.Tick += new System.EventHandler(this.timerSystemTime_Tick);
             // 
             // MainForm
             // 
@@ -284,8 +298,10 @@
         private System.Windows.Forms.Button buttonSetTimeStart;
         private System.Windows.Forms.Label labelSetTimeMinute;
         private System.Windows.Forms.Button buttonSetTimeReset;
-        private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SeeHelpToolStripMenuItem;
         private System.Windows.Forms.Timer timerSetTime;
+        private System.Windows.Forms.Timer timerSystemTime;
+        private System.Windows.Forms.ToolStripMenuItem AboutBoxToolStripMenuItem;
     }
 }
 

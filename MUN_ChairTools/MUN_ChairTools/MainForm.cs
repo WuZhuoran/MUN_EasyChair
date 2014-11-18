@@ -13,10 +13,18 @@ namespace MUN_ChairTools
 
     public partial class MainForm : Form
     {
+        private int MinuteSetTime = 0;
+
+        private int SecondSetTime = 0;
+
+        private DateTime TimePass;
 
         public MainForm()
         {
             InitializeComponent();
+            this.timerSystemTime.Enabled = true;
+            this.timerSystemTime.Start();
+            
         }
 
         /// <summary>
@@ -30,29 +38,63 @@ namespace MUN_ChairTools
             this.groupBoxInfo.Location = new Point(this.groupBoxRecord.Size.Width + 6, this.groupBoxTime.Size.Height + 3 + 10);
         }
 
-        private void buttonSetTimeStart_Click(object sender, EventArgs e)
-        {
-            this.Clock = 180;
-            this.timerSetTime.Enabled = true;
-            this.timerSetTime.Tick += new EventHandler(timerSetTime_Tick);
-            this.timerSetTime.Start();
-        }
-
-        public int Clock = 180;
-
         void timerSetTime_Tick(object sender, EventArgs e)
         {
-            Clock--;
-            this.labelSetTimeMinute.Text = Clock.ToString();
-            if (Clock == 0)
+            if (this.TimePass != Convert.ToDateTime("00:00:00"))
+            {
+                this.TimePass = this.TimePass.AddSeconds(-1);
+                this.labelSetTimeMinute.Text = this.TimePass.Minute.ToString("00") + ":" + this.TimePass.Second.ToString("00");
+
+                if(this.TimePass.Minute == 0 && this.TimePass.Second <= 20)
+                {
+                    this.labelSetTimeMinute.ForeColor = Color.Red;
+                }
+            }
+            else
             {
                 this.timerSetTime.Stop();
             }
         }
 
+        private void buttonSetTimeStart_Click(object sender, EventArgs e)
+        {
+            //获取数据并验证正确性
+            int timeSetTime = 0;
+            if(Int32.TryParse(this.numericUpDownSetTime.Value.ToString(), out timeSetTime))
+            {
+                this.MinuteSetTime = timeSetTime / 60;
+                this.SecondSetTime = timeSetTime % 60;
+                this.TimePass = DateTime.Parse("00:" + this.MinuteSetTime.ToString("00") + ":" + this.SecondSetTime.ToString("00"));
+                this.labelSetTimeMinute.Text = this.MinuteSetTime.ToString("00") + ":" + this.SecondSetTime.ToString("00");
+
+            }
+            else
+            {
+                return;
+            }
+            
+            //开始Timer
+            this.timerSetTime.Enabled = true;
+            this.timerSetTime.Tick += new EventHandler(timerSetTime_Tick);
+            this.timerSetTime.Start();
+        }
+
         private void buttonSetTimePause_Click(object sender, EventArgs e)
         {
-
+            if(this.buttonSetTimePause.Text == "暂停")
+            {
+                this.buttonSetTimePause.Text = "继续";
+                this.timerSetTime.Stop();
+            }
+            else if(this.buttonSetTimePause.Text == "继续")
+            {
+                this.buttonSetTimePause.Text = "暂停";
+                this.timerSetTime.Start();
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void buttonSetTimeReset_Click(object sender, EventArgs e)
@@ -61,8 +103,24 @@ namespace MUN_ChairTools
             this.timerSetTime.Stop();
             this.timerSetTime.Interval = 1000;
             this.labelSetTimeMinute.Text = "";
+            this.labelSetTimeMinute.ForeColor = Color.Black;
+            this.timerSetTime.Tick -= new System.EventHandler(timerSetTime_Tick);
+            this.SecondSetTime = 0;
+            this.MinuteSetTime = 0;
         }
 
+        private void timerSystemTime_Tick(object sender, EventArgs e)
+        {
+            this.labelSystemTime.Text = "系统时间：" + DateTime.Now.ToString();
+        }
+
+        private void AboutBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new AboutBox().Show();
+        }
+
+    
+        
     }
 
 
