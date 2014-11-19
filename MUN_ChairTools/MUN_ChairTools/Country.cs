@@ -30,7 +30,6 @@ namespace MUN_ChairTools
             this.CountryNumber = 0;
             this.CountrySpeechTime = 0;
             this.CountryFlag = new Bitmap(new Bitmap("E:\\Coding Files\\VisualStdio2010_C#\\MUN_ChairTools\\MUN_ChairTools\\Image\\Default.png"), 66, 44);
-            
         }
     }
 }

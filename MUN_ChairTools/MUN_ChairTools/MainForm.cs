@@ -24,6 +24,8 @@ namespace MUN_ChairTools
             InitializeComponent();
             this.timerSystemTime.Enabled = true;
             this.timerSystemTime.Start();
+
+            
             
         }
 
@@ -36,6 +38,8 @@ namespace MUN_ChairTools
         {
             this.groupBoxRecord.Size = new Size(this.panelMain.Size.Width - this.groupBoxTime.Size.Width, this.groupBoxInfo.Size.Height + this.groupBoxTime.Size.Height + 10);
             this.groupBoxInfo.Location = new Point(this.groupBoxRecord.Size.Width + 6, this.groupBoxTime.Size.Height + 3 + 10);
+            this.richTextBoxRecord.Width = this.groupBoxRecord.Width - 20;
+            this.richTextBoxRecord.Height = this.groupBoxRecord.Height - 40;
         }
 
         void timerSetTime_Tick(object sender, EventArgs e)
@@ -58,6 +62,8 @@ namespace MUN_ChairTools
 
         private void buttonSetTimeStart_Click(object sender, EventArgs e)
         {
+            //自动关闭之前可能出现的Trik事件
+            this.timerSetTime.Tick -= new EventHandler(timerSetTime_Tick);
             //获取数据并验证正确性
             int timeSetTime = 0;
             if(Int32.TryParse(this.numericUpDownSetTime.Value.ToString(), out timeSetTime))
@@ -77,6 +83,10 @@ namespace MUN_ChairTools
             this.timerSetTime.Enabled = true;
             this.timerSetTime.Tick += new EventHandler(timerSetTime_Tick);
             this.timerSetTime.Start();
+
+            this.buttonSetTimeStart.Enabled = false;
+            this.buttonSetTimeStart.ForeColor = Color.Gray;
+
         }
 
         private void buttonSetTimePause_Click(object sender, EventArgs e)
@@ -105,8 +115,12 @@ namespace MUN_ChairTools
             this.labelSetTimeMinute.Text = "";
             this.labelSetTimeMinute.ForeColor = Color.Black;
             this.timerSetTime.Tick -= new System.EventHandler(timerSetTime_Tick);
+            
             this.SecondSetTime = 0;
             this.MinuteSetTime = 0;
+
+            this.buttonSetTimeStart.Enabled = true;
+            this.buttonSetTimeStart.ForeColor = Color.Black;
         }
 
         private void timerSystemTime_Tick(object sender, EventArgs e)

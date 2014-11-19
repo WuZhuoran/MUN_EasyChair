@@ -15,13 +15,6 @@ namespace MUN_ChairTools
             InitializeComponent();
             
             this.Text = String.Format("关于 {0}", AssemblyTitle);
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("版本 {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
-            this.textBoxDescription.Text = AssemblyDescription;
-
-            //显示
-            this.labelProductName.Text = AssemblyProduct + ":模拟联合国主席程序";
         }
 
         #region 程序集特性访问器
@@ -104,9 +97,11 @@ namespace MUN_ChairTools
         }
         #endregion
 
-        private void okButton_Click(object sender, EventArgs e)
+        private void buttonOK_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+
     }
 }

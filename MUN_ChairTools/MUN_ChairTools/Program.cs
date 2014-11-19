@@ -16,6 +16,7 @@ namespace MUN_ChairTools
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
+            
         }
     }
 }

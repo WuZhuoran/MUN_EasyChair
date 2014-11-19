@@ -51,10 +51,12 @@
             this.groupBoxRecord = new System.Windows.Forms.GroupBox();
             this.timerSetTime = new System.Windows.Forms.Timer(this.components);
             this.timerSystemTime = new System.Windows.Forms.Timer(this.components);
+            this.richTextBoxRecord = new System.Windows.Forms.RichTextBox();
             this.menuStripMain.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.groupBoxTime.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSetTime)).BeginInit();
+            this.groupBoxRecord.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStripMain
@@ -129,6 +131,7 @@
             // 
             this.groupBoxInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxInfo.BackColor = System.Drawing.SystemColors.Highlight;
+            this.groupBoxInfo.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Bold);
             this.groupBoxInfo.Location = new System.Drawing.Point(589, 263);
             this.groupBoxInfo.Name = "groupBoxInfo";
             this.groupBoxInfo.Size = new System.Drawing.Size(400, 352);
@@ -148,6 +151,7 @@
             this.groupBoxTime.Controls.Add(this.numericUpDownSetTime);
             this.groupBoxTime.Controls.Add(this.labelSetTime);
             this.groupBoxTime.Controls.Add(this.labelSystemTime);
+            this.groupBoxTime.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Bold);
             this.groupBoxTime.Location = new System.Drawing.Point(589, 3);
             this.groupBoxTime.Name = "groupBoxTime";
             this.groupBoxTime.Size = new System.Drawing.Size(400, 250);
@@ -167,6 +171,7 @@
             // 
             // buttonSetTimeReset
             // 
+            this.buttonSetTimeReset.Font = new System.Drawing.Font("宋体", 9F);
             this.buttonSetTimeReset.Location = new System.Drawing.Point(331, 209);
             this.buttonSetTimeReset.Name = "buttonSetTimeReset";
             this.buttonSetTimeReset.Size = new System.Drawing.Size(44, 33);
@@ -177,6 +182,7 @@
             // 
             // buttonSetTimePause
             // 
+            this.buttonSetTimePause.Font = new System.Drawing.Font("宋体", 9F);
             this.buttonSetTimePause.Location = new System.Drawing.Point(281, 209);
             this.buttonSetTimePause.Name = "buttonSetTimePause";
             this.buttonSetTimePause.Size = new System.Drawing.Size(44, 33);
@@ -187,6 +193,7 @@
             // 
             // buttonSetTimeStart
             // 
+            this.buttonSetTimeStart.Font = new System.Drawing.Font("宋体", 9F);
             this.buttonSetTimeStart.Location = new System.Drawing.Point(229, 209);
             this.buttonSetTimeStart.Name = "buttonSetTimeStart";
             this.buttonSetTimeStart.Size = new System.Drawing.Size(46, 33);
@@ -241,6 +248,8 @@
             // groupBoxRecord
             // 
             this.groupBoxRecord.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.groupBoxRecord.Controls.Add(this.richTextBoxRecord);
+            this.groupBoxRecord.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBoxRecord.Location = new System.Drawing.Point(3, 3);
             this.groupBoxRecord.Name = "groupBoxRecord";
             this.groupBoxRecord.Size = new System.Drawing.Size(580, 612);
@@ -256,6 +265,15 @@
             // 
             this.timerSystemTime.Interval = 1000;
             this.timerSystemTime.Tick += new System.EventHandler(this.timerSystemTime_Tick);
+            // 
+            // richTextBoxRecord
+            // 
+            this.richTextBoxRecord.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.richTextBoxRecord.Location = new System.Drawing.Point(4, 32);
+            this.richTextBoxRecord.Name = "richTextBoxRecord";
+            this.richTextBoxRecord.Size = new System.Drawing.Size(568, 572);
+            this.richTextBoxRecord.TabIndex = 0;
+            this.richTextBoxRecord.Text = "";
             // 
             // MainForm
             // 
@@ -274,6 +292,7 @@
             this.groupBoxTime.ResumeLayout(false);
             this.groupBoxTime.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSetTime)).EndInit();
+            this.groupBoxRecord.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,6 +321,7 @@
         private System.Windows.Forms.Timer timerSetTime;
         private System.Windows.Forms.Timer timerSystemTime;
         private System.Windows.Forms.ToolStripMenuItem AboutBoxToolStripMenuItem;
+        private System.Windows.Forms.RichTextBox richTextBoxRecord;
     }
 }
 
