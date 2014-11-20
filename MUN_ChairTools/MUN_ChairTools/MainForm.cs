@@ -19,14 +19,33 @@ namespace MUN_ChairTools
 
         private DateTime TimePass;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
         public MainForm()
         {
             InitializeComponent();
             this.timerSystemTime.Enabled = true;
             this.timerSystemTime.Start();
+            this.FormClosing += new FormClosingEventHandler(MainForm_FormClosing);
+        }
 
-            
-            
+        /// <summary>
+        /// 点击右上角关闭按钮时触发
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(MessageBox.Show("是否保存数据并退出程序？", "退出", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.OK)
+            {
+                this.Dispose();
+                this.Close();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
 
         /// <summary>
@@ -41,7 +60,12 @@ namespace MUN_ChairTools
             this.richTextBoxRecord.Width = this.groupBoxRecord.Width - 20;
             this.richTextBoxRecord.Height = this.groupBoxRecord.Height - 40;
         }
-
+        
+        /// <summary>
+        /// 计时器工作函数
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void timerSetTime_Tick(object sender, EventArgs e)
         {
             if (this.TimePass != Convert.ToDateTime("00:00:00"))
@@ -60,6 +84,11 @@ namespace MUN_ChairTools
             }
         }
 
+        /// <summary>
+        /// 计时器开始按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonSetTimeStart_Click(object sender, EventArgs e)
         {
             //自动关闭之前可能出现的Trik事件
@@ -89,6 +118,11 @@ namespace MUN_ChairTools
 
         }
 
+        /// <summary>
+        /// 倒计时暂停按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonSetTimePause_Click(object sender, EventArgs e)
         {
             if(this.buttonSetTimePause.Text == "暂停")
@@ -107,6 +141,11 @@ namespace MUN_ChairTools
             }
         }
 
+        /// <summary>
+        /// 设定时间的重置按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonSetTimeReset_Click(object sender, EventArgs e)
         {
             this.timerSetTime.Enabled = false;
@@ -123,11 +162,21 @@ namespace MUN_ChairTools
             this.buttonSetTimeStart.ForeColor = Color.Black;
         }
 
+        /// <summary>
+        /// 系统时间计时器
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timerSystemTime_Tick(object sender, EventArgs e)
         {
             this.labelSystemTime.Text = "系统时间：" + DateTime.Now.ToString();
         }
 
+        /// <summary>
+        /// 显示关于对话框
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AboutBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new AboutBox().Show();

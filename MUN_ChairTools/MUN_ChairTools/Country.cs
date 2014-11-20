@@ -10,26 +10,44 @@ using System.Windows.Forms;
 
 namespace MUN_ChairTools
 {
+    /// <summary>
+    /// 国家类
+    /// </summary>
     class Country
     {
-        private string CountryChineseName;
+        private string countryChineseName; //国家中文名
 
-        private string CountryEnghlishName;
+        private string countryEnghlishName; //国家英文名
 
-        private int CountryNumber;
+        private int countrySpeechTime; //发言次数
+        
+        private Bitmap CountryFlag; //国家国旗 默认为Default
 
-        private int CountrySpeechTime;
+        private CountryType countryType;//：国家，组织，个人等
 
-        public Bitmap CountryFlag;
+        private bool isPresent; //某一个session是否到场
+
         //TODO
 
         public Country()
         {
-            this.CountryChineseName = null;
-            this.CountryEnghlishName = null;
-            this.CountryNumber = 0;
-            this.CountrySpeechTime = 0;
+            this.countryChineseName = null;
+            this.countryEnghlishName = null;
+            this.countrySpeechTime = 0;
+            this.countryType = CountryType.UNDEFINED;
             this.CountryFlag = new Bitmap(new Bitmap("E:\\Coding Files\\VisualStdio2010_C#\\MUN_ChairTools\\MUN_ChairTools\\Image\\Default.png"), 66, 44);
+            this.isPresent = false;
         }
+    
+    
+    }
+
+    enum CountryType
+    {
+        UNDEFINED = 0,
+        COUNTRY = 1,
+        PERSON = 2,
+        ORGINZATION = 3,
+        OBVERSEVER = 4
     }
 }

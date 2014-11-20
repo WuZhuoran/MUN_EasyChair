@@ -10,11 +10,37 @@ namespace MUN_ChairTools
 {
     partial class AboutBox : Form
     {
+        public string AssemblyAuthorized = "All User";//默认授权给All User
+
         public AboutBox()
         {
             InitializeComponent();
             
             this.Text = String.Format("关于 {0}", AssemblyTitle);
+            this.labelAuthorization.Text = "本产品授权给:\n\n" + this.AssemblyAuthorized;
+            this.linkLabelMyGithubAddress.Text = "https://github.com/WuZhuoran";
+            this.linkLabelMyGithubAddress.Click += new EventHandler(linkLabelMyGithubAddress_Click);
+            this.linkLabelWriterEmail.Click += new EventHandler(linkLabelWriterEmail_Click);
+
+            this.labelProductName.Text += ProductName;
+            this.labelProdectOwner.Text += "吴卓燃 常州大学 软件工程专业2012级";
+            this.labelProductVersion.Text += AssemblyVersion;
+            this.labelWarning.Text += "本程序软件遵照GPL协议开放源代码";
+
+            
+        }
+
+        void linkLabelWriterEmail_Click(object sender, EventArgs e)
+        {
+            this.linkLabelWriterEmail.Links[0].LinkData = "work.serv.oliver@gmail.com";
+            Clipboard.SetDataObject(this.linkLabelWriterEmail.Links[0].LinkData, true);
+            MessageBox.Show("已经将邮箱地址复制到剪贴板中！");
+        }
+
+        void linkLabelMyGithubAddress_Click(object sender, EventArgs e)
+        {
+            this.linkLabelMyGithubAddress.Links[0].LinkData = "https://github.com/WuZhuoran";
+            System.Diagnostics.Process.Start(this.linkLabelMyGithubAddress.Links[0].LinkData.ToString());
         }
 
         #region 程序集特性访问器
@@ -100,6 +126,16 @@ namespace MUN_ChairTools
         private void buttonOK_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonCppyRightText_Click(object sender, EventArgs e)
+        {
+            new FormOpenSourceStatement().Show();
+        }
+
+        private void buttonGPLlicense_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://gnu.org/licenses/gpl.html");
         }
 
 

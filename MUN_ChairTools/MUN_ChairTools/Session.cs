@@ -14,7 +14,15 @@ namespace MUN_ChairTools
 
         private int SessonNum;
 
-        private string ConferenceName;
+        private int countryNum;
+
+        private int simpleMajority;
+
+        private int twothirdsMajority;
+
+        private int twentyMajority;
+
+        private Country[] countryList;//每一次的国家列表，用来统计到场的国家
 
 
     }

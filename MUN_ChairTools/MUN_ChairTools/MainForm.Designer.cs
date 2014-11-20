@@ -34,6 +34,7 @@
             this.SystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ActionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OtherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SeeHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,9 +50,9 @@
             this.labelSetTime = new System.Windows.Forms.Label();
             this.labelSystemTime = new System.Windows.Forms.Label();
             this.groupBoxRecord = new System.Windows.Forms.GroupBox();
+            this.richTextBoxRecord = new System.Windows.Forms.RichTextBox();
             this.timerSetTime = new System.Windows.Forms.Timer(this.components);
             this.timerSystemTime = new System.Windows.Forms.Timer(this.components);
-            this.richTextBoxRecord = new System.Windows.Forms.RichTextBox();
             this.menuStripMain.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.groupBoxTime.SuspendLayout();
@@ -86,9 +87,17 @@
             // 
             // OtherToolStripMenuItem
             // 
+            this.OtherToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SettingsToolStripMenuItem});
             this.OtherToolStripMenuItem.Name = "OtherToolStripMenuItem";
             this.OtherToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.OtherToolStripMenuItem.Text = "其他";
+            // 
+            // SettingsToolStripMenuItem
+            // 
+            this.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem";
+            this.SettingsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.SettingsToolStripMenuItem.Text = "会议设定";
             // 
             // HelpToolStripMenuItem
             // 
@@ -257,15 +266,6 @@
             this.groupBoxRecord.TabStop = false;
             this.groupBoxRecord.Text = "会议记录";
             // 
-            // timerSetTime
-            // 
-            this.timerSetTime.Interval = 1000;
-            // 
-            // timerSystemTime
-            // 
-            this.timerSystemTime.Interval = 1000;
-            this.timerSystemTime.Tick += new System.EventHandler(this.timerSystemTime_Tick);
-            // 
             // richTextBoxRecord
             // 
             this.richTextBoxRecord.Font = new System.Drawing.Font("宋体", 21.75F);
@@ -274,6 +274,15 @@
             this.richTextBoxRecord.Size = new System.Drawing.Size(568, 572);
             this.richTextBoxRecord.TabIndex = 0;
             this.richTextBoxRecord.Text = "";
+            // 
+            // timerSetTime
+            // 
+            this.timerSetTime.Interval = 1000;
+            // 
+            // timerSystemTime
+            // 
+            this.timerSystemTime.Interval = 1000;
+            this.timerSystemTime.Tick += new System.EventHandler(this.timerSystemTime_Tick);
             // 
             // MainForm
             // 
@@ -322,6 +331,7 @@
         private System.Windows.Forms.Timer timerSystemTime;
         private System.Windows.Forms.ToolStripMenuItem AboutBoxToolStripMenuItem;
         private System.Windows.Forms.RichTextBox richTextBoxRecord;
+        private System.Windows.Forms.ToolStripMenuItem SettingsToolStripMenuItem;
     }
 }
 
