@@ -118,7 +118,634 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenSourceStatement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\OpenSourceStatement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="UnitedNationFlag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\UnitedNationFlag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="不丹" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\不丹.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="东南亚国家协会" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\东南亚国家协会.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="东帝汶" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\东帝汶.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="中国" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\中国.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="中非" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\中非.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="丹麦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\丹麦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="乌克兰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\乌克兰.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="乌兹别克斯坦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\乌兹别克斯坦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="乌干达" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\乌干达.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="乌拉圭" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\乌拉圭.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="乍得" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\乍得.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="也门" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\也门.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="亚美尼亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\亚美尼亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="以色列" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\以色列.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="伊拉克" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\伊拉克.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="伊朗" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\伊朗.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="佛得角" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\佛得角.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="俄罗斯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\俄罗斯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="保加利亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\保加利亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="克罗地亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\克罗地亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="冈比亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\冈比亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="冰岛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\冰岛.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="几内亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\几内亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="几内亚比绍" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\几内亚比绍.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="列支敦士登" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\列支敦士登.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="刚果" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\刚果.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="刚果_金_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\刚果(金).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="利比亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\利比亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="利比果亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\利比果亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="加勒比海共同体" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\加勒比海共同体.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="加拿大" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\加拿大.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="加纳" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\加纳.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="加蓬" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\加蓬.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="匈牙利" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\匈牙利.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="北大西洋公约组织" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\北大西洋公约组织.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="南非" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\南非.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="博茨瓦纳" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\博茨瓦纳.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="卡塔尔" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\卡塔尔.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="卢旺达" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\卢旺达.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="卢森堡" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\卢森堡.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="印度" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\印度.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="印度尼西亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\印度尼西亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="危地马拉" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\危地马拉.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="厄瓜多尔" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\厄瓜多尔.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="厄立特里亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\厄立特里亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="叙利亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\叙利亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="古巴" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\古巴.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="吉尔吉斯斯坦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\吉尔吉斯斯坦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="吉布提" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\吉布提.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="哈萨克斯坦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\哈萨克斯坦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="哥伦比亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\哥伦比亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="哥斯达黎加" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\哥斯达黎加.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="喀麦隆" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\喀麦隆.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="国协" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\国协.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="图瓦卢" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\图瓦卢.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="土库曼斯坦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\土库曼斯坦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="土耳其" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\土耳其.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="圣卢西亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\圣卢西亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="圣基茨和尼维斯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\圣基茨和尼维斯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="圣多美和普林西比" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\圣多美和普林西比.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="圣文森特和格林纳丁斯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\圣文森特和格林纳丁斯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="圣马力诺" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\圣马力诺.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="圭亚那" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\圭亚那.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="坦桑尼亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\坦桑尼亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="埃及" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\埃及.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="埃塞俄比亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\埃塞俄比亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="基里巴斯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\基里巴斯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="塔吉克斯坦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\塔吉克斯坦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="塞内加尔" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\塞内加尔.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="塞尔维亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\塞尔维亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="塞拉利昂" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\塞拉利昂.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="塞浦路斯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\塞浦路斯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="塞舌尔" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\塞舌尔.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="墨西哥" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\墨西哥.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="多哥" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\多哥.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="多米尼克" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\多米尼克.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="多米尼加" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\多米尼加.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="太平洋共同体" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\太平洋共同体.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="奥地利" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\奥地利.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="委内瑞拉" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\委内瑞拉.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="孟加拉国" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\孟加拉国.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="安哥拉" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\安哥拉.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="安提瓜和巴布达" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\安提瓜和巴布达.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="安道尔" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\安道尔.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="密克罗尼西亚联邦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\密克罗尼西亚联邦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="尼加拉瓜" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\尼加拉瓜.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="尼日利亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\尼日利亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="尼日尔" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\尼日尔.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="尼泊尔" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\尼泊尔.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="巴勒斯坦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\巴勒斯坦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="巴哈马" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\巴哈马.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="巴基斯坦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\巴基斯坦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="巴巴多斯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\巴巴多斯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="巴布亚新几内亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\巴布亚新几内亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="巴拉圭" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\巴拉圭.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="巴拿马" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\巴拿马.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="巴林" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\巴林.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="巴西" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\巴西.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="布基纳法索" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\布基纳法索.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="布隆迪" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\布隆迪.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="希腊" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\希腊.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="帕劳" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\帕劳.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="德国" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\德国.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="意大利" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\意大利.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="所罗门群岛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\所罗门群岛.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="拉脱维亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\拉脱维亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="挪威" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\挪威.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="捷克" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\捷克.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="摩尔多瓦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\摩尔多瓦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="摩洛哥" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\摩洛哥.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="摩纳哥" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\摩纳哥.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="文莱" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\文莱.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="斐济" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\斐济.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="斯威士兰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\斯威士兰.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="斯洛伐克" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\斯洛伐克.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="斯洛文尼亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\斯洛文尼亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="斯里兰卡" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\斯里兰卡.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="新加坡" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\新加坡.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="新西兰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\新西兰.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="日本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\日本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="智利" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\智利.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="朝鲜" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\朝鲜.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="柬埔寨" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\柬埔寨.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="格林纳达" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\格林纳达.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="格鲁吉亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\格鲁吉亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="梵蒂冈" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\梵蒂冈.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="欧洲联盟" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\欧洲联盟.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="比利时" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\比利时.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="毛里塔尼亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\毛里塔尼亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="毛里求斯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\毛里求斯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="汤加" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\汤加.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="沙特阿拉伯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\沙特阿拉伯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="法国" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\法国.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="波兰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\波兰.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="波斯尼亚和黑塞哥维那" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\波斯尼亚和黑塞哥维那.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="泰国" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\泰国.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="津巴布韦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\津巴布韦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="洪都拉斯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\洪都拉斯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="海地" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\海地.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="澳大利亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\澳大利亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="澳门" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\澳门.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="爱尔兰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\爱尔兰.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="爱沙尼亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\爱沙尼亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="牙买加" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\牙买加.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="特立尼达和多巴哥" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\特立尼达和多巴哥.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="独立国家国协" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\独立国家国协.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="玻利维亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\玻利维亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="瑙鲁" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\瑙鲁.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="瑞典" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\瑞典.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="瑞士" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\瑞士.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="瓦努阿图" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\瓦努阿图.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="白俄罗斯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\白俄罗斯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="科威特" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\科威特.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="科摩罗" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\科摩罗.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="科特迪瓦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\科特迪瓦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="秘鲁" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\秘鲁.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="突尼斯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\突尼斯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="立陶宛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\立陶宛.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="索马里" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\索马里.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="约旦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\约旦.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="纳米比亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\纳米比亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="缅甸" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\缅甸.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="罗马尼亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\罗马尼亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="美国" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\美国.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="美国国家组织" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\美国国家组织.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="老挝" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\老挝.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="联合国" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\联合国.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="肯尼亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\肯尼亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="芬兰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\芬兰.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="苏丹" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\苏丹.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="苏里南" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\苏里南.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="英国" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\英国.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="英格兰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\英格兰.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="荷兰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\荷兰.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="莫桑比克" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\莫桑比克.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="莱索托" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\莱索托.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="菲律宾" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\菲律宾.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="萨尔瓦多" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\萨尔瓦多.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="葡萄牙" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\葡萄牙.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="蒙古" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\蒙古.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="西班牙" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\西班牙.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="西萨摩亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\西萨摩亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="贝宁" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\贝宁.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="赞比亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\赞比亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="赤道几内亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\赤道几内亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="越南" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\越南.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="阿塞拜疆" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\阿塞拜疆.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="阿富汗" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\阿富汗.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="阿尔及利亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\阿尔及利亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="阿尔巴尼亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\阿尔巴尼亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="阿拉伯国家联盟" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\阿拉伯国家联盟.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="阿曼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\阿曼.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="阿根廷" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\阿根廷.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="阿联酋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\阿联酋.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="韩国" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\韩国.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="香港" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\香港.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="马其顿" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\马其顿.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="马尔代夫" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\马尔代夫.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="马拉维" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\马拉维.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="马来西亚" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\马来西亚.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="马绍尔群岛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\马绍尔群岛.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="马耳他" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\马耳他.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="马达加斯加" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\马达加斯加.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="马里" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\马里.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="黎巴嫩" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\NationsFlag\黎巴嫩.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

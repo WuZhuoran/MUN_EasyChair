@@ -52,7 +52,19 @@
     <Compile Include="AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddCountryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCountryList.Designer.cs">
+      <DependentUpon>AddCountryList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conference.cs" />
+    <Compile Include="ConferenceLoadAndInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConferenceLoadAndInit.Designer.cs">
+      <DependentUpon>ConferenceLoadAndInit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Country.cs" />
     <Compile Include="FormOpenSourceStatement.cs">
       <SubType>Form</SubType>
@@ -77,6 +89,12 @@
     <Compile Include="Session.cs" />
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCountryList.resx">
+      <DependentUpon>AddCountryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConferenceLoadAndInit.resx">
+      <DependentUpon>ConferenceLoadAndInit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOpenSourceStatement.resx">
       <DependentUpon>FormOpenSourceStatement.cs</DependentUpon>
@@ -109,6 +127,633 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\UnitedNationFlag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\OpenSourceStatement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\阿尔巴尼亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\阿尔及利亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\阿富汗.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\阿根廷.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\阿拉伯国家联盟.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\阿联酋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\阿曼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\阿塞拜疆.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\埃及.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\埃塞俄比亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\爱尔兰.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\爱沙尼亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\安道尔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\安哥拉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\安提瓜和巴布达.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\奥地利.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\澳大利亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\澳门.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\巴巴多斯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\巴布亚新几内亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\巴哈马.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\巴基斯坦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\巴拉圭.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\巴勒斯坦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\巴林.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\巴拿马.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\巴西.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\白俄罗斯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\保加利亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\北大西洋公约组织.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\贝宁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\比利时.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\冰岛.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\波兰.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\波斯尼亚和黑塞哥维那.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\玻利维亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\博茨瓦纳.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\不丹.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\布基纳法索.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\布隆迪.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\朝鲜.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\赤道几内亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\丹麦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\德国.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\东帝汶.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\东南亚国家协会.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\独立国家国协.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\多哥.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\多米尼加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\多米尼克.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\俄罗斯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\厄瓜多尔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\厄立特里亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\法国.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\梵蒂冈.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\菲律宾.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\斐济.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\芬兰.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\佛得角.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\冈比亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\刚果%28金%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\刚果.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\哥伦比亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\哥斯达黎加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\格林纳达.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\格鲁吉亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\古巴.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\圭亚那.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\国协.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\哈萨克斯坦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\海地.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\韩国.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\荷兰.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\洪都拉斯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\基里巴斯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\吉布提.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\吉尔吉斯斯坦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\几内亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\几内亚比绍.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\加勒比海共同体.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\加拿大.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\加纳.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\加蓬.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\柬埔寨.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\捷克.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\津巴布韦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\喀麦隆.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\卡塔尔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\科摩罗.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\科特迪瓦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\科威特.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\克罗地亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\肯尼亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\拉脱维亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\莱索托.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\老挝.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\黎巴嫩.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\立陶宛.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\利比果亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\利比亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\联合国.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\列支敦士登.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\卢森堡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\卢旺达.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\罗马尼亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\马达加斯加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\马尔代夫.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\马耳他.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\马拉维.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\马来西亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\马里.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\马其顿.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\马绍尔群岛.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\毛里求斯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\毛里塔尼亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\美国.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\美国国家组织.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\蒙古.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\孟加拉国.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\秘鲁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\密克罗尼西亚联邦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\缅甸.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\摩尔多瓦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\摩洛哥.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\摩纳哥.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\莫桑比克.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\墨西哥.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\纳米比亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\南非.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\瑙鲁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\尼泊尔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\尼加拉瓜.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\尼日尔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\尼日利亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\挪威.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\欧洲联盟.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\帕劳.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\葡萄牙.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\日本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\瑞典.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\瑞士.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\萨尔瓦多.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\塞尔维亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\塞拉利昂.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\塞内加尔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\塞浦路斯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\塞舌尔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\沙特阿拉伯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\圣多美和普林西比.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\圣基茨和尼维斯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\圣卢西亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\圣马力诺.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\圣文森特和格林纳丁斯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\斯里兰卡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\斯洛伐克.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\斯洛文尼亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\斯威士兰.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\苏丹.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\苏里南.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\所罗门群岛.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\索马里.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\塔吉克斯坦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\太平洋共同体.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\泰国.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\坦桑尼亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\汤加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\特立尼达和多巴哥.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\突尼斯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\图瓦卢.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\土耳其.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\土库曼斯坦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\瓦努阿图.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\危地马拉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\委内瑞拉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\文莱.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\乌干达.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\乌克兰.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\乌拉圭.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\乌兹别克斯坦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\西班牙.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\西萨摩亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\希腊.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\香港.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\新加坡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\新西兰.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\匈牙利.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\叙利亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\牙买加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\亚美尼亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\也门.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\伊拉克.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\伊朗.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\以色列.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\意大利.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\印度.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\印度尼西亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\英格兰.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\英国.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\约旦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\越南.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\赞比亚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\乍得.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\智利.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\中非.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NationsFlag\中国.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

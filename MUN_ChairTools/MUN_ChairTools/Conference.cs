@@ -13,9 +13,15 @@ namespace MUN_ChairTools
     {
         private Dictionary<string, string> KeyWordInBothLanguage = new Dictionary<string, string>();
 
-        private string conferenceName;
+        public string ConferenceName { get; set; }
 
-        private int sessionNum;
+        public string CommitteeName { get; set; }
+
+        public int SessionNumber { get; set; }
+
+        public int SpeakerListTime { get; set; }
+
+        public List<Country> TotalCountryList;
 
         
         /// <summary>

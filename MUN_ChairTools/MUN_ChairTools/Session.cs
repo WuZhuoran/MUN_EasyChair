@@ -8,21 +8,21 @@ namespace MUN_ChairTools
     /// <summary>
     /// 每一个Conference包含多个Session
     /// </summary>
-    class Session
+    class Session : Conference
     {
-        private string SessionName;
+        public int SessionNumber { get; set; }
+        public int CountryNumber { get; set; }
+        public int SimpleMajority { get; set; }
+        public int TwoThirdsMajority { get; set; }
+        public int TwentyMajority { get; set; }
+        public int CustomMajority { get; set; }
 
-        private int SessonNum;
+        public List<Country> CountryList;//每一次的国家列表，用来统计到场的国家
 
-        private int countryNum;
-
-        private int simpleMajority;
-
-        private int twothirdsMajority;
-
-        private int twentyMajority;
-
-        private Country[] countryList;//每一次的国家列表，用来统计到场的国家
+        public Session()
+        {
+        
+        }
 
 
     }

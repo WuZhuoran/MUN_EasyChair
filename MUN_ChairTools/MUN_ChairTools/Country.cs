@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 
 
+
 namespace MUN_ChairTools
 {
     /// <summary>
@@ -15,31 +16,40 @@ namespace MUN_ChairTools
     /// </summary>
     class Country
     {
-        private string countryChineseName; //国家中文名
-
-        private string countryEnghlishName; //国家英文名
-
-        private int countrySpeechTime; //发言次数
-        
-        private Bitmap CountryFlag; //国家国旗 默认为Default
-
-        private CountryType countryType;//：国家，组织，个人等
-
-        private bool isPresent; //某一个session是否到场
+        public string ChineseName { get; set; }
+        public string EnglishName { get; set; }
+        public int SpeechTime { get; set; }
+        public Bitmap CountryFlag { get; set; }
+        public CountryType CountryProperty { get; set; }
+        public bool IsPresent { get; set; }
 
         //TODO
 
         public Country()
         {
-            this.countryChineseName = null;
-            this.countryEnghlishName = null;
-            this.countrySpeechTime = 0;
-            this.countryType = CountryType.UNDEFINED;
-            this.CountryFlag = new Bitmap(new Bitmap("E:\\Coding Files\\VisualStdio2010_C#\\MUN_ChairTools\\MUN_ChairTools\\Image\\Default.png"), 66, 44);
-            this.isPresent = false;
+            this.ChineseName = string.Empty;
+            this.EnglishName = string.Empty;
+            this.SpeechTime = 0;
+            this.CountryProperty = CountryType.UNDEFINED;
+            this.IsPresent = false;
+            this.CountryFlag = Properties.Resources.UnitedNationFlag;
+            
         }
-    
-    
+
+        public Country(string chineseName, CountryType countryType)
+        {
+            this.ChineseName = chineseName;
+            this.EnglishName = string.Empty;
+            this.CountryProperty = countryType;
+        }
+
+        public Country(string chineseName, string englishName, Bitmap countryFlag, CountryType countryType)
+        {
+            this.ChineseName = chineseName;
+            this.EnglishName = englishName;
+            this.CountryFlag = countryFlag;
+            this.CountryProperty = countryType;
+        }
     }
 
     enum CountryType
