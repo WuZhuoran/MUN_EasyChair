@@ -9,7 +9,7 @@ namespace MUN_ChairTools
     /// <summary>
     /// 每一场会议是本类的实例化
     /// </summary>
-    class Conference
+    public class Conference
     {
         private Dictionary<string, string> KeyWordInBothLanguage = new Dictionary<string, string>();
 
@@ -17,13 +17,39 @@ namespace MUN_ChairTools
 
         public string CommitteeName { get; set; }
 
-        public int SessionNumber { get; set; }
+        public static int SessionNumber { get; set; }
 
-        public int SpeakerListTime { get; set; }
+        //TODO 总计发言次数，用来评估用
+        //public int SpeakerListTime { get; set; }
 
-        public List<Country> TotalCountryList;
+        public List<Country> MainCountryList;
 
-        
+        public List<Country> ObserverCountryList;
+
+        public Conference()
+        {
+            
+        }
+
+        public Conference(string conferenceName, string committeeName, int mainCountryListNumber, int ObserverCountryListNumber)
+        {
+            this.ConferenceName = conferenceName;
+            this.CommitteeName = committeeName;
+            this.MainCountryList.Capacity = mainCountryListNumber;
+            this.ObserverCountryList.Capacity = ObserverCountryListNumber;
+            Conference.SessionNumber = 0;
+        }
+
+        public Conference(string conferenceName, string committeeName, List<Country> mainCountryList, List<Country> observerCountryList)
+        {
+            this.ConferenceName = conferenceName;
+            this.CommitteeName = committeeName;
+            this.MainCountryList = mainCountryList;
+            this.ObserverCountryList = observerCountryList;
+            Conference.SessionNumber = 0;            
+        }
+
+
         /// <summary>
         /// 每一场会议初始化时加载字典类
         /// </summary>

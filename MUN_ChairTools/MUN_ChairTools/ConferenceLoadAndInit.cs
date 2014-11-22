@@ -14,10 +14,15 @@ namespace MUN_ChairTools
     /// </summary>
     public partial class ConferenceLoadAndInit : Form
     {
-        private Conference CurrentConference;
+        public Conference CurrentConference;
 
-        private bool isAddCountry; //只有加载了国家时 才可以点确定
+        public static bool isAddCountry = false; //只有加载了国家时 才可以点确定
 
+        AddCountryList addCountryListForm;
+
+        /// <summary>
+        /// 会议初始化 窗体
+        /// </summary>
         public ConferenceLoadAndInit()
         {
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -63,8 +68,20 @@ namespace MUN_ChairTools
             else
             {
                 //验证是否添加了国家
-
-                //创建Conference类  
+                if (!isAddCountry)
+                {
+                    MessageBox.Show("尚未添加国家！");
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show("OK！");
+                    //创建Conference类  
+                    this.CurrentConference = new Conference(this.textBoxConferenceName.Text, this.textBoxCommitteeName.Text, this.addCountryListForm.GetMainCountryList().Count, this.addCountryListForm.GetObserverCountryList().Count);
+                
+                    //显示Session选项，是选中之前的session还是新建一个session
+                }
+               
             }
             
         }
@@ -88,9 +105,9 @@ namespace MUN_ChairTools
             }
             else
             {
-                AddCountryList addCountryListForm = new AddCountryList(countryNum);
-                addCountryListForm.StartPosition = FormStartPosition.CenterScreen;
-                addCountryListForm.Show();
+                this.addCountryListForm = new AddCountryList(countryNum);
+                this.addCountryListForm.StartPosition = FormStartPosition.CenterScreen;
+                this.addCountryListForm.Show();
             }            
         }
     

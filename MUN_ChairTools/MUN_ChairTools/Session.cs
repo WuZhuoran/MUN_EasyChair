@@ -19,11 +19,6 @@ namespace MUN_ChairTools
 
         public List<Country> CountryList;//每一次的国家列表，用来统计到场的国家
 
-        public Session()
-        {
-        
-        }
-
 
     }
 }

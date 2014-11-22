@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCountryList));
             this.panelTotalCountry = new System.Windows.Forms.Panel();
             this.buttonBack = new System.Windows.Forms.Button();
             this.buttonConfirm = new System.Windows.Forms.Button();
@@ -35,9 +36,7 @@
             // 
             // panelTotalCountry
             // 
-            this.panelTotalCountry.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelTotalCountry.AutoScroll = true;
             this.panelTotalCountry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelTotalCountry.Location = new System.Drawing.Point(12, 12);
             this.panelTotalCountry.Name = "panelTotalCountry";
@@ -62,6 +61,7 @@
             this.buttonConfirm.TabIndex = 2;
             this.buttonConfirm.Text = "确认";
             this.buttonConfirm.UseVisualStyleBackColor = true;
+            this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
             // 
             // AddCountryList
             // 
@@ -72,6 +72,8 @@
             this.Controls.Add(this.buttonConfirm);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.panelTotalCountry);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddCountryList";
             this.Text = "添加国家列表";
             this.ResumeLayout(false);

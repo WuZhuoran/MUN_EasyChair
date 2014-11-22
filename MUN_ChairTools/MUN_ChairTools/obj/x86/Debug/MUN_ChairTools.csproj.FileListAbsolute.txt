@@ -18,3 +18,4 @@ E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\M
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.pdb
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.ConferenceLoadAndInit.resources
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.AddCountryList.resources
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.csprojResolveAssemblyReference.cache

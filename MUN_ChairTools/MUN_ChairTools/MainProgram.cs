@@ -15,9 +15,7 @@ namespace MUN_ChairTools
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddCountryList(5));
-            //Application.Run(new ConferenceLoadAndInit());
-            
+            Application.Run(new ConferenceLoadAndInit());
         }
     }
 }

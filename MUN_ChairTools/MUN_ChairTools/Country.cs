@@ -14,7 +14,7 @@ namespace MUN_ChairTools
     /// <summary>
     /// 国家类
     /// </summary>
-    class Country
+    public class Country
     {
         public string ChineseName { get; set; }
         public string EnglishName { get; set; }
@@ -36,9 +36,9 @@ namespace MUN_ChairTools
             
         }
 
-        public Country(string chineseName, CountryType countryType)
+        public Country(string countryName, CountryType countryType)
         {
-            this.ChineseName = chineseName;
+            this.ChineseName = countryName;
             this.EnglishName = string.Empty;
             this.CountryProperty = countryType;
         }
@@ -52,7 +52,7 @@ namespace MUN_ChairTools
         }
     }
 
-    enum CountryType
+    public enum CountryType
     {
         UNDEFINED = 0,
         COUNTRY = 1,
