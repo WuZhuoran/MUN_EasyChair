@@ -208,7 +208,6 @@
             this.Controls.Add(this.labelConferenceName);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConferenceLoadAndInit";
-            this.Text = "会议初始化";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConferenceLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCountryNumber)).EndInit();
             this.ResumeLayout(false);

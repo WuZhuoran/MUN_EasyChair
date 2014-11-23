@@ -87,6 +87,12 @@
       <DependentUpon>RollCallForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Session.cs" />
+    <Compile Include="SessionChooser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SessionChooser.Designer.cs">
+      <DependentUpon>SessionChooser.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +120,9 @@
     </Compile>
     <EmbeddedResource Include="RollCallForm.resx">
       <DependentUpon>RollCallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SessionChooser.resx">
+      <DependentUpon>SessionChooser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

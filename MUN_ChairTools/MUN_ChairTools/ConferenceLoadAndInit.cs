@@ -20,6 +20,8 @@ namespace MUN_ChairTools
 
         AddCountryList addCountryListForm;
 
+
+
         /// <summary>
         /// 会议初始化 窗体
         /// </summary>
@@ -77,9 +79,12 @@ namespace MUN_ChairTools
                 {
                     MessageBox.Show("OK！");
                     //创建Conference类  
-                    this.CurrentConference = new Conference(this.textBoxConferenceName.Text, this.textBoxCommitteeName.Text, this.addCountryListForm.GetMainCountryList().Count, this.addCountryListForm.GetObserverCountryList().Count);
-                
+                    this.CurrentConference = new Conference(this.textBoxConferenceName.Text, this.textBoxCommitteeName.Text, this.addCountryListForm.GetMainCountryList(), this.addCountryListForm.GetObserverCountryList());
+                    this.CurrentConference.ShowInfo();
                     //显示Session选项，是选中之前的session还是新建一个session
+
+                    SessionChooser sessionChooser = new SessionChooser(this.CurrentConference);
+                    sessionChooser.Show();
                 }
                
             }
@@ -105,12 +110,21 @@ namespace MUN_ChairTools
             }
             else
             {
+                this.buttonAddCountry.Enabled = !ConferenceLoadAndInit.isAddCountry;
                 this.addCountryListForm = new AddCountryList(countryNum);
                 this.addCountryListForm.StartPosition = FormStartPosition.CenterScreen;
                 this.addCountryListForm.Show();
-            }            
+
+                this.addCountryListForm.changeBottomStatus += new ChangeAddCountryBottomStatus(addCountryListForm_changeBottomStatus);
+            }
+
+            
         }
-    
-        
+
+        void addCountryListForm_changeBottomStatus(bool status)
+        {
+            this.buttonAddCountry.Enabled = !ConferenceLoadAndInit.isAddCountry;
+        }
+
     }
 }

@@ -52,6 +52,7 @@
             this.buttonBack.TabIndex = 1;
             this.buttonBack.Text = "后退";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonConfirm
             // 

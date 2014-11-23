@@ -22,13 +22,19 @@ namespace MUN_ChairTools
         //TODO 总计发言次数，用来评估用
         //public int SpeakerListTime { get; set; }
 
+        public int CountryTotalNumber { get; set; }
+
         public List<Country> MainCountryList;
 
         public List<Country> ObserverCountryList;
 
         public Conference()
         {
-            
+            this.ConferenceName = string.Empty;
+            this.CommitteeName = string.Empty;
+            this.MainCountryList = new List<Country>();
+            this.ObserverCountryList = new List<Country>();
+            Conference.SessionNumber = 0;
         }
 
         public Conference(string conferenceName, string committeeName, int mainCountryListNumber, int ObserverCountryListNumber)
@@ -38,6 +44,7 @@ namespace MUN_ChairTools
             this.MainCountryList.Capacity = mainCountryListNumber;
             this.ObserverCountryList.Capacity = ObserverCountryListNumber;
             Conference.SessionNumber = 0;
+            this.CountryTotalNumber = mainCountryListNumber + ObserverCountryListNumber;
         }
 
         public Conference(string conferenceName, string committeeName, List<Country> mainCountryList, List<Country> observerCountryList)
@@ -46,10 +53,25 @@ namespace MUN_ChairTools
             this.CommitteeName = committeeName;
             this.MainCountryList = mainCountryList;
             this.ObserverCountryList = observerCountryList;
-            Conference.SessionNumber = 0;            
+            Conference.SessionNumber = 0;
+            this.CountryTotalNumber = this.MainCountryList.Count + this.ObserverCountryList.Count;
         }
 
+        public void ShowInfo()
+        {
+            Console.WriteLine(this.ConferenceName);
+            Console.WriteLine(this.CommitteeName);
+            for (int i = 0; i < this.MainCountryList.Count; i++)
+            {
+                Console.WriteLine(this.MainCountryList[i].ChineseName);
+            }
 
+            for (int i = 0; i < this.ObserverCountryList.Count; i++)
+            {
+                Console.WriteLine(this.ObserverCountryList[i].ChineseName);
+            }
+            Console.WriteLine("Done");
+        }
         /// <summary>
         /// 每一场会议初始化时加载字典类
         /// </summary>

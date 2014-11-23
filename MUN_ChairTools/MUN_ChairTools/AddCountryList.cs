@@ -12,6 +12,8 @@ using System.Resources;
 
 namespace MUN_ChairTools
 {
+    public delegate void ChangeAddCountryBottomStatus(bool status);
+
     public partial class AddCountryList : Form
     {
 
@@ -25,6 +27,12 @@ namespace MUN_ChairTools
 
         List<Country> ObserverCountryList;
 
+        public event ChangeAddCountryBottomStatus changeBottomStatus; //委托实例 用来改变ConferenceLoadAndInit的状态
+
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="CountryNumbers"></param>
         public AddCountryList(int CountryNumbers)
         {
             InitializeComponent();
@@ -184,6 +192,13 @@ namespace MUN_ChairTools
         public List<Country> GetObserverCountryList()
         {
             return this.ObserverCountryList;
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ConferenceLoadAndInit.isAddCountry = false;
+            this.changeBottomStatus(ConferenceLoadAndInit.isAddCountry);
         }
     }
 }
