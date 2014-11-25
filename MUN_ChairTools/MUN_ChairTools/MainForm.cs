@@ -19,15 +19,24 @@ namespace MUN_ChairTools
 
         private DateTime TimePass;
 
+        private Conference CurrentConference;
+
         /// <summary>
         /// 构造函数
         /// </summary>
-        public MainForm()
+        public MainForm(Conference conference)
         {
             InitializeComponent();
             this.timerSystemTime.Enabled = true;
             this.timerSystemTime.Start();
             this.FormClosing += new FormClosingEventHandler(MainForm_FormClosing);
+
+            this.CurrentConference = conference;
+
+            //显示会议信息
+            this.richTextBoxRecord.Text += "会议名称:" + this.CurrentConference.ConferenceName + "\n会场名称：" + this.CurrentConference.CommitteeName + "\n议程：" + this.CurrentConference.TotalSessionList.Count;
+            this.richTextBoxRecord.Text += "\n\n参会国家总数：" + this.CurrentConference.CountryTotalNumber + "\n到场国家：" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].PresentMainCountryNumber + "+" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].PresentObserverCountryNumber;
+            this.richTextBoxRecord.Text += "简单多数为：" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].SimpleMajority + "\n绝对多数为:" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].TwoThirdsMajority;
         }
 
         /// <summary>

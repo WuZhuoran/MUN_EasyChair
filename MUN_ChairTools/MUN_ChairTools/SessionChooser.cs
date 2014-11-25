@@ -11,10 +11,13 @@ namespace MUN_ChairTools
 {
     public partial class SessionChooser : Form
     {
+        public Conference CurrentConference;
 
         public SessionChooser(Conference conference)
         {
             InitializeComponent();
+
+            CurrentConference = conference;
 
             this.labelConferenceInfo.Text = "会议名称：" 
                                             + conference.ConferenceName + "\n会场名称：" 
@@ -46,10 +49,14 @@ namespace MUN_ChairTools
                 MessageBox.Show("新建议程！");
                 Conference.SessionNumber++;
                 MessageBox.Show(Conference.SessionNumber.ToString());
-                return;
+                CurrentConference.TotalSessionList.Add(new Session(Conference.SessionNumber));
             }
             //窗口关闭
             this.Close();
+
+            RollCallForm rollCallForm = new RollCallForm(CurrentConference);
+            rollCallForm.StartPosition = FormStartPosition.CenterScreen;
+            rollCallForm.Show();
         }
 
         private void buttonBack_Click(object sender, EventArgs e)

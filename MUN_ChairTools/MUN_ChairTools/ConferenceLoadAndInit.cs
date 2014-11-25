@@ -84,10 +84,12 @@ namespace MUN_ChairTools
                     //显示Session选项，是选中之前的session还是新建一个session
 
                     SessionChooser sessionChooser = new SessionChooser(this.CurrentConference);
+                    sessionChooser.StartPosition = FormStartPosition.CenterScreen;
                     sessionChooser.Show();
                 }
                
             }
+            
             
         }
 

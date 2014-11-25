@@ -48,6 +48,7 @@
             this.buttonBack.TabIndex = 1;
             this.buttonBack.Text = "后退";
             this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonConfirm
             // 
@@ -57,6 +58,7 @@
             this.buttonConfirm.TabIndex = 2;
             this.buttonConfirm.Text = "确定";
             this.buttonConfirm.UseVisualStyleBackColor = true;
+            this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
             // 
             // RollCallForm
             // 
@@ -67,7 +69,7 @@
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.panelMainRollCall);
             this.Name = "RollCallForm";
-            this.Text = "RollCallForm";
+            this.Text = "点名";
             this.ResumeLayout(false);
 
         }
