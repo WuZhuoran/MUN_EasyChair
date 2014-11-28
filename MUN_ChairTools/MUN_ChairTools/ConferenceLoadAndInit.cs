@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace MUN_ChairTools
 {
@@ -82,11 +83,69 @@ namespace MUN_ChairTools
                     this.CurrentConference = new Conference(this.textBoxConferenceName.Text, this.textBoxCommitteeName.Text, this.addCountryListForm.GetMainCountryList(), this.addCountryListForm.GetObserverCountryList());
                     this.CurrentConference.ShowInfo();
                     //显示Session选项，是选中之前的session还是新建一个session
+                    if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data"))
+                    {
+                        Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data");
+                    }
 
+                    //再在这个目录下创建一个名为Conference名字的目录
+                    if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName))
+                    {
+                        Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName);
+                    }
+
+                    //然后创建一个CommitteeName的文件夹
+                    if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName))
+                    {
+                        Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName);
+                    }
+
+                    //创建一个TXT存放会议信息ConferenceInfo.txt
+                    if (!File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName + "\\" + "ConferenceInfo.txt"))
+                    {
+                        File.Create(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName + "\\" + "ConferenceInfo.txt").Close();
+                    }
+
+                    StreamWriter streamWriter = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName + "\\" + "ConferenceInfo.txt", true);
+                    streamWriter.WriteLine("会议名称" + CurrentConference.ConferenceName);
+                    streamWriter.WriteLine("会场名称" + CurrentConference.CommitteeName);
+                    streamWriter.WriteLine("国家数：" + CurrentConference.CountryTotalNumber);
+                    streamWriter.Close();
+
+                    //创建一个TXT存放国家列表CountryList.txt
+                    if (!File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName + "\\" + "CountryList.txt"))
+                    {
+                        File.Create(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName + "\\" + "CountryList.txt").Close();
+                    }
+
+                    StreamWriter streamWriterCountryList = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName + "\\" + "CountryList.txt", true);
+                    //首先两行输入国家数（与会国+观察员）
+                    streamWriterCountryList.WriteLine(CurrentConference.MainCountryNumber);
+                    streamWriterCountryList.WriteLine(CurrentConference.ObserverCountryNumber);
+                    for (int i = 0; i < CurrentConference.MainCountryList.Count; i++)
+                    {
+                        streamWriterCountryList.WriteLine(this.CurrentConference.MainCountryList[i].ChineseName);
+                    }
+
+                    for (int i = 0; i < CurrentConference.ObserverCountryList.Count; i++)
+                    {
+                        streamWriterCountryList.WriteLine(this.CurrentConference.ObserverCountryList[i].ChineseName);
+                    }
+
+                    streamWriterCountryList.Close();
+                    //然后是在sessionChooser中每新建一个Session就新建一个session的txt
+
+                    //创建一个新的议程
                     SessionChooser sessionChooser = new SessionChooser(this.CurrentConference);
                     sessionChooser.StartPosition = FormStartPosition.CenterScreen;
                     sessionChooser.Show();
                 }
+
+                //此时已经新建了一个会议，则需要通过文件体现
+                //如果没有则创建一个目录
+               
+
+
                
             }
             
@@ -125,7 +184,13 @@ namespace MUN_ChairTools
 
         void addCountryListForm_changeBottomStatus(bool status)
         {
-            this.buttonAddCountry.Enabled = !ConferenceLoadAndInit.isAddCountry;
+            //this.buttonAddCountry.Enabled = !ConferenceLoadAndInit.isAddCountry;
+        }
+
+        //从文件中加载已有的数据
+        private void buttonLoadFileData_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

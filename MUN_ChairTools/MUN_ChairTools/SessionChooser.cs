@@ -38,7 +38,8 @@ namespace MUN_ChairTools
         private void buttonConfirm_Click(object sender, EventArgs e)
         {
             //Session创建
-            if(this.comboBoxSessionChooser.SelectedItem.ToString() == string.Empty)
+
+            if(this.comboBoxSessionChooser.SelectedIndex == -1 || this.comboBoxSessionChooser.SelectedItem.ToString() == "未选择")
             {
                 MessageBox.Show("未选择议程");
                 return;

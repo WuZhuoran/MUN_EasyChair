@@ -67,6 +67,8 @@
             // 
             this.comboBoxSessionChooser.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.comboBoxSessionChooser.FormattingEnabled = true;
+            this.comboBoxSessionChooser.Items.AddRange(new object[] {
+            "未选择"});
             this.comboBoxSessionChooser.Location = new System.Drawing.Point(12, 129);
             this.comboBoxSessionChooser.Name = "comboBoxSessionChooser";
             this.comboBoxSessionChooser.Size = new System.Drawing.Size(360, 34);

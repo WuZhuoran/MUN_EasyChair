@@ -59,23 +59,23 @@ namespace MUN_ChairTools
 
             for (int i = conference.MainCountryList.Count; i < (conference.ObserverCountryList.Count + conference.MainCountryList.Count); i++)
             {
-                this.checkBoxCountry[i - conference.MainCountryList.Count] = new CheckBox();
-                this.checkBoxCountry[i - conference.MainCountryList.Count].Text = conference.ObserverCountryList[i - conference.MainCountryList.Count].ChineseName;
-                this.checkBoxCountry[i - conference.MainCountryList.Count].Location = new Point(OffsetX + OffsetGap, OffsetY + OffsetGap);
-                this.checkBoxCountry[i - conference.MainCountryList.Count].Font = new Font("微软雅黑", 12.25F, FontStyle.Regular);
+                this.checkBoxCountry[i] = new CheckBox();
+                this.checkBoxCountry[i].Text = conference.ObserverCountryList[i - conference.MainCountryList.Count].ChineseName;
+                this.checkBoxCountry[i].Location = new Point(OffsetX + OffsetGap, OffsetY + OffsetGap);
+                this.checkBoxCountry[i].Font = new Font("微软雅黑", 12.25F, FontStyle.Regular);
                 if ((i + 1) % coloum == 0)
                 {
                     OffsetY = 0;
-                    OffsetX += this.checkBoxCountry[i - conference.MainCountryList.Count].Width;
+                    OffsetX += this.checkBoxCountry[i].Width;
                     //OffsetX += OffsetLabel;
                 }
                 else
                 {
-                    OffsetY += this.checkBoxCountry[i - conference.MainCountryList.Count].Height;
+                    OffsetY += this.checkBoxCountry[i].Height;
                     OffsetY += OffsetGap;
                 }
-                this.checkBoxCountry[i - conference.MainCountryList.Count].BackColor = Color.Green;
-                this.panelMainRollCall.Controls.Add(this.checkBoxCountry[i - conference.MainCountryList.Count]);
+                this.checkBoxCountry[i].BackColor = Color.Green;
+                this.panelMainRollCall.Controls.Add(this.checkBoxCountry[i]);
             }
             
         }
@@ -115,7 +115,7 @@ namespace MUN_ChairTools
 
             for (int i = this.CurrentConference.MainCountryList.Count; i < this.CurrentConference.CountryTotalNumber; i++)
             {
-                if (this.checkBoxCountry[i].Checked)
+                if (this.checkBoxCountry[i].Checked)//有问题？
                 {
                     this.CurrentConference.ObserverCountryList[i - this.CurrentConference.MainCountryList.Count].IsPresent = true;
                     ObserverCountryPresent++;
@@ -129,7 +129,7 @@ namespace MUN_ChairTools
             
             //修改Conference中的各种多数的值
             this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].SimpleMajority = MainCountryPresent / 2 + 1;
-            this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].TwoThirdsMajority = (int)(MainCountryPresent / 2 * 3);
+            this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].TwoThirdsMajority = (int)(MainCountryPresent / 3 * 2);
             this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].PresentMainCountryNumber = MainCountryPresent;
             this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].PresentObserverCountryNumber = ObserverCountryPresent;
             //新建一个MainForm

@@ -126,6 +126,7 @@
             this.buttonLoadFileData.TabIndex = 7;
             this.buttonLoadFileData.Text = "加载文件";
             this.buttonLoadFileData.UseVisualStyleBackColor = true;
+            this.buttonLoadFileData.Click += new System.EventHandler(this.buttonLoadFileData_Click);
             // 
             // buttonConfirm
             // 
