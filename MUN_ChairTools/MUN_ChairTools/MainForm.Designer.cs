@@ -53,6 +53,14 @@
             this.richTextBoxRecord = new System.Windows.Forms.RichTextBox();
             this.timerSetTime = new System.Windows.Forms.Timer(this.components);
             this.timerSystemTime = new System.Windows.Forms.Timer(this.components);
+            this.MotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.UMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SuspendToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OpenSpeakersListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.动议结束辩论ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.动议投票ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.其他动议ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripMain.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.groupBoxTime.SuspendLayout();
@@ -81,6 +89,8 @@
             // 
             // ActionToolStripMenuItem
             // 
+            this.ActionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MotionToolStripMenuItem});
             this.ActionToolStripMenuItem.Name = "ActionToolStripMenuItem";
             this.ActionToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.ActionToolStripMenuItem.Text = "操作";
@@ -123,9 +133,9 @@
             // 
             // panelMain
             // 
-            this.panelMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelMain.BackColor = System.Drawing.SystemColors.Control;
             this.panelMain.Controls.Add(this.groupBoxInfo);
             this.panelMain.Controls.Add(this.groupBoxTime);
@@ -284,6 +294,63 @@
             this.timerSystemTime.Interval = 1000;
             this.timerSystemTime.Tick += new System.EventHandler(this.timerSystemTime_Tick);
             // 
+            // MotionToolStripMenuItem
+            // 
+            this.MotionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MCToolStripMenuItem,
+            this.UMCToolStripMenuItem,
+            this.SuspendToolStripMenuItem,
+            this.OpenSpeakersListToolStripMenuItem,
+            this.动议结束辩论ToolStripMenuItem,
+            this.动议投票ToolStripMenuItem,
+            this.其他动议ToolStripMenuItem});
+            this.MotionToolStripMenuItem.Name = "MotionToolStripMenuItem";
+            this.MotionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.MotionToolStripMenuItem.Text = "动议";
+            // 
+            // MCToolStripMenuItem
+            // 
+            this.MCToolStripMenuItem.Name = "MCToolStripMenuItem";
+            this.MCToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.MCToolStripMenuItem.Text = "有主持核心磋商";
+            // 
+            // UMCToolStripMenuItem
+            // 
+            this.UMCToolStripMenuItem.Name = "UMCToolStripMenuItem";
+            this.UMCToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.UMCToolStripMenuItem.Text = "无主持核心磋商";
+            this.UMCToolStripMenuItem.Click += new System.EventHandler(this.UMCToolStripMenuItem_Click);
+            // 
+            // SuspendToolStripMenuItem
+            // 
+            this.SuspendToolStripMenuItem.Name = "SuspendToolStripMenuItem";
+            this.SuspendToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.SuspendToolStripMenuItem.Text = "动议休会";
+            // 
+            // OpenSpeakersListToolStripMenuItem
+            // 
+            this.OpenSpeakersListToolStripMenuItem.Name = "OpenSpeakersListToolStripMenuItem";
+            this.OpenSpeakersListToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.OpenSpeakersListToolStripMenuItem.Text = "动议开启主发言名单";
+            // 
+            // 动议结束辩论ToolStripMenuItem
+            // 
+            this.动议结束辩论ToolStripMenuItem.Name = "动议结束辩论ToolStripMenuItem";
+            this.动议结束辩论ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.动议结束辩论ToolStripMenuItem.Text = "动议结束辩论";
+            // 
+            // 动议投票ToolStripMenuItem
+            // 
+            this.动议投票ToolStripMenuItem.Name = "动议投票ToolStripMenuItem";
+            this.动议投票ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.动议投票ToolStripMenuItem.Text = "动议投票";
+            // 
+            // 其他动议ToolStripMenuItem
+            // 
+            this.其他动议ToolStripMenuItem.Name = "其他动议ToolStripMenuItem";
+            this.其他动议ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.其他动议ToolStripMenuItem.Text = "其他动议";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -332,6 +399,14 @@
         private System.Windows.Forms.ToolStripMenuItem AboutBoxToolStripMenuItem;
         private System.Windows.Forms.RichTextBox richTextBoxRecord;
         private System.Windows.Forms.ToolStripMenuItem SettingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MotionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem UMCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SuspendToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem OpenSpeakersListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 动议结束辩论ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 动议投票ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 其他动议ToolStripMenuItem;
     }
 }
 

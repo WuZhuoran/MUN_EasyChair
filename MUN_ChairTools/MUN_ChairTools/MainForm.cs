@@ -13,13 +13,13 @@ namespace MUN_ChairTools
 
     public partial class MainForm : Form
     {
-        private int MinuteSetTime = 0;
+        public int MinuteSetTime = 0;
 
-        private int SecondSetTime = 0;
+        public int SecondSetTime = 0;
 
-        private DateTime TimePass;
+        public DateTime TimePass;
 
-        private Conference CurrentConference;
+        public Conference CurrentConference;
 
         /// <summary>
         /// 构造函数
@@ -50,10 +50,12 @@ namespace MUN_ChairTools
             {
                 this.Dispose();
                 this.Close();
+                Environment.Exit(0);
             }
             else
             {
                 e.Cancel = true;
+                
             }
         }
 
@@ -191,8 +193,39 @@ namespace MUN_ChairTools
             new AboutBox().Show();
         }
 
+        public void WirteToRecord(string content)
+        {
+            this.richTextBoxRecord.Text += content;
+            this.richTextBoxRecord.Text += "\n";
+        }
+
+        public void AddTimer(int seconds)
+        {
+            this.timerSetTime.Tick -= new EventHandler(timerSetTime_Tick);
+            //获取数据并验证正确性
+
+            this.MinuteSetTime = seconds / 60;
+            this.SecondSetTime = seconds % 60;
+            this.TimePass = DateTime.Parse("00:" + this.MinuteSetTime.ToString("00") + ":" + this.SecondSetTime.ToString("00"));
+            this.labelSetTimeMinute.Text = this.MinuteSetTime.ToString("00") + ":" + this.SecondSetTime.ToString("00");
+
+
+            //开始Timer
+            this.timerSetTime.Enabled = true;
+            this.timerSetTime.Tick += new EventHandler(timerSetTime_Tick);
+            this.timerSetTime.Start();
+
+            this.buttonSetTimeStart.Enabled = false;
+            this.buttonSetTimeStart.ForeColor = Color.Gray;
+        }
+
+        private void UMCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MotionUMC motionUMC = new MotionUMC(this);
+            motionUMC.StartPosition = FormStartPosition.CenterScreen;
+            motionUMC.Show();
+        }
     
-        
     }
 
 

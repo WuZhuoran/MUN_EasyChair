@@ -139,6 +139,7 @@ namespace MUN_ChairTools
                     SessionChooser sessionChooser = new SessionChooser(this.CurrentConference);
                     sessionChooser.StartPosition = FormStartPosition.CenterScreen;
                     sessionChooser.Show();
+                    this.Hide();
                 }
 
                 //此时已经新建了一个会议，则需要通过文件体现
@@ -190,7 +191,7 @@ namespace MUN_ChairTools
         //从文件中加载已有的数据
         private void buttonLoadFileData_Click(object sender, EventArgs e)
         {
-
+            DialogResult dr = MessageBox.Show("复议", "Second?", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
         }
 
     }

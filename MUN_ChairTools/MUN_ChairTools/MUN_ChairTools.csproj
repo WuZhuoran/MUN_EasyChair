@@ -66,6 +66,12 @@
       <DependentUpon>ConferenceLoadAndInit.cs</DependentUpon>
     </Compile>
     <Compile Include="Country.cs" />
+    <Compile Include="DocumentVote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentVote.Designer.cs">
+      <DependentUpon>DocumentVote.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOpenSourceStatement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MotionMC.resx">
+      <DependentUpon>MotionMC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MotionUMC.resx">
       <DependentUpon>MotionUMC.cs</DependentUpon>
