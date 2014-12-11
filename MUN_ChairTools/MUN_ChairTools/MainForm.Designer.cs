@@ -33,6 +33,14 @@
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
             this.SystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ActionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.UMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SuspendToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OpenSpeakersListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.动议结束辩论ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.动议投票ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.其他动议ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OtherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,14 +61,6 @@
             this.richTextBoxRecord = new System.Windows.Forms.RichTextBox();
             this.timerSetTime = new System.Windows.Forms.Timer(this.components);
             this.timerSystemTime = new System.Windows.Forms.Timer(this.components);
-            this.MotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.UMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SuspendToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.OpenSpeakersListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.动议结束辩论ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.动议投票ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.其他动议ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripMain.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.groupBoxTime.SuspendLayout();
@@ -94,6 +94,65 @@
             this.ActionToolStripMenuItem.Name = "ActionToolStripMenuItem";
             this.ActionToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.ActionToolStripMenuItem.Text = "操作";
+            // 
+            // MotionToolStripMenuItem
+            // 
+            this.MotionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MCToolStripMenuItem,
+            this.UMCToolStripMenuItem,
+            this.SuspendToolStripMenuItem,
+            this.OpenSpeakersListToolStripMenuItem,
+            this.动议结束辩论ToolStripMenuItem,
+            this.动议投票ToolStripMenuItem,
+            this.其他动议ToolStripMenuItem});
+            this.MotionToolStripMenuItem.Name = "MotionToolStripMenuItem";
+            this.MotionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.MotionToolStripMenuItem.Text = "动议";
+            // 
+            // MCToolStripMenuItem
+            // 
+            this.MCToolStripMenuItem.Name = "MCToolStripMenuItem";
+            this.MCToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.MCToolStripMenuItem.Text = "有主持核心磋商";
+            this.MCToolStripMenuItem.Click += new System.EventHandler(this.MCToolStripMenuItem_Click);
+            // 
+            // UMCToolStripMenuItem
+            // 
+            this.UMCToolStripMenuItem.Name = "UMCToolStripMenuItem";
+            this.UMCToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.UMCToolStripMenuItem.Text = "无主持核心磋商";
+            this.UMCToolStripMenuItem.Click += new System.EventHandler(this.UMCToolStripMenuItem_Click);
+            // 
+            // SuspendToolStripMenuItem
+            // 
+            this.SuspendToolStripMenuItem.Name = "SuspendToolStripMenuItem";
+            this.SuspendToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.SuspendToolStripMenuItem.Text = "动议休会";
+            // 
+            // OpenSpeakersListToolStripMenuItem
+            // 
+            this.OpenSpeakersListToolStripMenuItem.Name = "OpenSpeakersListToolStripMenuItem";
+            this.OpenSpeakersListToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.OpenSpeakersListToolStripMenuItem.Text = "动议开启主发言名单";
+            this.OpenSpeakersListToolStripMenuItem.Click += new System.EventHandler(this.OpenSpeakersListToolStripMenuItem_Click);
+            // 
+            // 动议结束辩论ToolStripMenuItem
+            // 
+            this.动议结束辩论ToolStripMenuItem.Name = "动议结束辩论ToolStripMenuItem";
+            this.动议结束辩论ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.动议结束辩论ToolStripMenuItem.Text = "动议结束辩论";
+            // 
+            // 动议投票ToolStripMenuItem
+            // 
+            this.动议投票ToolStripMenuItem.Name = "动议投票ToolStripMenuItem";
+            this.动议投票ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.动议投票ToolStripMenuItem.Text = "动议投票";
+            // 
+            // 其他动议ToolStripMenuItem
+            // 
+            this.其他动议ToolStripMenuItem.Name = "其他动议ToolStripMenuItem";
+            this.其他动议ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.其他动议ToolStripMenuItem.Text = "其他动议";
             // 
             // OtherToolStripMenuItem
             // 
@@ -293,63 +352,6 @@
             // 
             this.timerSystemTime.Interval = 1000;
             this.timerSystemTime.Tick += new System.EventHandler(this.timerSystemTime_Tick);
-            // 
-            // MotionToolStripMenuItem
-            // 
-            this.MotionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MCToolStripMenuItem,
-            this.UMCToolStripMenuItem,
-            this.SuspendToolStripMenuItem,
-            this.OpenSpeakersListToolStripMenuItem,
-            this.动议结束辩论ToolStripMenuItem,
-            this.动议投票ToolStripMenuItem,
-            this.其他动议ToolStripMenuItem});
-            this.MotionToolStripMenuItem.Name = "MotionToolStripMenuItem";
-            this.MotionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.MotionToolStripMenuItem.Text = "动议";
-            // 
-            // MCToolStripMenuItem
-            // 
-            this.MCToolStripMenuItem.Name = "MCToolStripMenuItem";
-            this.MCToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.MCToolStripMenuItem.Text = "有主持核心磋商";
-            // 
-            // UMCToolStripMenuItem
-            // 
-            this.UMCToolStripMenuItem.Name = "UMCToolStripMenuItem";
-            this.UMCToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.UMCToolStripMenuItem.Text = "无主持核心磋商";
-            this.UMCToolStripMenuItem.Click += new System.EventHandler(this.UMCToolStripMenuItem_Click);
-            // 
-            // SuspendToolStripMenuItem
-            // 
-            this.SuspendToolStripMenuItem.Name = "SuspendToolStripMenuItem";
-            this.SuspendToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.SuspendToolStripMenuItem.Text = "动议休会";
-            // 
-            // OpenSpeakersListToolStripMenuItem
-            // 
-            this.OpenSpeakersListToolStripMenuItem.Name = "OpenSpeakersListToolStripMenuItem";
-            this.OpenSpeakersListToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.OpenSpeakersListToolStripMenuItem.Text = "动议开启主发言名单";
-            // 
-            // 动议结束辩论ToolStripMenuItem
-            // 
-            this.动议结束辩论ToolStripMenuItem.Name = "动议结束辩论ToolStripMenuItem";
-            this.动议结束辩论ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.动议结束辩论ToolStripMenuItem.Text = "动议结束辩论";
-            // 
-            // 动议投票ToolStripMenuItem
-            // 
-            this.动议投票ToolStripMenuItem.Name = "动议投票ToolStripMenuItem";
-            this.动议投票ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.动议投票ToolStripMenuItem.Text = "动议投票";
-            // 
-            // 其他动议ToolStripMenuItem
-            // 
-            this.其他动议ToolStripMenuItem.Name = "其他动议ToolStripMenuItem";
-            this.其他动议ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.其他动议ToolStripMenuItem.Text = "其他动议";
             // 
             // MainForm
             // 

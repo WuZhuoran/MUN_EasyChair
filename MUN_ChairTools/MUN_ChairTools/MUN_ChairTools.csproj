@@ -85,11 +85,18 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainProgram.cs" />
+    <Compile Include="ModeratedCaucus.cs" />
     <Compile Include="MotionMC.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MotionMC.Designer.cs">
       <DependentUpon>MotionMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MotionMCMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MotionMCMain.Designer.cs">
+      <DependentUpon>MotionMCMain.cs</DependentUpon>
     </Compile>
     <Compile Include="MotionUMC.cs">
       <SubType>Form</SubType>
@@ -120,6 +127,9 @@
     <EmbeddedResource Include="ConferenceLoadAndInit.resx">
       <DependentUpon>ConferenceLoadAndInit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DocumentVote.resx">
+      <DependentUpon>DocumentVote.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormOpenSourceStatement.resx">
       <DependentUpon>FormOpenSourceStatement.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MotionMC.resx">
       <DependentUpon>MotionMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MotionMCMain.resx">
+      <DependentUpon>MotionMCMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MotionUMC.resx">
       <DependentUpon>MotionUMC.cs</DependentUpon>

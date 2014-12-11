@@ -60,13 +60,13 @@ namespace MUN_ChairTools
                 {
                     //通过 开始计时
                     this.currentMainform.AddTimer(Convert.ToInt32(this.numericUpDownUMCTime.Value));
-                    this.currentMainform.WirteToRecord("\n" + this.comboBoxMotionCountry.SelectedItem.ToString() + "动议一个无组织核心磋商 \n总时长为：" + this.numericUpDownUMCTime.Value + "秒\n" + "动议结果：成功！");
+                    this.currentMainform.WirteToRecord("\n\n" + this.comboBoxMotionCountry.SelectedItem.ToString() + "动议一个无组织核心磋商 \n总时长为：" + this.numericUpDownUMCTime.Value + "秒\n" + "动议结果：成功！");
                     this.Close();
                     //TODO 第二种思路，把这个和主计时器分开
                 }
                 else if(dialogVoteMotion == System.Windows.Forms.DialogResult.No)
                 {
-                    this.currentMainform.WirteToRecord("\n" + this.comboBoxMotionCountry.SelectedItem.ToString() + "动议一个无组织核心磋商 \n总时长为：" + this.numericUpDownUMCTime.Value + "秒\n" + "动议结果：失败！");
+                    this.currentMainform.WirteToRecord("\n\n" + this.comboBoxMotionCountry.SelectedItem.ToString() + "动议一个无组织核心磋商 \n总时长为：" + this.numericUpDownUMCTime.Value + "秒\n" + "动议结果：失败！");
                     this.Close();
                 }
                 else
@@ -78,7 +78,7 @@ namespace MUN_ChairTools
             else if(dialogSecond == System.Windows.Forms.DialogResult.No)
             {
                 //直接失败 输出
-                this.currentMainform.WirteToRecord("\n" + this.comboBoxMotionCountry.SelectedItem.ToString() + "动议一个无组织核心磋商 \n总时长为：" + this.numericUpDownUMCTime.Value + "秒\n" + "动议结果：失败！");
+                this.currentMainform.WirteToRecord("\n\n" + this.comboBoxMotionCountry.SelectedItem.ToString() + "动议一个无组织核心磋商 \n总时长为：" + this.numericUpDownUMCTime.Value + "秒\n" + "动议结果：失败！");
                 this.Close();
             }
             else

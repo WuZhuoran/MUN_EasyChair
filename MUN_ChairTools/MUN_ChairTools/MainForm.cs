@@ -19,6 +19,8 @@ namespace MUN_ChairTools
 
         public DateTime TimePass;
 
+        bool isOpenSpeakersList = false;
+
         public Conference CurrentConference;
 
         /// <summary>
@@ -224,6 +226,23 @@ namespace MUN_ChairTools
             MotionUMC motionUMC = new MotionUMC(this);
             motionUMC.StartPosition = FormStartPosition.CenterScreen;
             motionUMC.Show();
+        }
+
+        private void MCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MotionMC motionMC = new MotionMC(this);
+            motionMC.StartPosition = FormStartPosition.CenterScreen;
+            motionMC.Show();
+        }
+
+        /// <summary>
+        /// 开启住发言名单
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OpenSpeakersListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
     
     }

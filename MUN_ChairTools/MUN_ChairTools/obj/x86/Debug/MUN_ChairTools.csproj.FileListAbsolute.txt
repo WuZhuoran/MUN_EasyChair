@@ -21,3 +21,5 @@ E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\M
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.csprojResolveAssemblyReference.cache
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.SessionChooser.resources
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.MotionUMC.resources
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.MotionMC.resources
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.MotionMCMain.resources
