@@ -34,6 +34,8 @@ namespace MUN_ChairTools
 
         public List<Session> TotalSessionList;
 
+        public List<string> SpeakersList { get; set; }
+
         public Conference()
         {
             this.ConferenceName = string.Empty;
@@ -44,6 +46,7 @@ namespace MUN_ChairTools
             this.ObserverCountryNumber = 0;
             Conference.SessionNumber = 0;
             this.TotalSessionList = new List<Session>(1);
+            this.SpeakersList = new List<string>(1);
         }
 
         public Conference(string conferenceName, string committeeName, int mainCountryListNumber, int ObserverCountryListNumber)
@@ -57,6 +60,7 @@ namespace MUN_ChairTools
             this.ObserverCountryNumber = ObserverCountryListNumber;
             this.CountryTotalNumber = mainCountryListNumber + ObserverCountryListNumber;
             this.TotalSessionList = new List<Session>(10); //最高会期值是10
+            this.SpeakersList = new List<string>(MainCountryList.Count * 2);
         }
 
         public Conference(string conferenceName, string committeeName, List<Country> mainCountryList, List<Country> observerCountryList)
@@ -70,6 +74,7 @@ namespace MUN_ChairTools
             this.ObserverCountryNumber = observerCountryList.Count;
             this.CountryTotalNumber = this.MainCountryList.Count + this.ObserverCountryList.Count;
             this.TotalSessionList = new List<Session>(10);
+            this.SpeakersList = new List<string>(MainCountryList.Count * 2);
         }
 
         public void ShowInfo()

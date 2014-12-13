@@ -15,11 +15,15 @@ namespace MUN_ChairTools
 
         public Conference CurrentConference;
 
+        public List<Country> PresentCountryListTemp { get; set; }
+
         public CheckBox[] checkBoxCountry;
 
         public RollCallForm(Conference conference)
         {
             InitializeComponent();
+
+            
             //初始化界面
             this.ControlBox = false;
             this.SizeChanged += new EventHandler(RollCallForm_SizeChanged);
@@ -27,7 +31,7 @@ namespace MUN_ChairTools
             this.AutoScroll = true;
             this.HorizontalScroll.Visible = true;
             this.CurrentConference = conference;
-
+            this.PresentCountryListTemp = new List<Country>(this.CurrentConference.CountryTotalNumber);
             //界面初始化结束
             int coloum = (int)Math.Sqrt((double)conference.CountryTotalNumber);
             int OffsetX = 0;
@@ -74,7 +78,7 @@ namespace MUN_ChairTools
                     OffsetY += this.checkBoxCountry[i].Height;
                     OffsetY += OffsetGap;
                 }
-                this.checkBoxCountry[i].BackColor = Color.Green;
+                this.checkBoxCountry[i].BackColor = Color.DarkGray;
                 this.panelMainRollCall.Controls.Add(this.checkBoxCountry[i]);
             }
             
@@ -99,12 +103,15 @@ namespace MUN_ChairTools
         {
             int MainCountryPresent = 0;
             int ObserverCountryPresent = 0;
+
+            
             //修改Conference中的国家列表的中国家到场的值
             for (int i = 0; i < this.CurrentConference.MainCountryList.Count; i++)
             {
                 if (this.checkBoxCountry[i].Checked)
                 {
                     this.CurrentConference.MainCountryList[i].IsPresent = true;
+                    this.PresentCountryListTemp.Add(this.CurrentConference.MainCountryList[i]);
                     MainCountryPresent++;
                 }
                 else
@@ -118,6 +125,7 @@ namespace MUN_ChairTools
                 if (this.checkBoxCountry[i].Checked)//有问题？
                 {
                     this.CurrentConference.ObserverCountryList[i - this.CurrentConference.MainCountryList.Count].IsPresent = true;
+                    this.PresentCountryListTemp.Add(this.CurrentConference.MainCountryList[i]);
                     ObserverCountryPresent++;
                 }
                 else
@@ -132,6 +140,11 @@ namespace MUN_ChairTools
             this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].TwoThirdsMajority = (int)(MainCountryPresent / 3 * 2);
             this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].PresentMainCountryNumber = MainCountryPresent;
             this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].PresentObserverCountryNumber = ObserverCountryPresent;
+            this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].CountryList = this.PresentCountryListTemp;
+            this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].MainCountryList = this.CurrentConference.MainCountryList;
+            this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].ObserverCountryList = this.CurrentConference.ObserverCountryList;
+            this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].CommitteeName = this.CurrentConference.CommitteeName;
+            this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].ConferenceName = this.CurrentConference.ConferenceName;
             //新建一个MainForm
 
             this.mainForm = new MainForm(this.CurrentConference);

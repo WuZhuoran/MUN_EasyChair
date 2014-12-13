@@ -39,6 +39,18 @@ namespace MUN_ChairTools
             this.richTextBoxRecord.Text += "会议名称:" + this.CurrentConference.ConferenceName + "\n会场名称：" + this.CurrentConference.CommitteeName + "\n议程：" + this.CurrentConference.TotalSessionList.Count;
             this.richTextBoxRecord.Text += "\n\n参会国家总数：" + this.CurrentConference.CountryTotalNumber + "\n到场国家：" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].PresentMainCountryNumber + "+" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].PresentObserverCountryNumber;
             this.richTextBoxRecord.Text += "简单多数为：" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].SimpleMajority + "\n绝对多数为:" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].TwoThirdsMajority;
+
+            this.listBoxSpeakersList.Visible = false;
+            this.comboBoxChooseCountry.Visible = false;
+            this.pictureBoxCountryMinus.Visible = false;
+            this.pictureBoxCountryPlus.Visible = false;
+
+            if(this.isOpenSpeakersList)
+            {
+                //此时说明不是第一次开启窗体 住发言名单已经开启
+            }
+
+            this.labelConferenceInformation.Text = "会场名称：\n" + this.CurrentConference.CommitteeName + "\n国家总数：" + this.CurrentConference.CountryTotalNumber + "\n到场国家数：" + (this.CurrentConference.TotalSessionList[Conference.SessionNumber].PresentMainCountryNumber + this.CurrentConference.TotalSessionList[Conference.SessionNumber].PresentObserverCountryNumber) + "\n简单多数：" + this.CurrentConference.TotalSessionList[Conference.SessionNumber].SimpleMajority + "\n绝对多数：" + this.CurrentConference.TotalSessionList[Conference.SessionNumber].TwoThirdsMajority;
         }
 
         /// <summary>
@@ -50,6 +62,16 @@ namespace MUN_ChairTools
         {
             if(MessageBox.Show("是否保存数据并退出程序？", "退出", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.OK)
             {
+                //进行信息保存工作
+                //1. 保存议程基本信息
+
+                //2. 保存主发言名单
+                for (int i = 0; i < this.listBoxSpeakersList.Items.Count; i++ )
+                {
+                    this.CurrentConference.SpeakersList.Add(this.listBoxSpeakersList.Items[i].ToString());
+                }
+                //3. 保存会议记录信息
+
                 this.Dispose();
                 this.Close();
                 Environment.Exit(0);
@@ -195,12 +217,20 @@ namespace MUN_ChairTools
             new AboutBox().Show();
         }
 
+        /// <summary>
+        /// 向Record主窗口 写入一个string
+        /// </summary>
+        /// <param name="content"></param>
         public void WirteToRecord(string content)
         {
             this.richTextBoxRecord.Text += content;
             this.richTextBoxRecord.Text += "\n";
         }
 
+        /// <summary>
+        /// 给主窗口的Timer空间一个计时
+        /// </summary>
+        /// <param name="seconds"></param>
         public void AddTimer(int seconds)
         {
             this.timerSetTime.Tick -= new EventHandler(timerSetTime_Tick);
@@ -221,6 +251,11 @@ namespace MUN_ChairTools
             this.buttonSetTimeStart.ForeColor = Color.Gray;
         }
 
+        /// <summary>
+        /// 无组织核心磋商
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UMCToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MotionUMC motionUMC = new MotionUMC(this);
@@ -228,6 +263,11 @@ namespace MUN_ChairTools
             motionUMC.Show();
         }
 
+        /// <summary>
+        /// 有主持核心磋商
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MCToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MotionMC motionMC = new MotionMC(this);
@@ -242,9 +282,113 @@ namespace MUN_ChairTools
         /// <param name="e"></param>
         private void OpenSpeakersListToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (this.isOpenSpeakersList)
+            { 
+                //此时已经开了住发言名单 那么就
+                MessageBox.Show("主发言名单已经开启！");
+                return;
+            }
+
+            //跳出复议框
+            DialogResult dialogSecond = MessageBox.Show("请问场下又无任何复议？", "复议", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            if (dialogSecond == System.Windows.Forms.DialogResult.Yes)
+            {
+                //跳出投票框
+
+                DialogResult dialogVoteMotion = MessageBox.Show("动议是否通过？", "动议投票", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                if (dialogVoteMotion == System.Windows.Forms.DialogResult.Yes)
+                {
+                    //通过 开始计时
+                    this.listBoxSpeakersList.Visible = true;
+                    this.comboBoxChooseCountry.Visible = true;
+                    this.pictureBoxCountryMinus.Visible = true;
+                    this.pictureBoxCountryPlus.Visible = true;
+
+                    for (int i = 0; i < this.CurrentConference.TotalSessionList[Conference.SessionNumber].CountryList.Count; i++ )
+                    {
+                        this.comboBoxChooseCountry.Items.Add(this.CurrentConference.TotalSessionList[Conference.SessionNumber].CountryList[i].ChineseName);
+                    }
+                    
+                    //TODO 第二种思路，把这个和主计时器分开
+                }
+                else if (dialogVoteMotion == System.Windows.Forms.DialogResult.No)
+                {
+   
+                    
+                }
+                else
+                {
+                    //取消 那么久这个窗口关闭
+                    return;
+                }
+            }
+            else if (dialogSecond == System.Windows.Forms.DialogResult.No)
+            {
+                //直接失败 输出
+              
+                
+            }
+            else
+            {
+                return;
+                //取消 不动
+            }
+
+
             
         }
-    
+
+        /// <summary>
+        /// 主发言名单中 添加国家
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void pictureBoxCountryPlus_Click(object sender, EventArgs e)
+        {
+            if(this.comboBoxChooseCountry.SelectedIndex == -1)
+            {
+                return;
+            }
+
+            if (this.listBoxSpeakersList.SelectedIndex == -1)
+            {
+                this.listBoxSpeakersList.Items.Add(this.comboBoxChooseCountry.SelectedItem);
+            }
+            else
+            {
+                this.listBoxSpeakersList.Items.Insert(this.listBoxSpeakersList.SelectedIndex + 1, this.comboBoxChooseCountry.SelectedItem);
+            }
+
+
+
+        }
+
+        /// <summary>
+        /// 主发言名单 减少国家
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void pictureBoxCountryMinus_Click(object sender, EventArgs e)
+        {
+            if (this.listBoxSpeakersList.SelectedIndex == -1)
+            {
+                return;
+            }
+            else
+            {
+                this.listBoxSpeakersList.Items.RemoveAt(this.listBoxSpeakersList.SelectedIndex);
+            }
+        }
+
+        /// <summary>
+        /// 更新主发言名单旁边的信息
+        /// </summary>
+        /// <param name="labelContent"></param>
+        public void ReloadInformationLabel(string labelContent)
+        {
+            this.labelConferenceInformation.Text = labelContent;
+        }
+
     }
 
 

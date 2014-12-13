@@ -48,6 +48,10 @@
             this.AboutBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain = new System.Windows.Forms.Panel();
             this.groupBoxInfo = new System.Windows.Forms.GroupBox();
+            this.comboBoxChooseCountry = new System.Windows.Forms.ComboBox();
+            this.pictureBoxCountryPlus = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCountryMinus = new System.Windows.Forms.PictureBox();
+            this.listBoxSpeakersList = new System.Windows.Forms.ListBox();
             this.groupBoxTime = new System.Windows.Forms.GroupBox();
             this.labelSetTimeMinute = new System.Windows.Forms.Label();
             this.buttonSetTimeReset = new System.Windows.Forms.Button();
@@ -61,8 +65,12 @@
             this.richTextBoxRecord = new System.Windows.Forms.RichTextBox();
             this.timerSetTime = new System.Windows.Forms.Timer(this.components);
             this.timerSystemTime = new System.Windows.Forms.Timer(this.components);
+            this.labelConferenceInformation = new System.Windows.Forms.Label();
             this.menuStripMain.SuspendLayout();
             this.panelMain.SuspendLayout();
+            this.groupBoxInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCountryPlus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCountryMinus)).BeginInit();
             this.groupBoxTime.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSetTime)).BeginInit();
             this.groupBoxRecord.SuspendLayout();
@@ -106,7 +114,7 @@
             this.动议投票ToolStripMenuItem,
             this.其他动议ToolStripMenuItem});
             this.MotionToolStripMenuItem.Name = "MotionToolStripMenuItem";
-            this.MotionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.MotionToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.MotionToolStripMenuItem.Text = "动议";
             // 
             // MCToolStripMenuItem
@@ -209,6 +217,11 @@
             // 
             this.groupBoxInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxInfo.BackColor = System.Drawing.SystemColors.Highlight;
+            this.groupBoxInfo.Controls.Add(this.labelConferenceInformation);
+            this.groupBoxInfo.Controls.Add(this.comboBoxChooseCountry);
+            this.groupBoxInfo.Controls.Add(this.pictureBoxCountryPlus);
+            this.groupBoxInfo.Controls.Add(this.pictureBoxCountryMinus);
+            this.groupBoxInfo.Controls.Add(this.listBoxSpeakersList);
             this.groupBoxInfo.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Bold);
             this.groupBoxInfo.Location = new System.Drawing.Point(589, 263);
             this.groupBoxInfo.Name = "groupBoxInfo";
@@ -216,6 +229,46 @@
             this.groupBoxInfo.TabIndex = 2;
             this.groupBoxInfo.TabStop = false;
             this.groupBoxInfo.Text = "信息";
+            // 
+            // comboBoxChooseCountry
+            // 
+            this.comboBoxChooseCountry.FormattingEnabled = true;
+            this.comboBoxChooseCountry.Location = new System.Drawing.Point(9, 310);
+            this.comboBoxChooseCountry.Name = "comboBoxChooseCountry";
+            this.comboBoxChooseCountry.Size = new System.Drawing.Size(121, 37);
+            this.comboBoxChooseCountry.TabIndex = 3;
+            // 
+            // pictureBoxCountryPlus
+            // 
+            this.pictureBoxCountryPlus.Image = global::MUN_ChairTools.Properties.Resources.plus;
+            this.pictureBoxCountryPlus.Location = new System.Drawing.Point(136, 310);
+            this.pictureBoxCountryPlus.Name = "pictureBoxCountryPlus";
+            this.pictureBoxCountryPlus.Size = new System.Drawing.Size(31, 33);
+            this.pictureBoxCountryPlus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCountryPlus.TabIndex = 2;
+            this.pictureBoxCountryPlus.TabStop = false;
+            this.pictureBoxCountryPlus.Click += new System.EventHandler(this.pictureBoxCountryPlus_Click);
+            // 
+            // pictureBoxCountryMinus
+            // 
+            this.pictureBoxCountryMinus.Image = global::MUN_ChairTools.Properties.Resources.minus;
+            this.pictureBoxCountryMinus.Location = new System.Drawing.Point(173, 310);
+            this.pictureBoxCountryMinus.Name = "pictureBoxCountryMinus";
+            this.pictureBoxCountryMinus.Size = new System.Drawing.Size(31, 33);
+            this.pictureBoxCountryMinus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCountryMinus.TabIndex = 1;
+            this.pictureBoxCountryMinus.TabStop = false;
+            this.pictureBoxCountryMinus.Click += new System.EventHandler(this.pictureBoxCountryMinus_Click);
+            // 
+            // listBoxSpeakersList
+            // 
+            this.listBoxSpeakersList.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
+            this.listBoxSpeakersList.FormattingEnabled = true;
+            this.listBoxSpeakersList.ItemHeight = 26;
+            this.listBoxSpeakersList.Location = new System.Drawing.Point(9, 40);
+            this.listBoxSpeakersList.Name = "listBoxSpeakersList";
+            this.listBoxSpeakersList.Size = new System.Drawing.Size(195, 264);
+            this.listBoxSpeakersList.TabIndex = 0;
             // 
             // groupBoxTime
             // 
@@ -353,6 +406,16 @@
             this.timerSystemTime.Interval = 1000;
             this.timerSystemTime.Tick += new System.EventHandler(this.timerSystemTime_Tick);
             // 
+            // labelConferenceInformation
+            // 
+            this.labelConferenceInformation.AutoSize = true;
+            this.labelConferenceInformation.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
+            this.labelConferenceInformation.Location = new System.Drawing.Point(210, 40);
+            this.labelConferenceInformation.Name = "labelConferenceInformation";
+            this.labelConferenceInformation.Size = new System.Drawing.Size(88, 26);
+            this.labelConferenceInformation.TabIndex = 4;
+            this.labelConferenceInformation.Text = "会议信息";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -367,6 +430,10 @@
             this.menuStripMain.ResumeLayout(false);
             this.menuStripMain.PerformLayout();
             this.panelMain.ResumeLayout(false);
+            this.groupBoxInfo.ResumeLayout(false);
+            this.groupBoxInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCountryPlus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCountryMinus)).EndInit();
             this.groupBoxTime.ResumeLayout(false);
             this.groupBoxTime.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSetTime)).EndInit();
@@ -409,6 +476,11 @@
         private System.Windows.Forms.ToolStripMenuItem 动议结束辩论ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 动议投票ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 其他动议ToolStripMenuItem;
+        private System.Windows.Forms.ListBox listBoxSpeakersList;
+        private System.Windows.Forms.PictureBox pictureBoxCountryMinus;
+        private System.Windows.Forms.PictureBox pictureBoxCountryPlus;
+        private System.Windows.Forms.ComboBox comboBoxChooseCountry;
+        private System.Windows.Forms.Label labelConferenceInformation;
     }
 }
 
