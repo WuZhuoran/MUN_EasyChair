@@ -24,3 +24,4 @@ E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\M
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.csproj.GenerateResource.Cache
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.exe
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.pdb
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.ChooseConference.resources

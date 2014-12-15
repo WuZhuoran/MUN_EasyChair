@@ -15,6 +15,10 @@ namespace MUN_ChairTools
     /// </summary>
     public partial class ConferenceLoadAndInit : Form
     {
+        public static bool flag = false;
+
+        private bool isLoadConference = false;
+
         public Conference CurrentConference;
 
         public static bool isAddCountry = false; //只有加载了国家时 才可以点确定
@@ -33,8 +37,8 @@ namespace MUN_ChairTools
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.ControlBox = false;
-            
-            
+
+            this.CurrentConference = new Conference();
         }
 
         /// <summary>
@@ -68,7 +72,7 @@ namespace MUN_ChairTools
                 MessageBox.Show("请输入正确的信息！");
                 return;
             }
-            else
+            else if(!isLoadConference)
             {
                 //验证是否添加了国家
                 if (!isAddCountry)
@@ -81,6 +85,7 @@ namespace MUN_ChairTools
                     MessageBox.Show("OK！");
                     //创建Conference类  
                     this.CurrentConference = new Conference(this.textBoxConferenceName.Text, this.textBoxCommitteeName.Text, this.addCountryListForm.GetMainCountryList(), this.addCountryListForm.GetObserverCountryList());
+                    
                     this.CurrentConference.ShowInfo();
                     //显示Session选项，是选中之前的session还是新建一个session
                     if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data"))
@@ -106,10 +111,10 @@ namespace MUN_ChairTools
                         File.Create(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName + "\\" + "ConferenceInfo.txt").Close();
                     }
 
-                    StreamWriter streamWriter = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName + "\\" + "ConferenceInfo.txt", true);
-                    streamWriter.WriteLine("会议名称" + CurrentConference.ConferenceName);
-                    streamWriter.WriteLine("会场名称" + CurrentConference.CommitteeName);
-                    streamWriter.WriteLine("国家数：" + CurrentConference.CountryTotalNumber);
+                    StreamWriter streamWriter = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName + "\\" + "ConferenceInfo.txt", false);
+                    streamWriter.WriteLine(CurrentConference.ConferenceName);
+                    streamWriter.WriteLine(CurrentConference.CommitteeName);
+                    streamWriter.WriteLine(CurrentConference.CountryTotalNumber);
                     streamWriter.Close();
 
                     //创建一个TXT存放国家列表CountryList.txt
@@ -118,7 +123,7 @@ namespace MUN_ChairTools
                         File.Create(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName + "\\" + "CountryList.txt").Close();
                     }
 
-                    StreamWriter streamWriterCountryList = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName + "\\" + "CountryList.txt", true);
+                    StreamWriter streamWriterCountryList = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\MUN_Data\\" + CurrentConference.ConferenceName + "\\" + CurrentConference.CommitteeName + "\\" + "CountryList.txt", false);
                     //首先两行输入国家数（与会国+观察员）
                     streamWriterCountryList.WriteLine(CurrentConference.MainCountryNumber);
                     streamWriterCountryList.WriteLine(CurrentConference.ObserverCountryNumber);
@@ -141,7 +146,7 @@ namespace MUN_ChairTools
                     sessionChooser.Show();
                     this.Hide();
                 }
-
+                
                 //此时已经新建了一个会议，则需要通过文件体现
                 //如果没有则创建一个目录
                
@@ -149,7 +154,14 @@ namespace MUN_ChairTools
 
                
             }
-            
+            else // 
+            {
+                MessageBox.Show("Test");
+                SessionChooser sessionChooser = new SessionChooser(this.CurrentConference);
+                sessionChooser.StartPosition = FormStartPosition.CenterScreen;
+                sessionChooser.Show();
+                this.Hide();
+            }
             
         }
 
@@ -191,8 +203,52 @@ namespace MUN_ChairTools
         //从文件中加载已有的数据
         private void buttonLoadFileData_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("复议", "Second?", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            //查看我的文档中有无 MUN_DATA
+            if(!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "//MUN_Data"))
+            {
+                MessageBox.Show("不存在MUN_Data文件夹！");
+                return;
+            }
+
+            DirectoryInfo dir = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "//MUN_Data");
+            DirectoryInfo[] conferenceDirectory = dir.GetDirectories();
+            if(conferenceDirectory.Length > 0)
+            {
+                MessageBox.Show("有！" + conferenceDirectory.Length);
+                //接着去形成一个候选框
+
+                ChooseConference chooseConference = new ChooseConference(this.CurrentConference);
+                chooseConference.StartPosition = FormStartPosition.CenterScreen;
+                chooseConference.Show();
+
+                
+                //选择结束后 修改isLoadConference的值
+                this.isLoadConference = true;
+
+                while(flag)
+                {
+                    //等待    
+                }
+                
+                chooseConference.deliverConference += new DeliverConferenceHeader(GetConference);
+            }
+            else
+            {
+                MessageBox.Show("没有！");
+                
+            }
         }
 
+
+        public void GetConference(Conference conference)
+        {
+            
+            this.CurrentConference = conference;
+
+            this.textBoxConferenceName.Text = CurrentConference.ConferenceName;
+            this.textBoxCommitteeName.Text = CurrentConference.CommitteeName;
+            this.numericUpDownCountryNumber.Value = CurrentConference.CountryTotalNumber;
+            this.comboBoxOfficialLanguage.SelectedIndex = 1;
+        }
     }
 }

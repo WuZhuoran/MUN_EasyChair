@@ -25,6 +25,8 @@ namespace MUN_ChairTools
                                             + "\n国家数：" + (conference.MainCountryList.Count 
                                             + conference.ObserverCountryList.Count).ToString();
 
+            //遍历文件中有多少session的文件
+
             for (int i = 0; i < Conference.SessionNumber; i++ )
             {
                 this.comboBoxSessionChooser.Items.Add("Session" + i + 1);

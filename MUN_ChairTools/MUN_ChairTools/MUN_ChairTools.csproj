@@ -58,6 +58,12 @@
     <Compile Include="AddCountryList.Designer.cs">
       <DependentUpon>AddCountryList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChooseConference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseConference.Designer.cs">
+      <DependentUpon>ChooseConference.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conference.cs" />
     <Compile Include="ConferenceLoadAndInit.cs">
       <SubType>Form</SubType>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddCountryList.resx">
       <DependentUpon>AddCountryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseConference.resx">
+      <DependentUpon>ChooseConference.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConferenceLoadAndInit.resx">
       <DependentUpon>ConferenceLoadAndInit.cs</DependentUpon>
