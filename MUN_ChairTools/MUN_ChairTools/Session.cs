@@ -10,7 +10,7 @@ namespace MUN_ChairTools
     /// </summary>
     public class Session : Conference
     {
-        public int SessionNumber { get; set; }
+        public int SessionNum { get; set; }
         public int PresentMainCountryNumber { get; set; }
         public int PresentObserverCountryNumber { get; set; }
         public int SimpleMajority { get; set; }
@@ -22,7 +22,7 @@ namespace MUN_ChairTools
 
         public Session(int sessionNumber)
         {
-            this.SessionNumber = sessionNumber;
+            this.SessionNum = sessionNumber;
             this.PresentMainCountryNumber = 0;
             this.PresentObserverCountryNumber = 0;
             this.SimpleMajority = 0;

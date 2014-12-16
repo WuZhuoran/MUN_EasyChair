@@ -11,13 +11,13 @@ namespace MUN_ChairTools
     /// </summary>
     public class Conference
     {
+        public static int SessionNumber { get; set; }
+
         private Dictionary<string, string> KeyWordInBothLanguage = new Dictionary<string, string>();
 
         public string ConferenceName { get; set; }
 
         public string CommitteeName { get; set; }
-
-        public static int SessionNumber { get; set; }
 
         //TODO 总计发言次数，用来评估用
         //public int SpeakerListTime { get; set; }

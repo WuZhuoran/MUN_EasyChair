@@ -31,6 +31,7 @@
             this.panelMainRollCall = new System.Windows.Forms.Panel();
             this.buttonBack = new System.Windows.Forms.Button();
             this.buttonConfirm = new System.Windows.Forms.Button();
+            this.buttonCheakedPresent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panelMainRollCall
@@ -60,11 +61,22 @@
             this.buttonConfirm.UseVisualStyleBackColor = true;
             this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
             // 
+            // buttonCheakedPresent
+            // 
+            this.buttonCheakedPresent.Location = new System.Drawing.Point(531, 376);
+            this.buttonCheakedPresent.Name = "buttonCheakedPresent";
+            this.buttonCheakedPresent.Size = new System.Drawing.Size(93, 36);
+            this.buttonCheakedPresent.TabIndex = 3;
+            this.buttonCheakedPresent.Text = "检查已到";
+            this.buttonCheakedPresent.UseVisualStyleBackColor = true;
+            this.buttonCheakedPresent.Click += new System.EventHandler(this.buttonCheakedPresent_Click);
+            // 
             // RollCallForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(735, 424);
+            this.Controls.Add(this.buttonCheakedPresent);
             this.Controls.Add(this.buttonConfirm);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.panelMainRollCall);
@@ -79,5 +91,6 @@
         private System.Windows.Forms.Panel panelMainRollCall;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonConfirm;
+        private System.Windows.Forms.Button buttonCheakedPresent;
     }
 }

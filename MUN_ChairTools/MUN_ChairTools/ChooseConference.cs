@@ -16,15 +16,14 @@ namespace MUN_ChairTools
     {
         public Conference CurrentConference;
 
-        
+        public ConferenceLoadAndInit CurrentConferenceLoad;
 
-        public event DeliverConferenceHeader deliverConference;
-
-        public ChooseConference(Conference conference)
+        public ChooseConference(Conference conference, ConferenceLoadAndInit conferenceLoadAndInit)
         {
             InitializeComponent();
 
             this.CurrentConference = conference;
+            this.CurrentConferenceLoad = conferenceLoadAndInit;
 
             DirectoryInfo dir = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "//MUN_Data");
             DirectoryInfo[] conferenceDirectory = dir.GetDirectories();
@@ -46,7 +45,7 @@ namespace MUN_ChairTools
         /// <param name="e"></param>
         void ChooseConference_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.deliverConference(this.CurrentConference);
+            
             
         }
 
@@ -117,6 +116,10 @@ namespace MUN_ChairTools
 
                     this.CurrentConference.MainCountryNumber = Int32.Parse(streamReader2.ReadLine());
                     this.CurrentConference.ObserverCountryNumber = Int32.Parse(streamReader2.ReadLine());
+
+                    this.CurrentConference.MainCountryList.Clear();
+                    this.CurrentConference.ObserverCountryList.Clear();
+
                     for (int i = 0; i < this.CurrentConference.MainCountryNumber; i++)
                     {
                         this.CurrentConference.MainCountryList.Add(new Country(streamReader2.ReadLine(), CountryType.COUNTRY));
@@ -128,8 +131,7 @@ namespace MUN_ChairTools
                     streamReader1.Close();
                     streamReader1.Close();
                     //文件读取完毕
-
-                    ConferenceLoadAndInit.flag = true;
+                    this.CurrentConferenceLoad.GetConference(this.CurrentConference);
 
                     this.Close();
                 }

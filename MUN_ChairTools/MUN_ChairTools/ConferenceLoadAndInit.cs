@@ -17,6 +17,8 @@ namespace MUN_ChairTools
     {
         public static bool flag = false;
 
+        ChooseConference chooseConference;
+
         private bool isLoadConference = false;
 
         public Conference CurrentConference;
@@ -82,7 +84,6 @@ namespace MUN_ChairTools
                 }
                 else
                 {
-                    MessageBox.Show("OK！");
                     //创建Conference类  
                     this.CurrentConference = new Conference(this.textBoxConferenceName.Text, this.textBoxCommitteeName.Text, this.addCountryListForm.GetMainCountryList(), this.addCountryListForm.GetObserverCountryList());
                     
@@ -156,11 +157,10 @@ namespace MUN_ChairTools
             }
             else // 
             {
-                MessageBox.Show("Test");
                 SessionChooser sessionChooser = new SessionChooser(this.CurrentConference);
                 sessionChooser.StartPosition = FormStartPosition.CenterScreen;
                 sessionChooser.Show();
-                this.Hide();
+                this.WindowState = FormWindowState.Minimized;
             }
             
         }
@@ -203,42 +203,53 @@ namespace MUN_ChairTools
         //从文件中加载已有的数据
         private void buttonLoadFileData_Click(object sender, EventArgs e)
         {
-            //查看我的文档中有无 MUN_DATA
-            if(!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "//MUN_Data"))
+            if (this.buttonLoadFileData.Text == "加载文件")
             {
-                MessageBox.Show("不存在MUN_Data文件夹！");
-                return;
-            }
-
-            DirectoryInfo dir = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "//MUN_Data");
-            DirectoryInfo[] conferenceDirectory = dir.GetDirectories();
-            if(conferenceDirectory.Length > 0)
-            {
-                MessageBox.Show("有！" + conferenceDirectory.Length);
-                //接着去形成一个候选框
-
-                ChooseConference chooseConference = new ChooseConference(this.CurrentConference);
-                chooseConference.StartPosition = FormStartPosition.CenterScreen;
-                chooseConference.Show();
-
-                
-                //选择结束后 修改isLoadConference的值
-                this.isLoadConference = true;
-
-                while(flag)
+                //查看我的文档中有无 MUN_DATA
+                if(!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "//MUN_Data"))
                 {
-                    //等待    
+                    MessageBox.Show("不存在MUN_Data文件夹！");
+                    return;
                 }
-                
-                chooseConference.deliverConference += new DeliverConferenceHeader(GetConference);
-            }
-            else
-            {
-                MessageBox.Show("没有！");
-                
-            }
-        }
 
+                DirectoryInfo dir = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "//MUN_Data");
+                DirectoryInfo[] conferenceDirectory = dir.GetDirectories();
+                if(conferenceDirectory.Length > 0)
+                {
+                    //接着去形成一个候选框
+
+                    chooseConference = new ChooseConference(this.CurrentConference, this);
+                    chooseConference.StartPosition = FormStartPosition.CenterScreen;
+                    chooseConference.Show();
+
+                
+                    //选择结束后 修改isLoadConference的值
+                    this.isLoadConference = true;
+
+                    
+                    
+                }
+                else
+                {
+                    MessageBox.Show("没有！");
+                
+                }
+
+                //修改按钮的Text值
+                this.buttonLoadFileData.Text = "取消加载";
+            }
+            else //此时是按钮的选项是取消加载文件
+            {
+                this.isLoadConference = false;
+                this.textBoxCommitteeName.Text = string.Empty;
+                this.textBoxConferenceName.Text = string.Empty;
+                this.numericUpDownCountryNumber.Value = 0;
+                this.comboBoxOfficialLanguage.SelectedIndex = -1;
+
+                this.buttonLoadFileData.Text = "加载文件";
+            }
+            
+        }
 
         public void GetConference(Conference conference)
         {

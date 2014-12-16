@@ -26,9 +26,11 @@ namespace MUN_ChairTools
         /// <summary>
         /// 构造函数
         /// </summary>
+        /// <param name="conference">传入主窗口的Conferen类实例</param>
         public MainForm(Conference conference)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             this.timerSystemTime.Enabled = true;
             this.timerSystemTime.Start();
             this.FormClosing += new FormClosingEventHandler(MainForm_FormClosing);
@@ -38,7 +40,7 @@ namespace MUN_ChairTools
             //显示会议信息
             this.richTextBoxRecord.Text += "会议名称:" + this.CurrentConference.ConferenceName + "\n会场名称：" + this.CurrentConference.CommitteeName + "\n议程：" + this.CurrentConference.TotalSessionList.Count;
             this.richTextBoxRecord.Text += "\n\n参会国家总数：" + this.CurrentConference.CountryTotalNumber + "\n到场国家：" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].PresentMainCountryNumber + "+" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].PresentObserverCountryNumber;
-            this.richTextBoxRecord.Text += "简单多数为：" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].SimpleMajority + "\n绝对多数为:" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].TwoThirdsMajority;
+            this.richTextBoxRecord.Text += "\n简单多数为：" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].SimpleMajority + "\n绝对多数为:" + this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1].TwoThirdsMajority;
 
             this.listBoxSpeakersList.Visible = false;
             this.comboBoxChooseCountry.Visible = false;
@@ -218,40 +220,6 @@ namespace MUN_ChairTools
         }
 
         /// <summary>
-        /// 向Record主窗口 写入一个string
-        /// </summary>
-        /// <param name="content"></param>
-        public void WirteToRecord(string content)
-        {
-            this.richTextBoxRecord.Text += content;
-            this.richTextBoxRecord.Text += "\n";
-        }
-
-        /// <summary>
-        /// 给主窗口的Timer空间一个计时
-        /// </summary>
-        /// <param name="seconds"></param>
-        public void AddTimer(int seconds)
-        {
-            this.timerSetTime.Tick -= new EventHandler(timerSetTime_Tick);
-            //获取数据并验证正确性
-
-            this.MinuteSetTime = seconds / 60;
-            this.SecondSetTime = seconds % 60;
-            this.TimePass = DateTime.Parse("00:" + this.MinuteSetTime.ToString("00") + ":" + this.SecondSetTime.ToString("00"));
-            this.labelSetTimeMinute.Text = this.MinuteSetTime.ToString("00") + ":" + this.SecondSetTime.ToString("00");
-
-
-            //开始Timer
-            this.timerSetTime.Enabled = true;
-            this.timerSetTime.Tick += new EventHandler(timerSetTime_Tick);
-            this.timerSetTime.Start();
-
-            this.buttonSetTimeStart.Enabled = false;
-            this.buttonSetTimeStart.ForeColor = Color.Gray;
-        }
-
-        /// <summary>
         /// 无组织核心磋商
         /// </summary>
         /// <param name="sender"></param>
@@ -364,6 +332,19 @@ namespace MUN_ChairTools
         }
 
         /// <summary>
+        /// 点名系统 做到可以随时点名随时更新数据
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RollCallToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RollCallForm rollCallForm = new RollCallForm(this.CurrentConference, this);
+            rollCallForm.isFirstTime = false;
+            rollCallForm.StartPosition = FormStartPosition.CenterParent;
+            rollCallForm.Show();
+        }
+
+        /// <summary>
         /// 主发言名单 减少国家
         /// </summary>
         /// <param name="sender"></param>
@@ -383,12 +364,45 @@ namespace MUN_ChairTools
         /// <summary>
         /// 更新主发言名单旁边的信息
         /// </summary>
-        /// <param name="labelContent"></param>
+        /// <param name="labelContent">写到信息栏中窗口的内容</param>
         public void ReloadInformationLabel(string labelContent)
         {
             this.labelConferenceInformation.Text = labelContent;
         }
 
+        /// <summary>
+        /// 向Record主窗口 写入一个string
+        /// </summary>
+        /// <param name="content">写到主窗口中的内容</param>
+        public void WirteToRecord(string content)
+        {
+            this.richTextBoxRecord.Text += content;
+            this.richTextBoxRecord.Text += "\n\n";
+        }
+
+        /// <summary>
+        /// 给主窗口的Timer空间一个计时
+        /// </summary>
+        /// <param name="seconds">时间控件的秒数</param>
+        public void AddTimer(int seconds)
+        {
+            this.timerSetTime.Tick -= new EventHandler(timerSetTime_Tick);
+            //获取数据并验证正确性
+
+            this.MinuteSetTime = seconds / 60;
+            this.SecondSetTime = seconds % 60;
+            this.TimePass = DateTime.Parse("00:" + this.MinuteSetTime.ToString("00") + ":" + this.SecondSetTime.ToString("00"));
+            this.labelSetTimeMinute.Text = this.MinuteSetTime.ToString("00") + ":" + this.SecondSetTime.ToString("00");
+
+
+            //开始Timer
+            this.timerSetTime.Enabled = true;
+            this.timerSetTime.Tick += new EventHandler(timerSetTime_Tick);
+            this.timerSetTime.Start();
+
+            this.buttonSetTimeStart.Enabled = false;
+            this.buttonSetTimeStart.ForeColor = Color.Gray;
+        }
     }
 
 

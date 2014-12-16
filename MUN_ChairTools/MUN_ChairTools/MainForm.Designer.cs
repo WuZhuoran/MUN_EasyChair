@@ -41,6 +41,7 @@
             this.动议结束辩论ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.动议投票ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.其他动议ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RollCallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OtherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,6 +49,7 @@
             this.AboutBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain = new System.Windows.Forms.Panel();
             this.groupBoxInfo = new System.Windows.Forms.GroupBox();
+            this.labelConferenceInformation = new System.Windows.Forms.Label();
             this.comboBoxChooseCountry = new System.Windows.Forms.ComboBox();
             this.pictureBoxCountryPlus = new System.Windows.Forms.PictureBox();
             this.pictureBoxCountryMinus = new System.Windows.Forms.PictureBox();
@@ -65,7 +67,6 @@
             this.richTextBoxRecord = new System.Windows.Forms.RichTextBox();
             this.timerSetTime = new System.Windows.Forms.Timer(this.components);
             this.timerSystemTime = new System.Windows.Forms.Timer(this.components);
-            this.labelConferenceInformation = new System.Windows.Forms.Label();
             this.menuStripMain.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.groupBoxInfo.SuspendLayout();
@@ -98,7 +99,8 @@
             // ActionToolStripMenuItem
             // 
             this.ActionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MotionToolStripMenuItem});
+            this.MotionToolStripMenuItem,
+            this.RollCallToolStripMenuItem});
             this.ActionToolStripMenuItem.Name = "ActionToolStripMenuItem";
             this.ActionToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.ActionToolStripMenuItem.Text = "操作";
@@ -114,7 +116,7 @@
             this.动议投票ToolStripMenuItem,
             this.其他动议ToolStripMenuItem});
             this.MotionToolStripMenuItem.Name = "MotionToolStripMenuItem";
-            this.MotionToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.MotionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.MotionToolStripMenuItem.Text = "动议";
             // 
             // MCToolStripMenuItem
@@ -162,6 +164,13 @@
             this.其他动议ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.其他动议ToolStripMenuItem.Text = "其他动议";
             // 
+            // RollCallToolStripMenuItem
+            // 
+            this.RollCallToolStripMenuItem.Name = "RollCallToolStripMenuItem";
+            this.RollCallToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.RollCallToolStripMenuItem.Text = "点名";
+            this.RollCallToolStripMenuItem.Click += new System.EventHandler(this.RollCallToolStripMenuItem_Click);
+            // 
             // OtherToolStripMenuItem
             // 
             this.OtherToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -173,7 +182,7 @@
             // SettingsToolStripMenuItem
             // 
             this.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem";
-            this.SettingsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.SettingsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.SettingsToolStripMenuItem.Text = "会议设定";
             // 
             // HelpToolStripMenuItem
@@ -188,13 +197,13 @@
             // SeeHelpToolStripMenuItem
             // 
             this.SeeHelpToolStripMenuItem.Name = "SeeHelpToolStripMenuItem";
-            this.SeeHelpToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.SeeHelpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.SeeHelpToolStripMenuItem.Text = "帮助";
             // 
             // AboutBoxToolStripMenuItem
             // 
             this.AboutBoxToolStripMenuItem.Name = "AboutBoxToolStripMenuItem";
-            this.AboutBoxToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.AboutBoxToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.AboutBoxToolStripMenuItem.Text = "关于";
             this.AboutBoxToolStripMenuItem.Click += new System.EventHandler(this.AboutBoxToolStripMenuItem_Click);
             // 
@@ -229,6 +238,16 @@
             this.groupBoxInfo.TabIndex = 2;
             this.groupBoxInfo.TabStop = false;
             this.groupBoxInfo.Text = "信息";
+            // 
+            // labelConferenceInformation
+            // 
+            this.labelConferenceInformation.AutoSize = true;
+            this.labelConferenceInformation.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
+            this.labelConferenceInformation.Location = new System.Drawing.Point(210, 40);
+            this.labelConferenceInformation.Name = "labelConferenceInformation";
+            this.labelConferenceInformation.Size = new System.Drawing.Size(88, 26);
+            this.labelConferenceInformation.TabIndex = 4;
+            this.labelConferenceInformation.Text = "会议信息";
             // 
             // comboBoxChooseCountry
             // 
@@ -406,16 +425,6 @@
             this.timerSystemTime.Interval = 1000;
             this.timerSystemTime.Tick += new System.EventHandler(this.timerSystemTime_Tick);
             // 
-            // labelConferenceInformation
-            // 
-            this.labelConferenceInformation.AutoSize = true;
-            this.labelConferenceInformation.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
-            this.labelConferenceInformation.Location = new System.Drawing.Point(210, 40);
-            this.labelConferenceInformation.Name = "labelConferenceInformation";
-            this.labelConferenceInformation.Size = new System.Drawing.Size(88, 26);
-            this.labelConferenceInformation.TabIndex = 4;
-            this.labelConferenceInformation.Text = "会议信息";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -481,6 +490,7 @@
         private System.Windows.Forms.PictureBox pictureBoxCountryPlus;
         private System.Windows.Forms.ComboBox comboBoxChooseCountry;
         private System.Windows.Forms.Label labelConferenceInformation;
+        private System.Windows.Forms.ToolStripMenuItem RollCallToolStripMenuItem;
     }
 }
 
