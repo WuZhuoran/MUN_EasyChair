@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChooseConference));
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonConfirm = new System.Windows.Forms.Button();
             this.listBoxConference = new System.Windows.Forms.ListBox();
@@ -36,49 +37,34 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(12, 311);
+            resources.ApplyResources(this.buttonCancel, "buttonCancel");
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(72, 34);
-            this.buttonCancel.TabIndex = 0;
-            this.buttonCancel.Text = "取消";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonConfirm
             // 
-            this.buttonConfirm.Location = new System.Drawing.Point(378, 311);
+            resources.ApplyResources(this.buttonConfirm, "buttonConfirm");
             this.buttonConfirm.Name = "buttonConfirm";
-            this.buttonConfirm.Size = new System.Drawing.Size(72, 34);
-            this.buttonConfirm.TabIndex = 1;
-            this.buttonConfirm.Text = "确定";
             this.buttonConfirm.UseVisualStyleBackColor = true;
             this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
             // 
             // listBoxConference
             // 
-            this.listBoxConference.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.listBoxConference, "listBoxConference");
             this.listBoxConference.FormattingEnabled = true;
-            this.listBoxConference.ItemHeight = 28;
-            this.listBoxConference.Location = new System.Drawing.Point(12, 12);
             this.listBoxConference.Name = "listBoxConference";
-            this.listBoxConference.Size = new System.Drawing.Size(202, 256);
-            this.listBoxConference.TabIndex = 2;
             // 
             // listBoxCommittee
             // 
-            this.listBoxCommittee.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.listBoxCommittee, "listBoxCommittee");
             this.listBoxCommittee.FormattingEnabled = true;
-            this.listBoxCommittee.ItemHeight = 28;
-            this.listBoxCommittee.Location = new System.Drawing.Point(248, 12);
             this.listBoxCommittee.Name = "listBoxCommittee";
-            this.listBoxCommittee.Size = new System.Drawing.Size(202, 256);
-            this.listBoxCommittee.TabIndex = 3;
             // 
             // ChooseConference
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 357);
             this.ControlBox = false;
             this.Controls.Add(this.listBoxCommittee);
             this.Controls.Add(this.listBoxConference);

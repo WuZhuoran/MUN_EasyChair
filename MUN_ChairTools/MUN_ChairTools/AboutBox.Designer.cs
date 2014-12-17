@@ -27,6 +27,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox));
             this.panelAuthorization = new System.Windows.Forms.Panel();
             this.linkLabelMyGithubAddress = new System.Windows.Forms.LinkLabel();
             this.labelProductStatement = new System.Windows.Forms.Label();
@@ -51,142 +52,89 @@
             this.panelAuthorization.Controls.Add(this.linkLabelMyGithubAddress);
             this.panelAuthorization.Controls.Add(this.labelProductStatement);
             this.panelAuthorization.Controls.Add(this.labelAuthorization);
-            this.panelAuthorization.Location = new System.Drawing.Point(-1, 0);
+            resources.ApplyResources(this.panelAuthorization, "panelAuthorization");
             this.panelAuthorization.Name = "panelAuthorization";
-            this.panelAuthorization.Size = new System.Drawing.Size(774, 77);
-            this.panelAuthorization.TabIndex = 1;
             // 
             // linkLabelMyGithubAddress
             // 
-            this.linkLabelMyGithubAddress.AutoSize = true;
-            this.linkLabelMyGithubAddress.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabelMyGithubAddress.Location = new System.Drawing.Point(123, 30);
+            resources.ApplyResources(this.linkLabelMyGithubAddress, "linkLabelMyGithubAddress");
             this.linkLabelMyGithubAddress.Name = "linkLabelMyGithubAddress";
-            this.linkLabelMyGithubAddress.Size = new System.Drawing.Size(86, 21);
-            this.linkLabelMyGithubAddress.TabIndex = 2;
             this.linkLabelMyGithubAddress.TabStop = true;
-            this.linkLabelMyGithubAddress.Text = "linkLabel1";
             // 
             // labelProductStatement
             // 
-            this.labelProductStatement.AutoSize = true;
+            resources.ApplyResources(this.labelProductStatement, "labelProductStatement");
             this.labelProductStatement.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.labelProductStatement.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelProductStatement.Location = new System.Drawing.Point(24, 7);
             this.labelProductStatement.Name = "labelProductStatement";
-            this.labelProductStatement.Size = new System.Drawing.Size(154, 44);
-            this.labelProductStatement.TabIndex = 1;
-            this.labelProductStatement.Text = "模拟联合国会议软件\r\n更多请访问：";
             // 
             // labelAuthorization
             // 
-            this.labelAuthorization.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelAuthorization.Location = new System.Drawing.Point(469, 7);
+            resources.ApplyResources(this.labelAuthorization, "labelAuthorization");
             this.labelAuthorization.Name = "labelAuthorization";
-            this.labelAuthorization.Size = new System.Drawing.Size(300, 68);
-            this.labelAuthorization.TabIndex = 0;
-            this.labelAuthorization.Text = "本产品授权给：";
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(683, 264);
+            resources.ApplyResources(this.buttonOK, "buttonOK");
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(75, 23);
-            this.buttonOK.TabIndex = 2;
-            this.buttonOK.Text = "确定";
             this.buttonOK.UseVisualStyleBackColor = true;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // labelProductName
             // 
-            this.labelProductName.AutoSize = true;
-            this.labelProductName.Location = new System.Drawing.Point(344, 89);
+            resources.ApplyResources(this.labelProductName, "labelProductName");
             this.labelProductName.Name = "labelProductName";
-            this.labelProductName.Size = new System.Drawing.Size(65, 12);
-            this.labelProductName.TabIndex = 3;
-            this.labelProductName.Text = "产品名称：";
             // 
             // labelProductVersion
             // 
-            this.labelProductVersion.AutoSize = true;
-            this.labelProductVersion.Location = new System.Drawing.Point(344, 118);
+            resources.ApplyResources(this.labelProductVersion, "labelProductVersion");
             this.labelProductVersion.Name = "labelProductVersion";
-            this.labelProductVersion.Size = new System.Drawing.Size(65, 12);
-            this.labelProductVersion.TabIndex = 4;
-            this.labelProductVersion.Text = "产品版本：";
             // 
             // labelProdectOwner
             // 
-            this.labelProdectOwner.AutoSize = true;
-            this.labelProdectOwner.Location = new System.Drawing.Point(344, 150);
+            resources.ApplyResources(this.labelProdectOwner, "labelProdectOwner");
             this.labelProdectOwner.Name = "labelProdectOwner";
-            this.labelProdectOwner.Size = new System.Drawing.Size(65, 12);
-            this.labelProdectOwner.TabIndex = 5;
-            this.labelProdectOwner.Text = "产品作者：";
             // 
             // labelWarning
             // 
-            this.labelWarning.AutoSize = true;
-            this.labelWarning.Location = new System.Drawing.Point(344, 225);
+            resources.ApplyResources(this.labelWarning, "labelWarning");
             this.labelWarning.Name = "labelWarning";
-            this.labelWarning.Size = new System.Drawing.Size(41, 12);
-            this.labelWarning.TabIndex = 6;
-            this.labelWarning.Text = "警告：";
             // 
             // buttonCppyRightText
             // 
-            this.buttonCppyRightText.Location = new System.Drawing.Point(346, 264);
+            resources.ApplyResources(this.buttonCppyRightText, "buttonCppyRightText");
             this.buttonCppyRightText.Name = "buttonCppyRightText";
-            this.buttonCppyRightText.Size = new System.Drawing.Size(115, 23);
-            this.buttonCppyRightText.TabIndex = 7;
-            this.buttonCppyRightText.Text = "开源声明";
             this.buttonCppyRightText.UseVisualStyleBackColor = true;
             this.buttonCppyRightText.Click += new System.EventHandler(this.buttonCppyRightText_Click);
             // 
             // pictureBoxUNFlag
             // 
             this.pictureBoxUNFlag.Image = global::MUN_ChairTools.Properties.Resources.UnitedNationFlag;
-            this.pictureBoxUNFlag.Location = new System.Drawing.Point(-1, 78);
+            resources.ApplyResources(this.pictureBoxUNFlag, "pictureBoxUNFlag");
             this.pictureBoxUNFlag.Name = "pictureBoxUNFlag";
-            this.pictureBoxUNFlag.Size = new System.Drawing.Size(330, 220);
-            this.pictureBoxUNFlag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxUNFlag.TabIndex = 0;
             this.pictureBoxUNFlag.TabStop = false;
             // 
             // labelContactWriter
             // 
-            this.labelContactWriter.AutoSize = true;
-            this.labelContactWriter.Location = new System.Drawing.Point(344, 179);
+            resources.ApplyResources(this.labelContactWriter, "labelContactWriter");
             this.labelContactWriter.Name = "labelContactWriter";
-            this.labelContactWriter.Size = new System.Drawing.Size(65, 12);
-            this.labelContactWriter.TabIndex = 8;
-            this.labelContactWriter.Text = "联系作者：";
             // 
             // linkLabelWriterEmail
             // 
-            this.linkLabelWriterEmail.AutoSize = true;
-            this.linkLabelWriterEmail.Location = new System.Drawing.Point(405, 179);
+            resources.ApplyResources(this.linkLabelWriterEmail, "linkLabelWriterEmail");
             this.linkLabelWriterEmail.Name = "linkLabelWriterEmail";
-            this.linkLabelWriterEmail.Size = new System.Drawing.Size(161, 12);
-            this.linkLabelWriterEmail.TabIndex = 9;
             this.linkLabelWriterEmail.TabStop = true;
-            this.linkLabelWriterEmail.Text = "work.serv.oliver@gmail.com";
             // 
             // buttonGPLlicense
             // 
-            this.buttonGPLlicense.Location = new System.Drawing.Point(472, 263);
+            resources.ApplyResources(this.buttonGPLlicense, "buttonGPLlicense");
             this.buttonGPLlicense.Name = "buttonGPLlicense";
-            this.buttonGPLlicense.Size = new System.Drawing.Size(115, 23);
-            this.buttonGPLlicense.TabIndex = 10;
-            this.buttonGPLlicense.Text = "GPL协议原文链接";
             this.buttonGPLlicense.UseVisualStyleBackColor = true;
             this.buttonGPLlicense.Click += new System.EventHandler(this.buttonGPLlicense_Click);
             // 
             // AboutBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 297);
             this.Controls.Add(this.buttonGPLlicense);
             this.Controls.Add(this.linkLabelWriterEmail);
             this.Controls.Add(this.labelContactWriter);
@@ -202,11 +150,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AboutBox";
-            this.Padding = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "关于 MUN Chair Tools";
             this.panelAuthorization.ResumeLayout(false);
             this.panelAuthorization.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUNFlag)).EndInit();

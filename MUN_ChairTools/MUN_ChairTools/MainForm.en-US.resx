@@ -118,274 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBoxVoteYes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 348</value>
-  </data>
-  <data name="pictureBoxVoteYes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBoxVoteYes.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteYes.Name" xml:space="preserve">
-    <value>pictureBoxVoteYes</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteYes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteYes.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteYes.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pictureBoxVoteNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 348</value>
-  </data>
-  <data name="pictureBoxVoteNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="pictureBoxVoteNo.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteNo.Name" xml:space="preserve">
-    <value>pictureBoxVoteNo</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteNo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteNo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteNo.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="pictureBoxVoteAbsence.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 348</value>
-  </data>
-  <data name="pictureBoxVoteAbsence.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="pictureBoxVoteAbsence.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteAbsence.Name" xml:space="preserve">
-    <value>pictureBoxVoteAbsence</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteAbsence.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteAbsence.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteAbsence.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pictureBoxVotePass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 348</value>
-  </data>
-  <data name="pictureBoxVotePass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="pictureBoxVotePass.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVotePass.Name" xml:space="preserve">
-    <value>pictureBoxVotePass</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVotePass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVotePass.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVotePass.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="labelVoteYes.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelVoteYes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 15.75pt, style=Bold</value>
-  </data>
-  <data name="labelVoteYes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 360</value>
-  </data>
-  <data name="labelVoteYes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 28</value>
-  </data>
-  <data name="labelVoteYes.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="labelVoteYes.Text" xml:space="preserve">
-    <value>Yes</value>
-  </data>
-  <data name="&gt;&gt;labelVoteYes.Name" xml:space="preserve">
-    <value>labelVoteYes</value>
-  </data>
-  <data name="&gt;&gt;labelVoteYes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelVoteYes.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelVoteYes.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="labelVoteNo.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelVoteNo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 15.75pt, style=Bold</value>
-  </data>
-  <data name="labelVoteNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 360</value>
-  </data>
-  <data name="labelVoteNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 28</value>
-  </data>
-  <data name="labelVoteNo.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="labelVoteNo.Text" xml:space="preserve">
-    <value>No</value>
-  </data>
-  <data name="&gt;&gt;labelVoteNo.Name" xml:space="preserve">
-    <value>labelVoteNo</value>
-  </data>
-  <data name="&gt;&gt;labelVoteNo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelVoteNo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelVoteNo.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="labelVoteAbsense.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelVoteAbsense.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 15.75pt, style=Bold</value>
-  </data>
-  <data name="labelVoteAbsense.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 360</value>
-  </data>
-  <data name="labelVoteAbsense.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 28</value>
-  </data>
-  <data name="labelVoteAbsense.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="labelVoteAbsense.Text" xml:space="preserve">
-    <value>Absense</value>
-  </data>
-  <data name="&gt;&gt;labelVoteAbsense.Name" xml:space="preserve">
-    <value>labelVoteAbsense</value>
-  </data>
-  <data name="&gt;&gt;labelVoteAbsense.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelVoteAbsense.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelVoteAbsense.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelVotePass.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelVotePass.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 15.75pt, style=Bold</value>
-  </data>
-  <data name="labelVotePass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>501, 360</value>
-  </data>
-  <data name="labelVotePass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 28</value>
-  </data>
-  <data name="labelVotePass.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="labelVotePass.Text" xml:space="preserve">
-    <value>Pass</value>
-  </data>
-  <data name="&gt;&gt;labelVotePass.Name" xml:space="preserve">
-    <value>labelVotePass</value>
-  </data>
-  <data name="&gt;&gt;labelVotePass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelVotePass.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelVotePass.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="labelFileName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelFileName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 15.75pt, style=Bold</value>
-  </data>
-  <data name="labelFileName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 18</value>
-  </data>
-  <data name="labelFileName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 28</value>
-  </data>
-  <data name="labelFileName.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="labelFileName.Text" xml:space="preserve">
-    <value>文件名</value>
-  </data>
-  <data name="&gt;&gt;labelFileName.Name" xml:space="preserve">
-    <value>labelFileName</value>
-  </data>
-  <data name="&gt;&gt;labelFileName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelFileName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelFileName.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="textBoxFileName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 15.75pt, style=Bold</value>
-  </data>
-  <data name="textBoxFileName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 15</value>
-  </data>
-  <data name="textBoxFileName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 35</value>
-  </data>
-  <data name="textBoxFileName.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;textBoxFileName.Name" xml:space="preserve">
-    <value>textBoxFileName</value>
-  </data>
-  <data name="&gt;&gt;textBoxFileName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxFileName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxFileName.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>684, 410</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAACQAABMLAAATCwAAAAAAAAAA
@@ -552,13 +284,60 @@
         AAA=
 </value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>DocumentVote</value>
+  <data name="strMainTitle" xml:space="preserve">
+    <value>Easy Chair Tools</value>
+    <comment>窗体的标题</comment>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>DocumentVote</value>
+  <data name="strMenuItemFile" xml:space="preserve">
+    <value>File</value>
+    <comment>菜单栏-文件</comment>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="strMenuItemHelp" xml:space="preserve">
+    <value>Help</value>
+    <comment>菜单栏-帮助</comment>
+  </data>
+  <data name="strMenuItemOperation" xml:space="preserve">
+    <value>Operation</value>
+    <comment>菜单栏-操作</comment>
+  </data>
+  <data name="strMenuItemOther" xml:space="preserve">
+    <value>Other</value>
+    <comment>菜单栏-其他</comment>
+  </data>
+  <data name="strStripMenuItemCloseDebate" xml:space="preserve">
+    <value>Close Debate</value>
+    <comment>菜单栏-结束辩论</comment>
+  </data>
+  <data name="strStripMenuItemMC" xml:space="preserve">
+    <value>Moderated Caucus</value>
+    <comment>菜单栏-有组织核心磋商</comment>
+  </data>
+  <data name="strStripMenuItemMotion" xml:space="preserve">
+    <value>Motion</value>
+    <comment>菜单栏-动议</comment>
+  </data>
+  <data name="strStripMenuItemOpenSpeakerList" xml:space="preserve">
+    <value>OpenSpeakserList</value>
+    <comment>菜单栏-开启主发言名单</comment>
+  </data>
+  <data name="strStripMenuItemOtherMotion" xml:space="preserve">
+    <value>Other Motion</value>
+    <comment>菜单栏-其他动议</comment>
+  </data>
+  <data name="strStripMenuItemRollCall" xml:space="preserve">
+    <value>Roll Call</value>
+    <comment>菜单栏-点名</comment>
+  </data>
+  <data name="strStripMenuItemSuspendMeeting" xml:space="preserve">
+    <value>Suspend Meeting</value>
+    <comment>菜单栏-休会</comment>
+  </data>
+  <data name="strStripMenuItemUMC" xml:space="preserve">
+    <value>Unmoderated Caucus</value>
+    <comment>菜单栏-无组织核心磋商</comment>
+  </data>
+  <data name="strStripMenuItemVote" xml:space="preserve">
+    <value>Vote</value>
+    <comment>菜单栏-投票</comment>
   </data>
 </root>

@@ -117,4 +117,398 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="linkLabelMyGithubAddress.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="linkLabelMyGithubAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="linkLabelMyGithubAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 30</value>
+  </data>
+  <data name="linkLabelMyGithubAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 21</value>
+  </data>
+  <data name="linkLabelMyGithubAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="linkLabelMyGithubAddress.Text" xml:space="preserve">
+    <value>linkLabel1</value>
+  </data>
+  <data name="&gt;&gt;linkLabelMyGithubAddress.Name" xml:space="preserve">
+    <value>linkLabelMyGithubAddress</value>
+  </data>
+  <data name="&gt;&gt;linkLabelMyGithubAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelMyGithubAddress.Parent" xml:space="preserve">
+    <value>panelAuthorization</value>
+  </data>
+  <data name="&gt;&gt;linkLabelMyGithubAddress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelProductStatement.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelProductStatement.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt, style=Bold</value>
+  </data>
+  <data name="labelProductStatement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 7</value>
+  </data>
+  <data name="labelProductStatement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 44</value>
+  </data>
+  <data name="labelProductStatement.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelProductStatement.Text" xml:space="preserve">
+    <value>模拟联合国会议软件
+更多请访问：</value>
+  </data>
+  <data name="&gt;&gt;labelProductStatement.Name" xml:space="preserve">
+    <value>labelProductStatement</value>
+  </data>
+  <data name="&gt;&gt;labelProductStatement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelProductStatement.Parent" xml:space="preserve">
+    <value>panelAuthorization</value>
+  </data>
+  <data name="&gt;&gt;labelProductStatement.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelAuthorization.Font" type="System.Drawing.Font, System.Drawing">
+    <value>黑体, 12pt, style=Bold</value>
+  </data>
+  <data name="labelAuthorization.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 7</value>
+  </data>
+  <data name="labelAuthorization.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 68</value>
+  </data>
+  <data name="labelAuthorization.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelAuthorization.Text" xml:space="preserve">
+    <value>本产品授权给：</value>
+  </data>
+  <data name="&gt;&gt;labelAuthorization.Name" xml:space="preserve">
+    <value>labelAuthorization</value>
+  </data>
+  <data name="&gt;&gt;labelAuthorization.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAuthorization.Parent" xml:space="preserve">
+    <value>panelAuthorization</value>
+  </data>
+  <data name="&gt;&gt;labelAuthorization.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelAuthorization.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 0</value>
+  </data>
+  <data name="panelAuthorization.Size" type="System.Drawing.Size, System.Drawing">
+    <value>774, 77</value>
+  </data>
+  <data name="panelAuthorization.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelAuthorization.Name" xml:space="preserve">
+    <value>panelAuthorization</value>
+  </data>
+  <data name="&gt;&gt;panelAuthorization.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelAuthorization.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelAuthorization.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="buttonOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>683, 264</value>
+  </data>
+  <data name="buttonOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonOK.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonOK.Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.Name" xml:space="preserve">
+    <value>buttonOK</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelProductName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelProductName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 89</value>
+  </data>
+  <data name="labelProductName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="labelProductName.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelProductName.Text" xml:space="preserve">
+    <value>产品名称：</value>
+  </data>
+  <data name="&gt;&gt;labelProductName.Name" xml:space="preserve">
+    <value>labelProductName</value>
+  </data>
+  <data name="&gt;&gt;labelProductName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelProductName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelProductName.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelProductVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelProductVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 118</value>
+  </data>
+  <data name="labelProductVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="labelProductVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelProductVersion.Text" xml:space="preserve">
+    <value>产品版本：</value>
+  </data>
+  <data name="&gt;&gt;labelProductVersion.Name" xml:space="preserve">
+    <value>labelProductVersion</value>
+  </data>
+  <data name="&gt;&gt;labelProductVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelProductVersion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelProductVersion.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelProdectOwner.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelProdectOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 150</value>
+  </data>
+  <data name="labelProdectOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="labelProdectOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelProdectOwner.Text" xml:space="preserve">
+    <value>产品作者：</value>
+  </data>
+  <data name="&gt;&gt;labelProdectOwner.Name" xml:space="preserve">
+    <value>labelProdectOwner</value>
+  </data>
+  <data name="&gt;&gt;labelProdectOwner.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelProdectOwner.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelProdectOwner.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelWarning.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelWarning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 225</value>
+  </data>
+  <data name="labelWarning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="labelWarning.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelWarning.Text" xml:space="preserve">
+    <value>警告：</value>
+  </data>
+  <data name="&gt;&gt;labelWarning.Name" xml:space="preserve">
+    <value>labelWarning</value>
+  </data>
+  <data name="&gt;&gt;labelWarning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelWarning.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelWarning.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="buttonCppyRightText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 264</value>
+  </data>
+  <data name="buttonCppyRightText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 23</value>
+  </data>
+  <data name="buttonCppyRightText.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="buttonCppyRightText.Text" xml:space="preserve">
+    <value>开源声明</value>
+  </data>
+  <data name="&gt;&gt;buttonCppyRightText.Name" xml:space="preserve">
+    <value>buttonCppyRightText</value>
+  </data>
+  <data name="&gt;&gt;buttonCppyRightText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCppyRightText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonCppyRightText.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pictureBoxUNFlag.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 78</value>
+  </data>
+  <data name="pictureBoxUNFlag.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 220</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBoxUNFlag.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBoxUNFlag.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxUNFlag.Name" xml:space="preserve">
+    <value>pictureBoxUNFlag</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxUNFlag.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxUNFlag.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxUNFlag.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="labelContactWriter.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelContactWriter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 179</value>
+  </data>
+  <data name="labelContactWriter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="labelContactWriter.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelContactWriter.Text" xml:space="preserve">
+    <value>联系作者：</value>
+  </data>
+  <data name="&gt;&gt;labelContactWriter.Name" xml:space="preserve">
+    <value>labelContactWriter</value>
+  </data>
+  <data name="&gt;&gt;labelContactWriter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelContactWriter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelContactWriter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkLabelWriterEmail.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelWriterEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 179</value>
+  </data>
+  <data name="linkLabelWriterEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 12</value>
+  </data>
+  <data name="linkLabelWriterEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="linkLabelWriterEmail.Text" xml:space="preserve">
+    <value>work.serv.oliver@gmail.com</value>
+  </data>
+  <data name="&gt;&gt;linkLabelWriterEmail.Name" xml:space="preserve">
+    <value>linkLabelWriterEmail</value>
+  </data>
+  <data name="&gt;&gt;linkLabelWriterEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelWriterEmail.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;linkLabelWriterEmail.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonGPLlicense.Location" type="System.Drawing.Point, System.Drawing">
+    <value>472, 263</value>
+  </data>
+  <data name="buttonGPLlicense.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 23</value>
+  </data>
+  <data name="buttonGPLlicense.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="buttonGPLlicense.Text" xml:space="preserve">
+    <value>GPL协议原文链接</value>
+  </data>
+  <data name="&gt;&gt;buttonGPLlicense.Name" xml:space="preserve">
+    <value>buttonGPLlicense</value>
+  </data>
+  <data name="&gt;&gt;buttonGPLlicense.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonGPLlicense.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonGPLlicense.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>772, 297</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 8, 9, 8</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>关于 MUN Chair Tools</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AboutBox</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

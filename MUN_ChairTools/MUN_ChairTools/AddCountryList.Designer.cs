@@ -36,47 +36,33 @@
             // 
             // panelTotalCountry
             // 
-            this.panelTotalCountry.AutoScroll = true;
+            resources.ApplyResources(this.panelTotalCountry, "panelTotalCountry");
             this.panelTotalCountry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelTotalCountry.Location = new System.Drawing.Point(12, 12);
             this.panelTotalCountry.Name = "panelTotalCountry";
-            this.panelTotalCountry.Size = new System.Drawing.Size(610, 300);
-            this.panelTotalCountry.TabIndex = 0;
             // 
             // buttonBack
             // 
-            this.buttonBack.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonBack.Location = new System.Drawing.Point(12, 326);
+            resources.ApplyResources(this.buttonBack, "buttonBack");
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 1;
-            this.buttonBack.Text = "后退";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonConfirm
             // 
-            this.buttonConfirm.Location = new System.Drawing.Point(547, 326);
+            resources.ApplyResources(this.buttonConfirm, "buttonConfirm");
             this.buttonConfirm.Name = "buttonConfirm";
-            this.buttonConfirm.Size = new System.Drawing.Size(75, 23);
-            this.buttonConfirm.TabIndex = 2;
-            this.buttonConfirm.Text = "确认";
             this.buttonConfirm.UseVisualStyleBackColor = true;
             this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
             // 
             // AddCountryList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(634, 361);
             this.Controls.Add(this.buttonConfirm);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.panelTotalCountry);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddCountryList";
-            this.Text = "添加国家列表";
             this.ResumeLayout(false);
 
         }

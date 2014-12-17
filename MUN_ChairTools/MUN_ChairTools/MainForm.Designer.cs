@@ -79,34 +79,30 @@
             // 
             // menuStripMain
             // 
+            resources.ApplyResources(this.menuStripMain, "menuStripMain");
             this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SystemToolStripMenuItem,
             this.ActionToolStripMenuItem,
             this.OtherToolStripMenuItem,
             this.HelpToolStripMenuItem});
-            this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
-            this.menuStripMain.Size = new System.Drawing.Size(1008, 24);
-            this.menuStripMain.TabIndex = 3;
-            this.menuStripMain.Text = "menuStrip1";
             // 
             // SystemToolStripMenuItem
             // 
+            resources.ApplyResources(this.SystemToolStripMenuItem, "SystemToolStripMenuItem");
             this.SystemToolStripMenuItem.Name = "SystemToolStripMenuItem";
-            this.SystemToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.SystemToolStripMenuItem.Text = "文件";
             // 
             // ActionToolStripMenuItem
             // 
+            resources.ApplyResources(this.ActionToolStripMenuItem, "ActionToolStripMenuItem");
             this.ActionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MotionToolStripMenuItem,
             this.RollCallToolStripMenuItem});
             this.ActionToolStripMenuItem.Name = "ActionToolStripMenuItem";
-            this.ActionToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.ActionToolStripMenuItem.Text = "操作";
             // 
             // MotionToolStripMenuItem
             // 
+            resources.ApplyResources(this.MotionToolStripMenuItem, "MotionToolStripMenuItem");
             this.MotionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MCToolStripMenuItem,
             this.UMCToolStripMenuItem,
@@ -116,182 +112,140 @@
             this.动议投票ToolStripMenuItem,
             this.其他动议ToolStripMenuItem});
             this.MotionToolStripMenuItem.Name = "MotionToolStripMenuItem";
-            this.MotionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.MotionToolStripMenuItem.Text = "动议";
             // 
             // MCToolStripMenuItem
             // 
+            resources.ApplyResources(this.MCToolStripMenuItem, "MCToolStripMenuItem");
             this.MCToolStripMenuItem.Name = "MCToolStripMenuItem";
-            this.MCToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.MCToolStripMenuItem.Text = "有主持核心磋商";
             this.MCToolStripMenuItem.Click += new System.EventHandler(this.MCToolStripMenuItem_Click);
             // 
             // UMCToolStripMenuItem
             // 
+            resources.ApplyResources(this.UMCToolStripMenuItem, "UMCToolStripMenuItem");
             this.UMCToolStripMenuItem.Name = "UMCToolStripMenuItem";
-            this.UMCToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.UMCToolStripMenuItem.Text = "无主持核心磋商";
             this.UMCToolStripMenuItem.Click += new System.EventHandler(this.UMCToolStripMenuItem_Click);
             // 
             // SuspendToolStripMenuItem
             // 
+            resources.ApplyResources(this.SuspendToolStripMenuItem, "SuspendToolStripMenuItem");
             this.SuspendToolStripMenuItem.Name = "SuspendToolStripMenuItem";
-            this.SuspendToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.SuspendToolStripMenuItem.Text = "动议休会";
             // 
             // OpenSpeakersListToolStripMenuItem
             // 
+            resources.ApplyResources(this.OpenSpeakersListToolStripMenuItem, "OpenSpeakersListToolStripMenuItem");
             this.OpenSpeakersListToolStripMenuItem.Name = "OpenSpeakersListToolStripMenuItem";
-            this.OpenSpeakersListToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.OpenSpeakersListToolStripMenuItem.Text = "动议开启主发言名单";
             this.OpenSpeakersListToolStripMenuItem.Click += new System.EventHandler(this.OpenSpeakersListToolStripMenuItem_Click);
             // 
             // 动议结束辩论ToolStripMenuItem
             // 
+            resources.ApplyResources(this.动议结束辩论ToolStripMenuItem, "动议结束辩论ToolStripMenuItem");
             this.动议结束辩论ToolStripMenuItem.Name = "动议结束辩论ToolStripMenuItem";
-            this.动议结束辩论ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.动议结束辩论ToolStripMenuItem.Text = "动议结束辩论";
             // 
             // 动议投票ToolStripMenuItem
             // 
+            resources.ApplyResources(this.动议投票ToolStripMenuItem, "动议投票ToolStripMenuItem");
             this.动议投票ToolStripMenuItem.Name = "动议投票ToolStripMenuItem";
-            this.动议投票ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.动议投票ToolStripMenuItem.Text = "动议投票";
             // 
             // 其他动议ToolStripMenuItem
             // 
+            resources.ApplyResources(this.其他动议ToolStripMenuItem, "其他动议ToolStripMenuItem");
             this.其他动议ToolStripMenuItem.Name = "其他动议ToolStripMenuItem";
-            this.其他动议ToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.其他动议ToolStripMenuItem.Text = "其他动议";
             // 
             // RollCallToolStripMenuItem
             // 
+            resources.ApplyResources(this.RollCallToolStripMenuItem, "RollCallToolStripMenuItem");
             this.RollCallToolStripMenuItem.Name = "RollCallToolStripMenuItem";
-            this.RollCallToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.RollCallToolStripMenuItem.Text = "点名";
             this.RollCallToolStripMenuItem.Click += new System.EventHandler(this.RollCallToolStripMenuItem_Click);
             // 
             // OtherToolStripMenuItem
             // 
+            resources.ApplyResources(this.OtherToolStripMenuItem, "OtherToolStripMenuItem");
             this.OtherToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SettingsToolStripMenuItem});
             this.OtherToolStripMenuItem.Name = "OtherToolStripMenuItem";
-            this.OtherToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.OtherToolStripMenuItem.Text = "其他";
             // 
             // SettingsToolStripMenuItem
             // 
+            resources.ApplyResources(this.SettingsToolStripMenuItem, "SettingsToolStripMenuItem");
             this.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem";
-            this.SettingsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.SettingsToolStripMenuItem.Text = "会议设定";
             // 
             // HelpToolStripMenuItem
             // 
+            resources.ApplyResources(this.HelpToolStripMenuItem, "HelpToolStripMenuItem");
             this.HelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SeeHelpToolStripMenuItem,
             this.AboutBoxToolStripMenuItem});
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
-            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.HelpToolStripMenuItem.Text = "帮助";
             // 
             // SeeHelpToolStripMenuItem
             // 
+            resources.ApplyResources(this.SeeHelpToolStripMenuItem, "SeeHelpToolStripMenuItem");
             this.SeeHelpToolStripMenuItem.Name = "SeeHelpToolStripMenuItem";
-            this.SeeHelpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.SeeHelpToolStripMenuItem.Text = "帮助";
             // 
             // AboutBoxToolStripMenuItem
             // 
+            resources.ApplyResources(this.AboutBoxToolStripMenuItem, "AboutBoxToolStripMenuItem");
             this.AboutBoxToolStripMenuItem.Name = "AboutBoxToolStripMenuItem";
-            this.AboutBoxToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.AboutBoxToolStripMenuItem.Text = "关于";
             this.AboutBoxToolStripMenuItem.Click += new System.EventHandler(this.AboutBoxToolStripMenuItem_Click);
             // 
             // panelMain
             // 
-            this.panelMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.panelMain, "panelMain");
             this.panelMain.BackColor = System.Drawing.SystemColors.Control;
             this.panelMain.Controls.Add(this.groupBoxInfo);
             this.panelMain.Controls.Add(this.groupBoxTime);
             this.panelMain.Controls.Add(this.groupBoxRecord);
-            this.panelMain.Location = new System.Drawing.Point(12, 28);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(984, 690);
-            this.panelMain.TabIndex = 4;
             this.panelMain.SizeChanged += new System.EventHandler(this.panelMain_SizeChanged);
             // 
             // groupBoxInfo
             // 
-            this.groupBoxInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.groupBoxInfo, "groupBoxInfo");
             this.groupBoxInfo.BackColor = System.Drawing.SystemColors.Highlight;
             this.groupBoxInfo.Controls.Add(this.labelConferenceInformation);
             this.groupBoxInfo.Controls.Add(this.comboBoxChooseCountry);
             this.groupBoxInfo.Controls.Add(this.pictureBoxCountryPlus);
             this.groupBoxInfo.Controls.Add(this.pictureBoxCountryMinus);
             this.groupBoxInfo.Controls.Add(this.listBoxSpeakersList);
-            this.groupBoxInfo.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Bold);
-            this.groupBoxInfo.Location = new System.Drawing.Point(589, 263);
             this.groupBoxInfo.Name = "groupBoxInfo";
-            this.groupBoxInfo.Size = new System.Drawing.Size(400, 352);
-            this.groupBoxInfo.TabIndex = 2;
             this.groupBoxInfo.TabStop = false;
-            this.groupBoxInfo.Text = "信息";
             // 
             // labelConferenceInformation
             // 
-            this.labelConferenceInformation.AutoSize = true;
-            this.labelConferenceInformation.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
-            this.labelConferenceInformation.Location = new System.Drawing.Point(210, 40);
+            resources.ApplyResources(this.labelConferenceInformation, "labelConferenceInformation");
             this.labelConferenceInformation.Name = "labelConferenceInformation";
-            this.labelConferenceInformation.Size = new System.Drawing.Size(88, 26);
-            this.labelConferenceInformation.TabIndex = 4;
-            this.labelConferenceInformation.Text = "会议信息";
             // 
             // comboBoxChooseCountry
             // 
+            resources.ApplyResources(this.comboBoxChooseCountry, "comboBoxChooseCountry");
             this.comboBoxChooseCountry.FormattingEnabled = true;
-            this.comboBoxChooseCountry.Location = new System.Drawing.Point(9, 310);
             this.comboBoxChooseCountry.Name = "comboBoxChooseCountry";
-            this.comboBoxChooseCountry.Size = new System.Drawing.Size(121, 37);
-            this.comboBoxChooseCountry.TabIndex = 3;
             // 
             // pictureBoxCountryPlus
             // 
+            resources.ApplyResources(this.pictureBoxCountryPlus, "pictureBoxCountryPlus");
             this.pictureBoxCountryPlus.Image = global::MUN_ChairTools.Properties.Resources.plus;
-            this.pictureBoxCountryPlus.Location = new System.Drawing.Point(136, 310);
             this.pictureBoxCountryPlus.Name = "pictureBoxCountryPlus";
-            this.pictureBoxCountryPlus.Size = new System.Drawing.Size(31, 33);
-            this.pictureBoxCountryPlus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCountryPlus.TabIndex = 2;
             this.pictureBoxCountryPlus.TabStop = false;
             this.pictureBoxCountryPlus.Click += new System.EventHandler(this.pictureBoxCountryPlus_Click);
             // 
             // pictureBoxCountryMinus
             // 
+            resources.ApplyResources(this.pictureBoxCountryMinus, "pictureBoxCountryMinus");
             this.pictureBoxCountryMinus.Image = global::MUN_ChairTools.Properties.Resources.minus;
-            this.pictureBoxCountryMinus.Location = new System.Drawing.Point(173, 310);
             this.pictureBoxCountryMinus.Name = "pictureBoxCountryMinus";
-            this.pictureBoxCountryMinus.Size = new System.Drawing.Size(31, 33);
-            this.pictureBoxCountryMinus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCountryMinus.TabIndex = 1;
             this.pictureBoxCountryMinus.TabStop = false;
             this.pictureBoxCountryMinus.Click += new System.EventHandler(this.pictureBoxCountryMinus_Click);
             // 
             // listBoxSpeakersList
             // 
-            this.listBoxSpeakersList.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.listBoxSpeakersList, "listBoxSpeakersList");
             this.listBoxSpeakersList.FormattingEnabled = true;
-            this.listBoxSpeakersList.ItemHeight = 26;
-            this.listBoxSpeakersList.Location = new System.Drawing.Point(9, 40);
             this.listBoxSpeakersList.Name = "listBoxSpeakersList";
-            this.listBoxSpeakersList.Size = new System.Drawing.Size(195, 264);
-            this.listBoxSpeakersList.TabIndex = 0;
             // 
             // groupBoxTime
             // 
-            this.groupBoxTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.groupBoxTime, "groupBoxTime");
             this.groupBoxTime.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBoxTime.Controls.Add(this.labelSetTimeMinute);
             this.groupBoxTime.Controls.Add(this.buttonSetTimeReset);
@@ -301,120 +255,73 @@
             this.groupBoxTime.Controls.Add(this.numericUpDownSetTime);
             this.groupBoxTime.Controls.Add(this.labelSetTime);
             this.groupBoxTime.Controls.Add(this.labelSystemTime);
-            this.groupBoxTime.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Bold);
-            this.groupBoxTime.Location = new System.Drawing.Point(589, 3);
             this.groupBoxTime.Name = "groupBoxTime";
-            this.groupBoxTime.Size = new System.Drawing.Size(400, 250);
-            this.groupBoxTime.TabIndex = 1;
             this.groupBoxTime.TabStop = false;
-            this.groupBoxTime.Text = "计时工具";
             // 
             // labelSetTimeMinute
             // 
-            this.labelSetTimeMinute.Font = new System.Drawing.Font("微软雅黑", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            resources.ApplyResources(this.labelSetTimeMinute, "labelSetTimeMinute");
             this.labelSetTimeMinute.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelSetTimeMinute.Location = new System.Drawing.Point(26, 71);
             this.labelSetTimeMinute.Name = "labelSetTimeMinute";
-            this.labelSetTimeMinute.Size = new System.Drawing.Size(335, 128);
-            this.labelSetTimeMinute.TabIndex = 6;
-            this.labelSetTimeMinute.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // buttonSetTimeReset
             // 
-            this.buttonSetTimeReset.Font = new System.Drawing.Font("宋体", 9F);
-            this.buttonSetTimeReset.Location = new System.Drawing.Point(331, 209);
+            resources.ApplyResources(this.buttonSetTimeReset, "buttonSetTimeReset");
             this.buttonSetTimeReset.Name = "buttonSetTimeReset";
-            this.buttonSetTimeReset.Size = new System.Drawing.Size(44, 33);
-            this.buttonSetTimeReset.TabIndex = 9;
-            this.buttonSetTimeReset.Text = "重置";
             this.buttonSetTimeReset.UseVisualStyleBackColor = true;
             this.buttonSetTimeReset.Click += new System.EventHandler(this.buttonSetTimeReset_Click);
             // 
             // buttonSetTimePause
             // 
-            this.buttonSetTimePause.Font = new System.Drawing.Font("宋体", 9F);
-            this.buttonSetTimePause.Location = new System.Drawing.Point(281, 209);
+            resources.ApplyResources(this.buttonSetTimePause, "buttonSetTimePause");
             this.buttonSetTimePause.Name = "buttonSetTimePause";
-            this.buttonSetTimePause.Size = new System.Drawing.Size(44, 33);
-            this.buttonSetTimePause.TabIndex = 5;
-            this.buttonSetTimePause.Text = "暂停";
             this.buttonSetTimePause.UseVisualStyleBackColor = true;
             this.buttonSetTimePause.Click += new System.EventHandler(this.buttonSetTimePause_Click);
             // 
             // buttonSetTimeStart
             // 
-            this.buttonSetTimeStart.Font = new System.Drawing.Font("宋体", 9F);
-            this.buttonSetTimeStart.Location = new System.Drawing.Point(229, 209);
+            resources.ApplyResources(this.buttonSetTimeStart, "buttonSetTimeStart");
             this.buttonSetTimeStart.Name = "buttonSetTimeStart";
-            this.buttonSetTimeStart.Size = new System.Drawing.Size(46, 33);
-            this.buttonSetTimeStart.TabIndex = 4;
-            this.buttonSetTimeStart.Text = "开始";
             this.buttonSetTimeStart.UseVisualStyleBackColor = true;
             this.buttonSetTimeStart.Click += new System.EventHandler(this.buttonSetTimeStart_Click);
             // 
             // LabelSecond
             // 
-            this.LabelSecond.AutoSize = true;
-            this.LabelSecond.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
-            this.LabelSecond.Location = new System.Drawing.Point(192, 211);
+            resources.ApplyResources(this.LabelSecond, "LabelSecond");
             this.LabelSecond.Name = "LabelSecond";
-            this.LabelSecond.Size = new System.Drawing.Size(31, 26);
-            this.LabelSecond.TabIndex = 3;
-            this.LabelSecond.Text = "秒";
             // 
             // numericUpDownSetTime
             // 
-            this.numericUpDownSetTime.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
-            this.numericUpDownSetTime.Location = new System.Drawing.Point(117, 209);
+            resources.ApplyResources(this.numericUpDownSetTime, "numericUpDownSetTime");
             this.numericUpDownSetTime.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.numericUpDownSetTime.Name = "numericUpDownSetTime";
-            this.numericUpDownSetTime.Size = new System.Drawing.Size(69, 33);
-            this.numericUpDownSetTime.TabIndex = 2;
             // 
             // labelSetTime
             // 
-            this.labelSetTime.AutoSize = true;
-            this.labelSetTime.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelSetTime.Location = new System.Drawing.Point(18, 211);
+            resources.ApplyResources(this.labelSetTime, "labelSetTime");
             this.labelSetTime.Name = "labelSetTime";
-            this.labelSetTime.Size = new System.Drawing.Size(107, 26);
-            this.labelSetTime.TabIndex = 1;
-            this.labelSetTime.Text = "设定时间：";
             // 
             // labelSystemTime
             // 
-            this.labelSystemTime.AutoSize = true;
-            this.labelSystemTime.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelSystemTime.Location = new System.Drawing.Point(18, 32);
+            resources.ApplyResources(this.labelSystemTime, "labelSystemTime");
             this.labelSystemTime.Name = "labelSystemTime";
-            this.labelSystemTime.Size = new System.Drawing.Size(117, 28);
-            this.labelSystemTime.TabIndex = 0;
-            this.labelSystemTime.Text = "系统时间：";
             // 
             // groupBoxRecord
             // 
+            resources.ApplyResources(this.groupBoxRecord, "groupBoxRecord");
             this.groupBoxRecord.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.groupBoxRecord.Controls.Add(this.richTextBoxRecord);
-            this.groupBoxRecord.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBoxRecord.Location = new System.Drawing.Point(3, 3);
             this.groupBoxRecord.Name = "groupBoxRecord";
-            this.groupBoxRecord.Size = new System.Drawing.Size(580, 612);
-            this.groupBoxRecord.TabIndex = 0;
             this.groupBoxRecord.TabStop = false;
-            this.groupBoxRecord.Text = "会议记录";
             // 
             // richTextBoxRecord
             // 
-            this.richTextBoxRecord.Font = new System.Drawing.Font("宋体", 21.75F);
-            this.richTextBoxRecord.Location = new System.Drawing.Point(4, 32);
+            resources.ApplyResources(this.richTextBoxRecord, "richTextBoxRecord");
             this.richTextBoxRecord.Name = "richTextBoxRecord";
-            this.richTextBoxRecord.Size = new System.Drawing.Size(568, 572);
-            this.richTextBoxRecord.TabIndex = 0;
-            this.richTextBoxRecord.Text = "";
             // 
             // timerSetTime
             // 
@@ -427,15 +334,11 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.menuStripMain);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "模拟联合国主席团工具";
             this.menuStripMain.ResumeLayout(false);
             this.menuStripMain.PerformLayout();
             this.panelMain.ResumeLayout(false);

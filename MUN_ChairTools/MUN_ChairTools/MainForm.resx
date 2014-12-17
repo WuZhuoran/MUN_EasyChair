@@ -117,16 +117,162 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStripMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>18, 14</value>
-  </metadata>
-  <metadata name="timerSetTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>161, 14</value>
-  </metadata>
-  <metadata name="timerSystemTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>291, 14</value>
-  </metadata>
+  <data name="&gt;&gt;labelSetTime.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBoxInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelSetTimeMinute.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSystemTime.Name" xml:space="preserve">
+    <value>labelSystemTime</value>
+  </data>
+  <data name="&gt;&gt;MCToolStripMenuItem.Name" xml:space="preserve">
+    <value>MCToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;SuspendToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSetTimeReset.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBoxCountryPlus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 33</value>
+  </data>
+  <data name="&gt;&gt;LabelSecond.Parent" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="SuspendToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSetTimePause.Name" xml:space="preserve">
+    <value>buttonSetTimePause</value>
+  </data>
+  <data name="&gt;&gt;LabelSecond.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelConferenceInformation.Parent" xml:space="preserve">
+    <value>groupBoxInfo</value>
+  </data>
+  <data name="RollCallToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 22</value>
+  </data>
+  <data name="comboBoxChooseCountry.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 310</value>
+  </data>
+  <data name="&gt;&gt;menuStripMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="listBoxSpeakersList.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxRecord.Text" xml:space="preserve">
+    <value>会议记录</value>
+  </data>
+  <data name="buttonSetTimeStart.Text" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRecord.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;SeeHelpToolStripMenuItem.Name" xml:space="preserve">
+    <value>SeeHelpToolStripMenuItem</value>
+  </data>
+  <data name="labelSetTimeMinute.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBoxCountryPlus.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCountryMinus.Parent" xml:space="preserve">
+    <value>groupBoxInfo</value>
+  </data>
+  <data name="&gt;&gt;groupBoxInfo.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="labelConferenceInformation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 26</value>
+  </data>
+  <data name="&gt;&gt;RollCallToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuStripMain.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;buttonSetTimePause.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="menuStripMain.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSetTime.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ActionToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>模拟联合国主席团工具</value>
+  </data>
+  <data name="&gt;&gt;ActionToolStripMenuItem.Name" xml:space="preserve">
+    <value>ActionToolStripMenuItem</value>
+  </data>
+  <data name="labelConferenceInformation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 14.25pt, style=Bold</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="listBoxSpeakersList.ItemHeight" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;OtherToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStripMain.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBoxChooseCountry.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSetTime.Parent" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="&gt;&gt;MCToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SettingsToolStripMenuItem.Name" xml:space="preserve">
+    <value>SettingsToolStripMenuItem</value>
+  </data>
+  <data name="MotionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 22</value>
+  </data>
+  <data name="menuStripMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 24</value>
+  </data>
+  <data name="&gt;&gt;groupBoxInfo.Name" xml:space="preserve">
+    <value>groupBoxInfo</value>
+  </data>
+  <data name="groupBoxTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;动议投票ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAACQAABMLAAATCwAAAAAAAAAA
@@ -293,4 +439,595 @@
         AAA=
 </value>
   </data>
+  <data name="labelSystemTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 15.75pt, style=Bold</value>
+  </data>
+  <data name="groupBoxRecord.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="HelpToolStripMenuItem.Text" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="MCToolStripMenuItem.Text" xml:space="preserve">
+    <value>有主持核心磋商</value>
+  </data>
+  <data name="&gt;&gt;groupBoxInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="richTextBoxRecord.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 32</value>
+  </data>
+  <data name="&gt;&gt;labelConferenceInformation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UMCToolStripMenuItem.Text" xml:space="preserve">
+    <value>无主持核心磋商</value>
+  </data>
+  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>984, 690</value>
+  </data>
+  <data name="listBoxSpeakersList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 40</value>
+  </data>
+  <data name="labelSetTimeMinute.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelSetTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 211</value>
+  </data>
+  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 28</value>
+  </data>
+  <data name="&gt;&gt;labelSetTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCountryPlus.Name" xml:space="preserve">
+    <value>pictureBoxCountryPlus</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTime.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;timerSystemTime.Name" xml:space="preserve">
+    <value>timerSystemTime</value>
+  </data>
+  <data name="&gt;&gt;OtherToolStripMenuItem.Name" xml:space="preserve">
+    <value>OtherToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;buttonSetTimeStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelSetTimeMinute.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 128</value>
+  </data>
+  <data name="SeeHelpToolStripMenuItem.Text" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCountryPlus.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 352</value>
+  </data>
+  <data name="labelConferenceInformation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MotionToolStripMenuItem.Text" xml:space="preserve">
+    <value>动议</value>
+  </data>
+  <data name="&gt;&gt;SystemToolStripMenuItem.Name" xml:space="preserve">
+    <value>SystemToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSetTime.Name" xml:space="preserve">
+    <value>numericUpDownSetTime</value>
+  </data>
+  <data name="&gt;&gt;listBoxSpeakersList.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBoxRecord.Size" type="System.Drawing.Size, System.Drawing">
+    <value>580, 612</value>
+  </data>
+  <data name="动议投票ToolStripMenuItem.Text" xml:space="preserve">
+    <value>动议投票</value>
+  </data>
+  <data name="numericUpDownSetTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 14.25pt, style=Bold</value>
+  </data>
+  <data name="ActionToolStripMenuItem.Text" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="动议结束辩论ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="SystemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="&gt;&gt;listBoxSpeakersList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelSecond.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 26</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxRecord.Parent" xml:space="preserve">
+    <value>groupBoxRecord</value>
+  </data>
+  <data name="buttonSetTimePause.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;comboBoxChooseCountry.Name" xml:space="preserve">
+    <value>comboBoxChooseCountry</value>
+  </data>
+  <data name="&gt;&gt;SuspendToolStripMenuItem.Name" xml:space="preserve">
+    <value>SuspendToolStripMenuItem</value>
+  </data>
+  <data name="pictureBoxCountryMinus.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxRecord.Name" xml:space="preserve">
+    <value>richTextBoxRecord</value>
+  </data>
+  <data name="listBoxSpeakersList.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 14.25pt, style=Bold</value>
+  </data>
+  <data name="MCToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="buttonSetTimeStart.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;comboBoxChooseCountry.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCountryMinus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelConferenceInformation.Name" xml:space="preserve">
+    <value>labelConferenceInformation</value>
+  </data>
+  <data name="labelSystemTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 32</value>
+  </data>
+  <data name="richTextBoxRecord.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelSetTimeMinute.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 71</value>
+  </data>
+  <data name="buttonSetTimePause.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 33</value>
+  </data>
+  <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="labelSetTime.Text" xml:space="preserve">
+    <value>设定时间：</value>
+  </data>
+  <data name="&gt;&gt;动议结束辩论ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;其他动议ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HelpToolStripMenuItem.Name" xml:space="preserve">
+    <value>HelpToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTime.Name" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="SeeHelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 22</value>
+  </data>
+  <data name="RollCallToolStripMenuItem.Text" xml:space="preserve">
+    <value>点名</value>
+  </data>
+  <data name="&gt;&gt;动议结束辩论ToolStripMenuItem.Name" xml:space="preserve">
+    <value>动议结束辩论ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;UMCToolStripMenuItem.Name" xml:space="preserve">
+    <value>UMCToolStripMenuItem</value>
+  </data>
+  <data name="SuspendToolStripMenuItem.Text" xml:space="preserve">
+    <value>动议休会</value>
+  </data>
+  <data name="labelSystemTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SystemToolStripMenuItem.Text" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSetTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AboutBoxToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 22</value>
+  </data>
+  <data name="&gt;&gt;OpenSpeakersListToolStripMenuItem.Name" xml:space="preserve">
+    <value>OpenSpeakersListToolStripMenuItem</value>
+  </data>
+  <data name="groupBoxTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>589, 3</value>
+  </data>
+  <data name="labelSystemTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 28</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRecord.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelSetTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 14.25pt, style=Bold</value>
+  </data>
+  <data name="buttonSetTimeReset.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;labelSystemTime.Parent" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="&gt;&gt;labelConferenceInformation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelConferenceInformation.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="pictureBoxCountryMinus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 310</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTime.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;动议投票ToolStripMenuItem.Name" xml:space="preserve">
+    <value>动议投票ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;buttonSetTimeReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 250</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="labelConferenceInformation.Text" xml:space="preserve">
+    <value>会议信息</value>
+  </data>
+  <data name="buttonSetTimeReset.Text" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="numericUpDownSetTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 209</value>
+  </data>
+  <data name="&gt;&gt;labelSetTimeMinute.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBoxCountryMinus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 33</value>
+  </data>
+  <data name="buttonSetTimePause.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 209</value>
+  </data>
+  <data name="&gt;&gt;buttonSetTimePause.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonSetTimeStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 33</value>
+  </data>
+  <data name="&gt;&gt;SettingsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 21.75pt, style=Bold</value>
+  </data>
+  <data name="pictureBoxCountryMinus.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxTime.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonSetTimeReset.Name" xml:space="preserve">
+    <value>buttonSetTimeReset</value>
+  </data>
+  <data name="richTextBoxRecord.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menuStripMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;SystemToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HelpToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelSecond.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 14.25pt, style=Bold</value>
+  </data>
+  <data name="labelSetTime.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;listBoxSpeakersList.Parent" xml:space="preserve">
+    <value>groupBoxInfo</value>
+  </data>
+  <data name="ActionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="groupBoxInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 21.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;labelSetTime.Parent" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="&gt;&gt;comboBoxChooseCountry.Parent" xml:space="preserve">
+    <value>groupBoxInfo</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRecord.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="numericUpDownSetTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 33</value>
+  </data>
+  <data name="pictureBoxCountryPlus.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="richTextBoxRecord.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 21.75pt</value>
+  </data>
+  <data name="listBoxSpeakersList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 264</value>
+  </data>
+  <data name="&gt;&gt;其他动议ToolStripMenuItem.Name" xml:space="preserve">
+    <value>其他动议ToolStripMenuItem</value>
+  </data>
+  <data name="richTextBoxRecord.Size" type="System.Drawing.Size, System.Drawing">
+    <value>568, 572</value>
+  </data>
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBoxCountryPlus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>136, 310</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCountryPlus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSetTimeMinute.Name" xml:space="preserve">
+    <value>labelSetTimeMinute</value>
+  </data>
+  <data name="动议结束辩论ToolStripMenuItem.Text" xml:space="preserve">
+    <value>动议结束辩论</value>
+  </data>
+  <data name="buttonSetTimePause.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt</value>
+  </data>
+  <data name="comboBoxChooseCountry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 37</value>
+  </data>
+  <data name="OpenSpeakersListToolStripMenuItem.Text" xml:space="preserve">
+    <value>动议开启主发言名单</value>
+  </data>
+  <data name="buttonSetTimePause.Text" xml:space="preserve">
+    <value>暂停</value>
+  </data>
+  <data name="groupBoxInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>589, 263</value>
+  </data>
+  <data name="LabelSecond.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBoxInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timerSetTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelConferenceInformation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 40</value>
+  </data>
+  <data name="&gt;&gt;buttonSetTimeStart.Name" xml:space="preserve">
+    <value>buttonSetTimeStart</value>
+  </data>
+  <data name="&gt;&gt;LabelSecond.Name" xml:space="preserve">
+    <value>LabelSecond</value>
+  </data>
+  <data name="其他动议ToolStripMenuItem.Text" xml:space="preserve">
+    <value>其他动议</value>
+  </data>
+  <data name="&gt;&gt;buttonSetTimeReset.Parent" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="&gt;&gt;MotionToolStripMenuItem.Name" xml:space="preserve">
+    <value>MotionToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;menuStripMain.Name" xml:space="preserve">
+    <value>menuStripMain</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="OtherToolStripMenuItem.Text" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="buttonSetTimeStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt</value>
+  </data>
+  <data name="&gt;&gt;menuStripMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RollCallToolStripMenuItem.Name" xml:space="preserve">
+    <value>RollCallToolStripMenuItem</value>
+  </data>
+  <data name="panelMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;MotionToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="labelSystemTime.Text" xml:space="preserve">
+    <value>系统时间：</value>
+  </data>
+  <data name="&gt;&gt;AboutBoxToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timerSetTime.Name" xml:space="preserve">
+    <value>timerSetTime</value>
+  </data>
+  <data name="buttonSetTimeReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 209</value>
+  </data>
+  <data name="SettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>会议设定</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxRecord.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelSecond.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;OpenSpeakersListToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxChooseCountry.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSetTimePause.Parent" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="buttonSetTimeStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 209</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRecord.Name" xml:space="preserve">
+    <value>groupBoxRecord</value>
+  </data>
+  <data name="&gt;&gt;buttonSetTimeStart.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 730</value>
+  </data>
+  <data name="&gt;&gt;listBoxSpeakersList.Name" xml:space="preserve">
+    <value>listBoxSpeakersList</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxRecord.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCountryPlus.Parent" xml:space="preserve">
+    <value>groupBoxInfo</value>
+  </data>
+  <data name="其他动议ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="buttonSetTimeReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 33</value>
+  </data>
+  <data name="UMCToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="AboutBoxToolStripMenuItem.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSetTime.Name" xml:space="preserve">
+    <value>labelSetTime</value>
+  </data>
+  <data name="groupBoxInfo.Text" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="&gt;&gt;buttonSetTimeStart.Parent" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="groupBoxRecord.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="labelSetTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OtherToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="OpenSpeakersListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="动议投票ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="&gt;&gt;UMCToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonSetTimeReset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt</value>
+  </data>
+  <data name="labelSetTimeMinute.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 72pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;labelSystemTime.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupBoxRecord.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 21.75pt, style=Bold</value>
+  </data>
+  <data name="numericUpDownSetTime.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelSystemTime.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCountryMinus.Name" xml:space="preserve">
+    <value>pictureBoxCountryMinus</value>
+  </data>
+  <data name="&gt;&gt;LabelSecond.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;AboutBoxToolStripMenuItem.Name" xml:space="preserve">
+    <value>AboutBoxToolStripMenuItem</value>
+  </data>
+  <data name="groupBoxTime.Text" xml:space="preserve">
+    <value>计时工具</value>
+  </data>
+  <data name="&gt;&gt;timerSystemTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelSetTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 26</value>
+  </data>
+  <data name="LabelSecond.Text" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="LabelSecond.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 211</value>
+  </data>
+  <data name="&gt;&gt;labelSetTimeMinute.Parent" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCountryMinus.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;SeeHelpToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSystemTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="timerSetTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>161, 14</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="timerSystemTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>291, 14</value>
+  </metadata>
+  <metadata name="menuStripMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>18, 14</value>
+  </metadata>
 </root>

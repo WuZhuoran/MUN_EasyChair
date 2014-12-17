@@ -5,6 +5,8 @@ using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
 
 namespace MUN_ChairTools
 {
