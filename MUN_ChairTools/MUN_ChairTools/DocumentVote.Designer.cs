@@ -39,6 +39,12 @@
             this.labelVotePass = new System.Windows.Forms.Label();
             this.labelFileName = new System.Windows.Forms.Label();
             this.textBoxFileName = new System.Windows.Forms.TextBox();
+            this.panelAllCountries = new System.Windows.Forms.Panel();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonClear = new System.Windows.Forms.Button();
+            this.buttonConfirm = new System.Windows.Forms.Button();
+            this.groupBoxInformation = new System.Windows.Forms.GroupBox();
+            this.groupBoxVote = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteYes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteAbsence)).BeginInit();
@@ -99,10 +105,51 @@
             resources.ApplyResources(this.textBoxFileName, "textBoxFileName");
             this.textBoxFileName.Name = "textBoxFileName";
             // 
+            // panelAllCountries
+            // 
+            resources.ApplyResources(this.panelAllCountries, "panelAllCountries");
+            this.panelAllCountries.Name = "panelAllCountries";
+            // 
+            // buttonCancel
+            // 
+            resources.ApplyResources(this.buttonCancel, "buttonCancel");
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.UseVisualStyleBackColor = true;
+            // 
+            // buttonClear
+            // 
+            resources.ApplyResources(this.buttonClear, "buttonClear");
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.UseVisualStyleBackColor = true;
+            // 
+            // buttonConfirm
+            // 
+            resources.ApplyResources(this.buttonConfirm, "buttonConfirm");
+            this.buttonConfirm.Name = "buttonConfirm";
+            this.buttonConfirm.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxInformation
+            // 
+            resources.ApplyResources(this.groupBoxInformation, "groupBoxInformation");
+            this.groupBoxInformation.Name = "groupBoxInformation";
+            this.groupBoxInformation.TabStop = false;
+            // 
+            // groupBoxVote
+            // 
+            resources.ApplyResources(this.groupBoxVote, "groupBoxVote");
+            this.groupBoxVote.Name = "groupBoxVote";
+            this.groupBoxVote.TabStop = false;
+            // 
             // DocumentVote
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBoxVote);
+            this.Controls.Add(this.groupBoxInformation);
+            this.Controls.Add(this.buttonConfirm);
+            this.Controls.Add(this.buttonClear);
+            this.Controls.Add(this.buttonCancel);
+            this.Controls.Add(this.panelAllCountries);
             this.Controls.Add(this.textBoxFileName);
             this.Controls.Add(this.labelFileName);
             this.Controls.Add(this.labelVotePass);
@@ -137,5 +184,11 @@
         private System.Windows.Forms.Label labelVotePass;
         private System.Windows.Forms.Label labelFileName;
         private System.Windows.Forms.TextBox textBoxFileName;
+        private System.Windows.Forms.Panel panelAllCountries;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.Button buttonConfirm;
+        private System.Windows.Forms.GroupBox groupBoxInformation;
+        private System.Windows.Forms.GroupBox groupBoxVote;
     }
 }

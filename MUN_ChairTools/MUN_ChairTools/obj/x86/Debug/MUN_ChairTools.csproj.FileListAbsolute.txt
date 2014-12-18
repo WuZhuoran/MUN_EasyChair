@@ -8,9 +8,12 @@ D:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\M
 D:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.csprojResolveAssemblyReference.cache
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\bin\Debug\MUN_ChairTools.exe
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\bin\Debug\MUN_ChairTools.pdb
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\bin\Debug\en-US\MUN_ChairTools.resources.dll
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\bin\Debug\zh-CN\MUN_ChairTools.resources.dll
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.csprojResolveAssemblyReference.cache
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.AboutBox.resources
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.AddCountryList.resources
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.ChooseConference.resources
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.ConferenceLoadAndInit.resources
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.DocumentVote.resources
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.FormOpenSourceStatement.resources
@@ -21,7 +24,10 @@ E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\M
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.Properties.Resources.resources
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.RollCallForm.resources
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.SessionChooser.resources
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.MainForm.en-US.resources
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.MainForm.zh-CN.resources
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.csproj.GenerateResource.Cache
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\en-US\MUN_ChairTools.resources.dll
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\zh-CN\MUN_ChairTools.resources.dll
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.exe
 E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.pdb
-E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\obj\x86\Debug\MUN_ChairTools.ChooseConference.resources
