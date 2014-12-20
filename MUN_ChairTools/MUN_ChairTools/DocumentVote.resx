@@ -117,97 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBoxVoteYes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 348</value>
-  </data>
-  <data name="pictureBoxVoteYes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBoxVoteYes.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteYes.Name" xml:space="preserve">
-    <value>pictureBoxVoteYes</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteYes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteYes.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteYes.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="pictureBoxVoteNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 348</value>
-  </data>
-  <data name="pictureBoxVoteNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="pictureBoxVoteNo.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteNo.Name" xml:space="preserve">
-    <value>pictureBoxVoteNo</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteNo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteNo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteNo.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="pictureBoxVoteAbsence.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 348</value>
-  </data>
-  <data name="pictureBoxVoteAbsence.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="pictureBoxVoteAbsence.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteAbsence.Name" xml:space="preserve">
-    <value>pictureBoxVoteAbsence</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteAbsence.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteAbsence.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVoteAbsence.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="pictureBoxVotePass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 348</value>
-  </data>
-  <data name="pictureBoxVotePass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="pictureBoxVotePass.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVotePass.Name" xml:space="preserve">
-    <value>pictureBoxVotePass</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVotePass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVotePass.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVotePass.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
   <data name="labelVoteYes.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelVoteYes.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 15.75pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelVoteYes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="labelVoteYes.Location" type="System.Drawing.Point, System.Drawing">
     <value>73, 360</value>
@@ -239,6 +159,9 @@
   <data name="labelVoteNo.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 15.75pt, style=Bold</value>
   </data>
+  <data name="labelVoteNo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="labelVoteNo.Location" type="System.Drawing.Point, System.Drawing">
     <value>206, 360</value>
   </data>
@@ -269,17 +192,20 @@
   <data name="labelVoteAbsense.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 15.75pt, style=Bold</value>
   </data>
+  <data name="labelVoteAbsense.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="labelVoteAbsense.Location" type="System.Drawing.Point, System.Drawing">
     <value>328, 360</value>
   </data>
   <data name="labelVoteAbsense.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 28</value>
+    <value>101, 28</value>
   </data>
   <data name="labelVoteAbsense.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="labelVoteAbsense.Text" xml:space="preserve">
-    <value>Absense</value>
+    <value>Absence</value>
   </data>
   <data name="&gt;&gt;labelVoteAbsense.Name" xml:space="preserve">
     <value>labelVoteAbsense</value>
@@ -298,6 +224,9 @@
   </data>
   <data name="labelVotePass.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 15.75pt, style=Bold</value>
+  </data>
+  <data name="labelVotePass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="labelVotePass.Location" type="System.Drawing.Point, System.Drawing">
     <value>493, 360</value>
@@ -328,6 +257,9 @@
   </data>
   <data name="labelFileName.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 15.75pt, style=Bold</value>
+  </data>
+  <data name="labelFileName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="labelFileName.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 18</value>
@@ -401,6 +333,9 @@
   <data name="&gt;&gt;panelAllCountries.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="buttonCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="buttonCancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>565, 348</value>
   </data>
@@ -425,7 +360,6 @@
   <data name="&gt;&gt;buttonCancel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="buttonClear.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -527,6 +461,114 @@
   </data>
   <data name="&gt;&gt;groupBoxVote.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="pictureBoxVotePass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBoxVotePass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 348</value>
+  </data>
+  <data name="pictureBoxVotePass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="pictureBoxVotePass.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBoxVotePass.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVotePass.Name" xml:space="preserve">
+    <value>pictureBoxVotePass</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVotePass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVotePass.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVotePass.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="pictureBoxVoteAbsence.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBoxVoteAbsence.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 348</value>
+  </data>
+  <data name="pictureBoxVoteAbsence.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="pictureBoxVoteAbsence.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBoxVoteAbsence.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVoteAbsence.Name" xml:space="preserve">
+    <value>pictureBoxVoteAbsence</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVoteAbsence.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVoteAbsence.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVoteAbsence.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="pictureBoxVoteNo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBoxVoteNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 348</value>
+  </data>
+  <data name="pictureBoxVoteNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 48</value>
+  </data>
+  <data name="pictureBoxVoteNo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBoxVoteNo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVoteNo.Name" xml:space="preserve">
+    <value>pictureBoxVoteNo</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVoteNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVoteNo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVoteNo.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="pictureBoxVoteYes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBoxVoteYes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 348</value>
+  </data>
+  <data name="pictureBoxVoteYes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="pictureBoxVoteYes.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBoxVoteYes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVoteYes.Name" xml:space="preserve">
+    <value>pictureBoxVoteYes</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVoteYes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVoteYes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVoteYes.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

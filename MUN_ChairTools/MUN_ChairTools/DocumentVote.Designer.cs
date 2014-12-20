@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DocumentVote));
-            this.pictureBoxVoteYes = new System.Windows.Forms.PictureBox();
-            this.pictureBoxVoteNo = new System.Windows.Forms.PictureBox();
-            this.pictureBoxVoteAbsence = new System.Windows.Forms.PictureBox();
-            this.pictureBoxVotePass = new System.Windows.Forms.PictureBox();
             this.labelVoteYes = new System.Windows.Forms.Label();
             this.labelVoteNo = new System.Windows.Forms.Label();
             this.labelVoteAbsense = new System.Windows.Forms.Label();
@@ -45,35 +41,15 @@
             this.buttonConfirm = new System.Windows.Forms.Button();
             this.groupBoxInformation = new System.Windows.Forms.GroupBox();
             this.groupBoxVote = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteYes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteNo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteAbsence)).BeginInit();
+            this.pictureBoxVotePass = new System.Windows.Forms.PictureBox();
+            this.pictureBoxVoteAbsence = new System.Windows.Forms.PictureBox();
+            this.pictureBoxVoteNo = new System.Windows.Forms.PictureBox();
+            this.pictureBoxVoteYes = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVotePass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteAbsence)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteYes)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBoxVoteYes
-            // 
-            resources.ApplyResources(this.pictureBoxVoteYes, "pictureBoxVoteYes");
-            this.pictureBoxVoteYes.Name = "pictureBoxVoteYes";
-            this.pictureBoxVoteYes.TabStop = false;
-            // 
-            // pictureBoxVoteNo
-            // 
-            resources.ApplyResources(this.pictureBoxVoteNo, "pictureBoxVoteNo");
-            this.pictureBoxVoteNo.Name = "pictureBoxVoteNo";
-            this.pictureBoxVoteNo.TabStop = false;
-            // 
-            // pictureBoxVoteAbsence
-            // 
-            resources.ApplyResources(this.pictureBoxVoteAbsence, "pictureBoxVoteAbsence");
-            this.pictureBoxVoteAbsence.Name = "pictureBoxVoteAbsence";
-            this.pictureBoxVoteAbsence.TabStop = false;
-            // 
-            // pictureBoxVotePass
-            // 
-            resources.ApplyResources(this.pictureBoxVotePass, "pictureBoxVotePass");
-            this.pictureBoxVotePass.Name = "pictureBoxVotePass";
-            this.pictureBoxVotePass.TabStop = false;
             // 
             // labelVoteYes
             // 
@@ -140,6 +116,38 @@
             this.groupBoxVote.Name = "groupBoxVote";
             this.groupBoxVote.TabStop = false;
             // 
+            // pictureBoxVotePass
+            // 
+            this.pictureBoxVotePass.Image = global::MUN_ChairTools.Properties.Resources.Pass;
+            resources.ApplyResources(this.pictureBoxVotePass, "pictureBoxVotePass");
+            this.pictureBoxVotePass.Name = "pictureBoxVotePass";
+            this.pictureBoxVotePass.TabStop = false;
+            this.pictureBoxVotePass.Click += new System.EventHandler(this.pictureBoxVotePass_Click);
+            // 
+            // pictureBoxVoteAbsence
+            // 
+            this.pictureBoxVoteAbsence.Image = global::MUN_ChairTools.Properties.Resources.Absense;
+            resources.ApplyResources(this.pictureBoxVoteAbsence, "pictureBoxVoteAbsence");
+            this.pictureBoxVoteAbsence.Name = "pictureBoxVoteAbsence";
+            this.pictureBoxVoteAbsence.TabStop = false;
+            this.pictureBoxVoteAbsence.Click += new System.EventHandler(this.pictureBoxVoteAbsence_Click);
+            // 
+            // pictureBoxVoteNo
+            // 
+            this.pictureBoxVoteNo.Image = global::MUN_ChairTools.Properties.Resources.No;
+            resources.ApplyResources(this.pictureBoxVoteNo, "pictureBoxVoteNo");
+            this.pictureBoxVoteNo.Name = "pictureBoxVoteNo";
+            this.pictureBoxVoteNo.TabStop = false;
+            this.pictureBoxVoteNo.Click += new System.EventHandler(this.pictureBoxVoteNo_Click);
+            // 
+            // pictureBoxVoteYes
+            // 
+            this.pictureBoxVoteYes.Image = global::MUN_ChairTools.Properties.Resources.Yes;
+            resources.ApplyResources(this.pictureBoxVoteYes, "pictureBoxVoteYes");
+            this.pictureBoxVoteYes.Name = "pictureBoxVoteYes";
+            this.pictureBoxVoteYes.TabStop = false;
+            this.pictureBoxVoteYes.Click += new System.EventHandler(this.pictureBoxVoteYes_Click);
+            // 
             // DocumentVote
             // 
             resources.ApplyResources(this, "$this");
@@ -163,10 +171,10 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DocumentVote";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteYes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteNo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteAbsence)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVotePass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteAbsence)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVoteYes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
