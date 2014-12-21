@@ -15,18 +15,23 @@ namespace MUN_ChairTools
     {
         public Session currentSession;
 
+        public ListBox AllMainCountry;
+
         public DocumentVote(Session session)
         {
             InitializeComponent();
 
             currentSession = session;
 
+            this.AllMainCountry = new ListBox();
+            this.AllMainCountry.Location = new Point(this.panelAllCountries.Location.X + 5 , this.panelAllCountries.Location.Y + 5);
             for (int i = 0; i < currentSession.MainCountryList.Count; i++ )
-            {
-
+            {        
+                this.AllMainCountry.Items.Add(currentSession.MainCountryList[i].ChineseName);
+                
             }
 
-
+            this.panelAllCountries.Controls.Add(this.AllMainCountry);
         }
 
         /// <summary>

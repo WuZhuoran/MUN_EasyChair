@@ -39,7 +39,7 @@
             this.SuspendToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenSpeakersListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.动议结束辩论ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.动议投票ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MotionVoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.其他动议ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RollCallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OtherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,113 +79,114 @@
             // 
             // menuStripMain
             // 
-            resources.ApplyResources(this.menuStripMain, "menuStripMain");
             this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SystemToolStripMenuItem,
             this.ActionToolStripMenuItem,
             this.OtherToolStripMenuItem,
             this.HelpToolStripMenuItem});
+            resources.ApplyResources(this.menuStripMain, "menuStripMain");
             this.menuStripMain.Name = "menuStripMain";
             // 
             // SystemToolStripMenuItem
             // 
-            resources.ApplyResources(this.SystemToolStripMenuItem, "SystemToolStripMenuItem");
             this.SystemToolStripMenuItem.Name = "SystemToolStripMenuItem";
+            resources.ApplyResources(this.SystemToolStripMenuItem, "SystemToolStripMenuItem");
             // 
             // ActionToolStripMenuItem
             // 
-            resources.ApplyResources(this.ActionToolStripMenuItem, "ActionToolStripMenuItem");
             this.ActionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MotionToolStripMenuItem,
             this.RollCallToolStripMenuItem});
             this.ActionToolStripMenuItem.Name = "ActionToolStripMenuItem";
+            resources.ApplyResources(this.ActionToolStripMenuItem, "ActionToolStripMenuItem");
             // 
             // MotionToolStripMenuItem
             // 
-            resources.ApplyResources(this.MotionToolStripMenuItem, "MotionToolStripMenuItem");
             this.MotionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MCToolStripMenuItem,
             this.UMCToolStripMenuItem,
             this.SuspendToolStripMenuItem,
             this.OpenSpeakersListToolStripMenuItem,
             this.动议结束辩论ToolStripMenuItem,
-            this.动议投票ToolStripMenuItem,
+            this.MotionVoteToolStripMenuItem,
             this.其他动议ToolStripMenuItem});
             this.MotionToolStripMenuItem.Name = "MotionToolStripMenuItem";
+            resources.ApplyResources(this.MotionToolStripMenuItem, "MotionToolStripMenuItem");
             // 
             // MCToolStripMenuItem
             // 
-            resources.ApplyResources(this.MCToolStripMenuItem, "MCToolStripMenuItem");
             this.MCToolStripMenuItem.Name = "MCToolStripMenuItem";
+            resources.ApplyResources(this.MCToolStripMenuItem, "MCToolStripMenuItem");
             this.MCToolStripMenuItem.Click += new System.EventHandler(this.MCToolStripMenuItem_Click);
             // 
             // UMCToolStripMenuItem
             // 
-            resources.ApplyResources(this.UMCToolStripMenuItem, "UMCToolStripMenuItem");
             this.UMCToolStripMenuItem.Name = "UMCToolStripMenuItem";
+            resources.ApplyResources(this.UMCToolStripMenuItem, "UMCToolStripMenuItem");
             this.UMCToolStripMenuItem.Click += new System.EventHandler(this.UMCToolStripMenuItem_Click);
             // 
             // SuspendToolStripMenuItem
             // 
-            resources.ApplyResources(this.SuspendToolStripMenuItem, "SuspendToolStripMenuItem");
             this.SuspendToolStripMenuItem.Name = "SuspendToolStripMenuItem";
+            resources.ApplyResources(this.SuspendToolStripMenuItem, "SuspendToolStripMenuItem");
             // 
             // OpenSpeakersListToolStripMenuItem
             // 
-            resources.ApplyResources(this.OpenSpeakersListToolStripMenuItem, "OpenSpeakersListToolStripMenuItem");
             this.OpenSpeakersListToolStripMenuItem.Name = "OpenSpeakersListToolStripMenuItem";
+            resources.ApplyResources(this.OpenSpeakersListToolStripMenuItem, "OpenSpeakersListToolStripMenuItem");
             this.OpenSpeakersListToolStripMenuItem.Click += new System.EventHandler(this.OpenSpeakersListToolStripMenuItem_Click);
             // 
             // 动议结束辩论ToolStripMenuItem
             // 
-            resources.ApplyResources(this.动议结束辩论ToolStripMenuItem, "动议结束辩论ToolStripMenuItem");
             this.动议结束辩论ToolStripMenuItem.Name = "动议结束辩论ToolStripMenuItem";
+            resources.ApplyResources(this.动议结束辩论ToolStripMenuItem, "动议结束辩论ToolStripMenuItem");
             // 
-            // 动议投票ToolStripMenuItem
+            // MotionVoteToolStripMenuItem
             // 
-            resources.ApplyResources(this.动议投票ToolStripMenuItem, "动议投票ToolStripMenuItem");
-            this.动议投票ToolStripMenuItem.Name = "动议投票ToolStripMenuItem";
+            this.MotionVoteToolStripMenuItem.Name = "MotionVoteToolStripMenuItem";
+            resources.ApplyResources(this.MotionVoteToolStripMenuItem, "MotionVoteToolStripMenuItem");
+            this.MotionVoteToolStripMenuItem.Click += new System.EventHandler(this.MotionVoteToolStripMenuItem_Click);
             // 
             // 其他动议ToolStripMenuItem
             // 
-            resources.ApplyResources(this.其他动议ToolStripMenuItem, "其他动议ToolStripMenuItem");
             this.其他动议ToolStripMenuItem.Name = "其他动议ToolStripMenuItem";
+            resources.ApplyResources(this.其他动议ToolStripMenuItem, "其他动议ToolStripMenuItem");
             // 
             // RollCallToolStripMenuItem
             // 
-            resources.ApplyResources(this.RollCallToolStripMenuItem, "RollCallToolStripMenuItem");
             this.RollCallToolStripMenuItem.Name = "RollCallToolStripMenuItem";
+            resources.ApplyResources(this.RollCallToolStripMenuItem, "RollCallToolStripMenuItem");
             this.RollCallToolStripMenuItem.Click += new System.EventHandler(this.RollCallToolStripMenuItem_Click);
             // 
             // OtherToolStripMenuItem
             // 
-            resources.ApplyResources(this.OtherToolStripMenuItem, "OtherToolStripMenuItem");
             this.OtherToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SettingsToolStripMenuItem});
             this.OtherToolStripMenuItem.Name = "OtherToolStripMenuItem";
+            resources.ApplyResources(this.OtherToolStripMenuItem, "OtherToolStripMenuItem");
             // 
             // SettingsToolStripMenuItem
             // 
-            resources.ApplyResources(this.SettingsToolStripMenuItem, "SettingsToolStripMenuItem");
             this.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem";
+            resources.ApplyResources(this.SettingsToolStripMenuItem, "SettingsToolStripMenuItem");
             // 
             // HelpToolStripMenuItem
             // 
-            resources.ApplyResources(this.HelpToolStripMenuItem, "HelpToolStripMenuItem");
             this.HelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SeeHelpToolStripMenuItem,
             this.AboutBoxToolStripMenuItem});
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
+            resources.ApplyResources(this.HelpToolStripMenuItem, "HelpToolStripMenuItem");
             // 
             // SeeHelpToolStripMenuItem
             // 
-            resources.ApplyResources(this.SeeHelpToolStripMenuItem, "SeeHelpToolStripMenuItem");
             this.SeeHelpToolStripMenuItem.Name = "SeeHelpToolStripMenuItem";
+            resources.ApplyResources(this.SeeHelpToolStripMenuItem, "SeeHelpToolStripMenuItem");
             // 
             // AboutBoxToolStripMenuItem
             // 
-            resources.ApplyResources(this.AboutBoxToolStripMenuItem, "AboutBoxToolStripMenuItem");
             this.AboutBoxToolStripMenuItem.Name = "AboutBoxToolStripMenuItem";
+            resources.ApplyResources(this.AboutBoxToolStripMenuItem, "AboutBoxToolStripMenuItem");
             this.AboutBoxToolStripMenuItem.Click += new System.EventHandler(this.AboutBoxToolStripMenuItem_Click);
             // 
             // panelMain
@@ -217,22 +218,22 @@
             // 
             // comboBoxChooseCountry
             // 
-            resources.ApplyResources(this.comboBoxChooseCountry, "comboBoxChooseCountry");
             this.comboBoxChooseCountry.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxChooseCountry, "comboBoxChooseCountry");
             this.comboBoxChooseCountry.Name = "comboBoxChooseCountry";
             // 
             // pictureBoxCountryPlus
             // 
-            resources.ApplyResources(this.pictureBoxCountryPlus, "pictureBoxCountryPlus");
             this.pictureBoxCountryPlus.Image = global::MUN_ChairTools.Properties.Resources.plus;
+            resources.ApplyResources(this.pictureBoxCountryPlus, "pictureBoxCountryPlus");
             this.pictureBoxCountryPlus.Name = "pictureBoxCountryPlus";
             this.pictureBoxCountryPlus.TabStop = false;
             this.pictureBoxCountryPlus.Click += new System.EventHandler(this.pictureBoxCountryPlus_Click);
             // 
             // pictureBoxCountryMinus
             // 
-            resources.ApplyResources(this.pictureBoxCountryMinus, "pictureBoxCountryMinus");
             this.pictureBoxCountryMinus.Image = global::MUN_ChairTools.Properties.Resources.minus;
+            resources.ApplyResources(this.pictureBoxCountryMinus, "pictureBoxCountryMinus");
             this.pictureBoxCountryMinus.Name = "pictureBoxCountryMinus";
             this.pictureBoxCountryMinus.TabStop = false;
             this.pictureBoxCountryMinus.Click += new System.EventHandler(this.pictureBoxCountryMinus_Click);
@@ -312,9 +313,9 @@
             // 
             // groupBoxRecord
             // 
-            resources.ApplyResources(this.groupBoxRecord, "groupBoxRecord");
             this.groupBoxRecord.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.groupBoxRecord.Controls.Add(this.richTextBoxRecord);
+            resources.ApplyResources(this.groupBoxRecord, "groupBoxRecord");
             this.groupBoxRecord.Name = "groupBoxRecord";
             this.groupBoxRecord.TabStop = false;
             // 
@@ -386,7 +387,7 @@
         private System.Windows.Forms.ToolStripMenuItem SuspendToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem OpenSpeakersListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 动议结束辩论ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 动议投票ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MotionVoteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 其他动议ToolStripMenuItem;
         private System.Windows.Forms.ListBox listBoxSpeakersList;
         private System.Windows.Forms.PictureBox pictureBoxCountryMinus;

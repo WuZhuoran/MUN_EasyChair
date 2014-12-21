@@ -8,7 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.Threading;
 using System.Globalization;
-using System.Threading;
 
 namespace MUN_ChairTools
 {
@@ -55,6 +54,8 @@ namespace MUN_ChairTools
             }
 
             this.labelConferenceInformation.Text = "会场名称：\n" + this.CurrentConference.CommitteeName + "\n国家总数：" + this.CurrentConference.CountryTotalNumber + "\n到场国家数：" + (this.CurrentConference.TotalSessionList[Conference.SessionNumber].PresentMainCountryNumber + this.CurrentConference.TotalSessionList[Conference.SessionNumber].PresentObserverCountryNumber) + "\n简单多数：" + this.CurrentConference.TotalSessionList[Conference.SessionNumber].SimpleMajority + "\n绝对多数：" + this.CurrentConference.TotalSessionList[Conference.SessionNumber].TwoThirdsMajority;
+            //索引超出范围。必须为非负值并小于集合大小。 当选非新建session的时候 会出现问题
+            
         }
 
         /// <summary>
@@ -404,6 +405,13 @@ namespace MUN_ChairTools
 
             this.buttonSetTimeStart.Enabled = false;
             this.buttonSetTimeStart.ForeColor = Color.Gray;
+        }
+
+        private void MotionVoteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DocumentVote documentVote = new DocumentVote(this.CurrentConference.TotalSessionList[this.CurrentConference.TotalSessionList.Count - 1]);
+            documentVote.StartPosition = FormStartPosition.CenterScreen;
+            documentVote.Show();
         }
     }
 
