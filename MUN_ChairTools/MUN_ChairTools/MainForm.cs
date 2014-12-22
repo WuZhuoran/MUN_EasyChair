@@ -275,16 +275,17 @@ namespace MUN_ChairTools
                     this.pictureBoxCountryMinus.Visible = true;
                     this.pictureBoxCountryPlus.Visible = true;
 
-                    for (int i = 0; i < this.CurrentConference.TotalSessionList[Conference.SessionNumber].CountryList.Count; i++ )
+                    for (int i = 0; i < this.CurrentConference.TotalSessionList[CurrentConference.TotalSessionList.Count - 1].CountryList.Count; i++ )
                     {
-                        this.comboBoxChooseCountry.Items.Add(this.CurrentConference.TotalSessionList[Conference.SessionNumber].CountryList[i].ChineseName);
+                        this.comboBoxChooseCountry.Items.Add(this.CurrentConference.TotalSessionList[CurrentConference.TotalSessionList.Count - 1].CountryList[i].ChineseName);
                     }
                     
                     //TODO 第二种思路，把这个和主计时器分开
                 }
                 else if (dialogVoteMotion == System.Windows.Forms.DialogResult.No)
                 {
-   
+                    this.WirteToRecord("动议结束 开启主发言名单");
+                    return;
                     
                 }
                 else

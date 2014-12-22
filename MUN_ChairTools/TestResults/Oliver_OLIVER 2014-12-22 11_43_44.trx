@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d63cf908-b2a0-4114-b067-be49100e5a1d" name="Oliver@OLIVER 2014-12-22 11:43:44" runUser="OLIVER\Oliver" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="f1a81625-c35e-4261-9550-6549a6f688ce">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Oliver_OLIVER 2014-12-22 11_43_44">
+      <DeploymentItem filename="E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\MUN_ChairTools\bin\Debug\MUN_ChairTools.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-12-22T11:43:44.1828671+08:00" queuing="2014-12-22T11:43:45.7350578+08:00" start="2014-12-22T11:43:45.8290936+08:00" finish="2014-12-22T11:43:55.3996200+08:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="7" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="6" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="OLIVER" outcome="Warning" timestamp="2014-12-22T11:43:44.3318794+08:00">
+        <Text>当前已禁用部署。未部署测试“TestDocumentVote11_22.DocumentVoteTest.pictureBoxVotePass_ClickTest”中的部署项“MUN_ChairTools.exe”。</Text>
+      </RunInfo>
+      <RunInfo computerName="OLIVER" outcome="Error" timestamp="2014-12-22T11:43:55.3966170+08:00">
+        <Text>测试宿主进程意外退出。</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="pictureBoxVotePass_ClickTest" storage="e:\coding files\visualstdio2010_c#\mun_chairtools\testdocumentvote11_22\bin\debug\testdocumentvote11_22.dll" id="cc3acea5-e341-9ac7-b630-2ecef8257ea2">
+      <DeploymentItems>
+        <DeploymentItem filename="MUN_ChairTools.exe" />
+      </DeploymentItems>
+      <Execution id="47878b0c-4d06-4bef-8f4a-8b26312d05d4" />
+      <TestMethod codeBase="E:/Coding Files/VisualStdio2010_C#/MUN_ChairTools/TestDocumentVote11_22/bin/Debug/TestDocumentVote11_22.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestDocumentVote11_22.DocumentVoteTest, TestDocumentVote11_22, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="pictureBoxVotePass_ClickTest" />
+    </UnitTest>
+    <UnitTest name="DisposeTest" storage="e:\coding files\visualstdio2010_c#\mun_chairtools\testdocumentvote11_22\bin\debug\testdocumentvote11_22.dll" id="9399f3db-37be-0673-fba5-08885ed48b65">
+      <DeploymentItems>
+        <DeploymentItem filename="MUN_ChairTools.exe" />
+      </DeploymentItems>
+      <Execution id="3f54f0cc-1d7c-4e57-ae09-007601924352" />
+      <TestMethod codeBase="E:/Coding Files/VisualStdio2010_C#/MUN_ChairTools/TestDocumentVote11_22/bin/Debug/TestDocumentVote11_22.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestDocumentVote11_22.DocumentVoteTest, TestDocumentVote11_22, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DisposeTest" />
+    </UnitTest>
+    <UnitTest name="pictureBoxVoteYes_ClickTest" storage="e:\coding files\visualstdio2010_c#\mun_chairtools\testdocumentvote11_22\bin\debug\testdocumentvote11_22.dll" id="4e04a19c-26e5-bbb7-2a10-a7ff6ba728e7">
+      <DeploymentItems>
+        <DeploymentItem filename="MUN_ChairTools.exe" />
+      </DeploymentItems>
+      <Execution id="d417e35b-f80c-48d6-ada0-a5c26063d8a1" />
+      <TestMethod codeBase="E:/Coding Files/VisualStdio2010_C#/MUN_ChairTools/TestDocumentVote11_22/bin/Debug/TestDocumentVote11_22.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestDocumentVote11_22.DocumentVoteTest, TestDocumentVote11_22, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="pictureBoxVoteYes_ClickTest" />
+    </UnitTest>
+    <UnitTest name="pictureBoxVoteAbsence_ClickTest" storage="e:\coding files\visualstdio2010_c#\mun_chairtools\testdocumentvote11_22\bin\debug\testdocumentvote11_22.dll" id="8f450679-0172-9b41-4476-e8ba288e9b4d">
+      <DeploymentItems>
+        <DeploymentItem filename="MUN_ChairTools.exe" />
+      </DeploymentItems>
+      <Execution id="22c20bbf-d045-47f7-91f8-9aff1e6ca1de" />
+      <TestMethod codeBase="E:/Coding Files/VisualStdio2010_C#/MUN_ChairTools/TestDocumentVote11_22/bin/Debug/TestDocumentVote11_22.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestDocumentVote11_22.DocumentVoteTest, TestDocumentVote11_22, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="pictureBoxVoteAbsence_ClickTest" />
+    </UnitTest>
+    <UnitTest name="InitializeComponentTest" storage="e:\coding files\visualstdio2010_c#\mun_chairtools\testdocumentvote11_22\bin\debug\testdocumentvote11_22.dll" id="2e1678f5-4db2-f0f2-257d-51ff2bb83584">
+      <DeploymentItems>
+        <DeploymentItem filename="MUN_ChairTools.exe" />
+      </DeploymentItems>
+      <Execution id="3c39938f-10d1-41a2-b1ce-45f9b47ae2b0" />
+      <TestMethod codeBase="E:/Coding Files/VisualStdio2010_C#/MUN_ChairTools/TestDocumentVote11_22/bin/Debug/TestDocumentVote11_22.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestDocumentVote11_22.DocumentVoteTest, TestDocumentVote11_22, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InitializeComponentTest" />
+    </UnitTest>
+    <UnitTest name="pictureBoxVoteNo_ClickTest" storage="e:\coding files\visualstdio2010_c#\mun_chairtools\testdocumentvote11_22\bin\debug\testdocumentvote11_22.dll" id="22bd8df9-942e-635c-6fdb-d8c73ead0a09">
+      <DeploymentItems>
+        <DeploymentItem filename="MUN_ChairTools.exe" />
+      </DeploymentItems>
+      <Execution id="6470fc94-fcc4-4dfa-8f8b-4938b1f78225" />
+      <TestMethod codeBase="E:/Coding Files/VisualStdio2010_C#/MUN_ChairTools/TestDocumentVote11_22/bin/Debug/TestDocumentVote11_22.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestDocumentVote11_22.DocumentVoteTest, TestDocumentVote11_22, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="pictureBoxVoteNo_ClickTest" />
+    </UnitTest>
+    <UnitTest name="DocumentVoteConstructorTest" storage="e:\coding files\visualstdio2010_c#\mun_chairtools\testdocumentvote11_22\bin\debug\testdocumentvote11_22.dll" id="acb0d702-c04e-dde3-bd37-f30961d3f954">
+      <Execution id="d2888da9-bec7-494f-81ce-9ac62019460b" />
+      <TestMethod codeBase="E:/Coding Files/VisualStdio2010_C#/MUN_ChairTools/TestDocumentVote11_22/bin/Debug/TestDocumentVote11_22.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestDocumentVote11_22.DocumentVoteTest, TestDocumentVote11_22, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DocumentVoteConstructorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="acb0d702-c04e-dde3-bd37-f30961d3f954" executionId="d2888da9-bec7-494f-81ce-9ac62019460b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9399f3db-37be-0673-fba5-08885ed48b65" executionId="3f54f0cc-1d7c-4e57-ae09-007601924352" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2e1678f5-4db2-f0f2-257d-51ff2bb83584" executionId="3c39938f-10d1-41a2-b1ce-45f9b47ae2b0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f450679-0172-9b41-4476-e8ba288e9b4d" executionId="22c20bbf-d045-47f7-91f8-9aff1e6ca1de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22bd8df9-942e-635c-6fdb-d8c73ead0a09" executionId="6470fc94-fcc4-4dfa-8f8b-4938b1f78225" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc3acea5-e341-9ac7-b630-2ecef8257ea2" executionId="47878b0c-4d06-4bef-8f4a-8b26312d05d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e04a19c-26e5-bbb7-2a10-a7ff6ba728e7" executionId="d417e35b-f80c-48d6-ada0-a5c26063d8a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d2888da9-bec7-494f-81ce-9ac62019460b" testId="acb0d702-c04e-dde3-bd37-f30961d3f954" testName="DocumentVoteConstructorTest" computerName="OLIVER" duration="00:00:09.4925397" startTime="2014-12-22T11:43:45.9060812+08:00" endTime="2014-12-22T11:43:55.3986209+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2888da9-bec7-494f-81ce-9ac62019460b">
+    </UnitTestResult>
+    <UnitTestResult executionId="3f54f0cc-1d7c-4e57-ae09-007601924352" testId="9399f3db-37be-0673-fba5-08885ed48b65" testName="DisposeTest" computerName="OLIVER" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f54f0cc-1d7c-4e57-ae09-007601924352">
+    </UnitTestResult>
+    <UnitTestResult executionId="3c39938f-10d1-41a2-b1ce-45f9b47ae2b0" testId="2e1678f5-4db2-f0f2-257d-51ff2bb83584" testName="InitializeComponentTest" computerName="OLIVER" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c39938f-10d1-41a2-b1ce-45f9b47ae2b0">
+    </UnitTestResult>
+    <UnitTestResult executionId="22c20bbf-d045-47f7-91f8-9aff1e6ca1de" testId="8f450679-0172-9b41-4476-e8ba288e9b4d" testName="pictureBoxVoteAbsence_ClickTest" computerName="OLIVER" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22c20bbf-d045-47f7-91f8-9aff1e6ca1de">
+    </UnitTestResult>
+    <UnitTestResult executionId="6470fc94-fcc4-4dfa-8f8b-4938b1f78225" testId="22bd8df9-942e-635c-6fdb-d8c73ead0a09" testName="pictureBoxVoteNo_ClickTest" computerName="OLIVER" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6470fc94-fcc4-4dfa-8f8b-4938b1f78225">
+    </UnitTestResult>
+    <UnitTestResult executionId="47878b0c-4d06-4bef-8f4a-8b26312d05d4" testId="cc3acea5-e341-9ac7-b630-2ecef8257ea2" testName="pictureBoxVotePass_ClickTest" computerName="OLIVER" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47878b0c-4d06-4bef-8f4a-8b26312d05d4">
+    </UnitTestResult>
+    <UnitTestResult executionId="d417e35b-f80c-48d6-ada0-a5c26063d8a1" testId="4e04a19c-26e5-bbb7-2a10-a7ff6ba728e7" testName="pictureBoxVoteYes_ClickTest" computerName="OLIVER" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d417e35b-f80c-48d6-ada0-a5c26063d8a1">
+    </UnitTestResult>
+  </Results>
+</TestRun>

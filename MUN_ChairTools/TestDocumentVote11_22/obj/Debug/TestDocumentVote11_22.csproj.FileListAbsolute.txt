@@ -1,0 +1,11 @@
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\TestDocumentVote11_22\bin\Debug\TestDocumentVote11_22.dll
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\TestDocumentVote11_22\bin\Debug\TestDocumentVote11_22.pdb
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\TestDocumentVote11_22\bin\Debug\MUN_ChairTools.exe
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\TestDocumentVote11_22\bin\Debug\MUN_ChairTools.pdb
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\TestDocumentVote11_22\bin\Debug\en-US\MUN_ChairTools.resources.dll
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\TestDocumentVote11_22\bin\Debug\zh-CN\MUN_ChairTools.resources.dll
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\TestDocumentVote11_22\bin\Debug\MUN_ChairTools_Accessor.exe
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\TestDocumentVote11_22\bin\Debug\MUN_ChairTools_Accessor.pdb
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\TestDocumentVote11_22\obj\Debug\TestDocumentVote11_22.csprojResolveAssemblyReference.cache
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\TestDocumentVote11_22\obj\Debug\TestDocumentVote11_22.dll
+E:\Coding Files\VisualStdio2010_C#\MUN_ChairTools\TestDocumentVote11_22\obj\Debug\TestDocumentVote11_22.pdb

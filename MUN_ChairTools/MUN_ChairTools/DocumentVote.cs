@@ -24,7 +24,9 @@ namespace MUN_ChairTools
             currentSession = session;
 
             this.AllMainCountry = new ListBox();
-            this.AllMainCountry.Location = new Point(this.panelAllCountries.Location.X + 5 , this.panelAllCountries.Location.Y + 5);
+            this.AllMainCountry.Location = new Point(this.panelAllCountries.Location.X, this.panelAllCountries.Location.Y);
+            this.AllMainCountry.Size = this.panelAllCountries.Size;
+            this.AllMainCountry.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             for (int i = 0; i < currentSession.MainCountryList.Count; i++ )
             {        
                 this.AllMainCountry.Items.Add(currentSession.MainCountryList[i].ChineseName);
