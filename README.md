@@ -1,7 +1,7 @@
-MUN_EasyChair Beta 1.5
+MUN_EasyChair Beta 1.6
 =============
 
-模拟联合国主席程序 （Beta 1.5）
+模拟联合国主席程序 （Beta 1.6）
 
 2014年11月5日更新第一版本 布局与计时。计时功能仍有Bug
 
