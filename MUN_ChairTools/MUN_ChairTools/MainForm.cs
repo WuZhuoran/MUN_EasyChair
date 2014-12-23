@@ -20,7 +20,7 @@ namespace MUN_ChairTools
 
         public DateTime TimePass;
 
-        bool isOpenSpeakersList = false;
+        public bool isOpenSpeakersList = false;
 
         public Conference CurrentConference;
 

@@ -84,6 +84,7 @@
             // panelAllCountries
             // 
             resources.ApplyResources(this.panelAllCountries, "panelAllCountries");
+            this.panelAllCountries.BackColor = System.Drawing.SystemColors.Control;
             this.panelAllCountries.Name = "panelAllCountries";
             // 
             // buttonCancel
@@ -91,6 +92,7 @@
             resources.ApplyResources(this.buttonCancel, "buttonCancel");
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonClear
             // 
