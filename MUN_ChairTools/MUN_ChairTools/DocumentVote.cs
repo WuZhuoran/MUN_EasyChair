@@ -29,9 +29,10 @@ namespace MUN_ChairTools
             this.listViewAllMainCountry.Location = new Point(0, 0);
             this.listViewAllMainCountry.Size = new Size(this.panelAllCountries.Size.Width, this.panelAllCountries.Size.Height);
             this.listViewAllMainCountry.Font = new Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.listViewAllMainCountry.View = View.List;
             this.listViewAllMainCountry.MultiSelect = false;
+            this.listViewAllMainCountry.View = View.Details;
             
+            this.listViewAllMainCountry.FullRowSelect = true;
 
             for (int i = 0; i < currentSession.MainCountryList.Count; i++ )
             {
@@ -39,23 +40,14 @@ namespace MUN_ChairTools
             }
 
             this.panelAllCountries.Controls.Add(this.listViewAllMainCountry);
-            //this.AllMainCountry = new ListBox();
-            ////this.AllMainCountry.Margin = new Padding(0, 0, 0, 0);
-            //this.AllMainCountry.Location = new Point(0, 0);
-            //this.AllMainCountry.Size = new Size(this.panelAllCountries.Size.Width, this.panelAllCountries.Size.Height);
-            //this.AllMainCountry.Anchor = AnchorStyles.Top;
-            //this.AllMainCountry.Anchor = AnchorStyles.Left;
-            //this.AllMainCountry.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            //this.AllMainCountry.MultiColumn = true;
-            //this.AllMainCountry.ColumnWidth = this.panelAllCountries.Size.Width / 2;
-            //for (int i = 0; i < currentSession.MainCountryList.Count; i++ )
-            //{        
-            //    this.AllMainCountry.Items.Add(currentSession.MainCountryList[i].ChineseName);
-                
-            //}
-            //this.AllMainCountry.DrawMode = DrawMode.OwnerDrawFixed;
-            //this.panelAllCountries.Controls.Add(this.AllMainCountry);
-            
+
+
+            this.listViewAllMainCountry.LostFocus += new EventHandler(listViewAllMainCountry_LostFocus);
+        }
+
+        void listViewAllMainCountry_LostFocus(object sender, EventArgs e)
+        {
+            this.listViewAllMainCountry.SelectedItems.Clear();
         }
 
         /// <summary>
@@ -76,13 +68,10 @@ namespace MUN_ChairTools
             }
 
             this.listViewAllMainCountry.SelectedItems[0].BackColor = Color.CornflowerBlue;
+            
+            
 
-            //if (this.AllMainCountry.SelectedIndex == -1)
-            //{
-            //    return;
-            //}
-
-            //this.AllMainCountry.SelectedIndex++;
+            
 
             
 
@@ -95,17 +84,7 @@ namespace MUN_ChairTools
         /// <param name="e"></param>
         private void pictureBoxVoteNo_Click(object sender, EventArgs e)
         {
-            //if (this.textBoxFileName.Text == string.Empty)
-            //{
-            //    return;
-            //}
 
-            //if (this.AllMainCountry.SelectedIndex == -1)
-            //{
-            //    return;
-            //}
-            //this.AllMainCountry.Controls[this.AllMainCountry.SelectedIndex].ForeColor = Color.Red;
-            //this.AllMainCountry.SelectedIndex++;
         }
 
         /// <summary>
@@ -115,17 +94,7 @@ namespace MUN_ChairTools
         /// <param name="e"></param>
         private void pictureBoxVoteAbsence_Click(object sender, EventArgs e)
         {
-            //if (this.textBoxFileName.Text == string.Empty)
-            //{
-            //    return;
-            //}
 
-            //if (this.AllMainCountry.SelectedIndex == -1)
-            //{
-            //    return;
-            //}
-            //this.AllMainCountry.Controls[this.AllMainCountry.SelectedIndex].ForeColor = Color.Purple;
-            //this.AllMainCountry.SelectedIndex++;
         }
 
         /// <summary>
@@ -135,17 +104,7 @@ namespace MUN_ChairTools
         /// <param name="e"></param>
         private void pictureBoxVotePass_Click(object sender, EventArgs e)
         {
-            //if (this.textBoxFileName.Text == string.Empty)
-            //{
-            //    return;
-            //}
 
-            //if (this.AllMainCountry.SelectedIndex == -1)
-            //{
-            //    return;
-            //}
-            //this.AllMainCountry.Controls[this.AllMainCountry.SelectedIndex].ForeColor = Color.White;
-            //this.AllMainCountry.SelectedIndex++;
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
