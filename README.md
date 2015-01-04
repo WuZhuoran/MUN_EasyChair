@@ -56,3 +56,5 @@ MUN_EasyChair Beta 1.6
 2015年1月1日 Github客户端出问题 无法sync 更新文件部分
 
 2015年1月3日 Github客户端仍然无法使用 更新界面
+
+2015年1月4日 找到了潜在Github无法登陆的问题 完成MVC项目
